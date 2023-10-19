@@ -9,8 +9,7 @@ namespace SUBD_CourseWork.Entities
     public class Discipline
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string? ShortName { get; set; }
+        public DisciplineType DisciplineType { get; set; }
 
         public List<Degree> Degrees { get; set; } = new();
     }

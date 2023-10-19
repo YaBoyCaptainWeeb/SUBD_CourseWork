@@ -9,10 +9,9 @@ namespace SUBD_CourseWork.Entities
     public class AcademicRank
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string? ShortName { get; set; }
+        public AcademicRankType AcademicRankType { get; set; }
 
-        public string YearOfAward { get; set; }
+        public DateTime YearOfAward { get; set; }
 
         public List<Teacher> Teachers { get; set; } = new();
     }

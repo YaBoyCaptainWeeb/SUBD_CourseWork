@@ -9,8 +9,7 @@ namespace SUBD_CourseWork.Entities
     public class JobTitle
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string? ShortName { get; set; }
+        public JobTitlesType JobTitlesType { get; set; }
 
         public List<Teacher> Teachers { get; set; } = new();
         public Experience? Experience { get; set; } = new();

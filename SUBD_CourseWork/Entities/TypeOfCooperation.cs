@@ -9,8 +9,7 @@ namespace SUBD_CourseWork.Entities
     public class TypeOfCooperation
     {
         public int Id { get; set; }
-        public bool State { get; set; }
-        public bool Combined { get; set; }
+        public CooperationType CoopType {get;set;}
 
         public List<Teacher> Teachers { get; set; } = new();
     }

@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SUBD_CourseWork"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Индивидуальный план преподавателя" Height="450" Width="800">
     <Grid>
         <TextBlock x:Name="TestBlock"/>
+        
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" CanContentScroll="False">
+            <DataGrid Name="TeachersGrid" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" AutoGenerateColumns="True">
+                <DataGrid.Columns>
+                    <!--
+                    <DataGridTextColumn Header="№"/>
+                    <DataGridTextColumn Header="ФИО"/>
+                    <DataGridTextColumn Header="Дата рождения"/>
+                    <DataGridTextColumn Header="Домашний адрес"/>
+                    <DataGridTextColumn Header="Контактные данные"/>
+                    <DataGridTextColumn Header="Факультет"/>
+                    <DataGridTextColumn Header="Кафедра"/>
+                    <DataGridTextColumn Header="Должность"/>
+                    <DataGridTextColumn Header="Работает в штате"/>
+                    <DataGridTextColumn Header="Совмещает работу в ВУЗе"/>
+                    <DataGridTextColumn Header="Ученая степень"/>
+                    <DataGridTextColumn Header="Ученое звание"/>
+                    <DataGridTextColumn Header="Учебное заведение"/>
+                         -->
+                </DataGrid.Columns>
+            </DataGrid>
+        </ScrollViewer>
+       
     </Grid>
 </Window>
