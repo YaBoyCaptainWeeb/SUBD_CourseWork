@@ -16,7 +16,8 @@ namespace SUBD_CourseWork.Configurations
             builder.HasIndex(d => d.Id);
             builder.HasKey(d => d.Id);
             builder.Property(d => d.Id).ValueGeneratedOnAdd();
-            builder.Property(x=>x.DegreeType).IsRequired();
+            builder.Property(x => x.DegreeType).IsRequired();
+            builder.Property(x => x.DisciplineId).IsRequired();
         }
     }
 }

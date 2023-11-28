@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace SUBD_CourseWork.Entities
 {
-    public class TypeOfCooperation
+    public class Year
     {
         public int Id { get; set; }
-        public string CoopType {get;set;}
+        public DateTime startOfYear { get; set; }
+        public DateTime endOfYear { get; set; }
 
-        public List<Teacher> Teachers { get; set; } = new();
+        public IndividualPlan individualPlans { get; set; }
     }
 }

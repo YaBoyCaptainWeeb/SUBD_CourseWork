@@ -9,13 +9,13 @@ namespace SUBD_CourseWork.Entities
     public class Degree
     {
         public int Id { get; set; }
-        public DegreeType DegreeType { get; set; }
+        public string DegreeType { get; set; }
         public DateTime YearOfAward { get; set; }
 
-        public int? DisciplineId { get; set; }
+        public int DisciplineId { get; set; }
 
-        public Discipline? Discipline { get; set; }
+        public Discipline Discipline { get; set; }
 
-        public List<Teacher> Teachers { get; set; } = new();
+        public Teacher Teacher { get; set; } = new();
     }
 }

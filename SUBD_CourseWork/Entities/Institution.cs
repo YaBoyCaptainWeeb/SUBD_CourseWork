@@ -12,6 +12,7 @@ namespace SUBD_CourseWork.Entities
         public string Name { get; set; }
         public string? ShortName { get; set; }
 
-        public List<Teacher> Teachers { get; set; } = new();
+        public List<Faculty> Faculties { get; set; } = new();
+        //public List<Teacher> Teachers { get; set; } = new();
     }
 }

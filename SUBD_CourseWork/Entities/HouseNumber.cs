@@ -1,5 +1,4 @@
-﻿using SUBD_CourseWork.Configurations;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace SUBD_CourseWork.Entities
 {
-    public class Discipline
+    public class HouseNumber
     {
         public int Id { get; set; }
-        public string DisciplineType { get; set; }
-        public List<Degree> Degrees { get; set; }
+        public int House { get; set; }
+        public List<Teacher> Teachers { get; set; } = new();
     }
 }

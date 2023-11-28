@@ -9,16 +9,14 @@ using System.Threading.Tasks;
 
 namespace SUBD_CourseWork.Configurations
 {
-    public class TeacherConfiguration : IEntityTypeConfiguration<Teacher>
+    public class HouseNumberConfiguration : IEntityTypeConfiguration<HouseNumber>
     {
-        public void Configure(EntityTypeBuilder<Teacher> builder)
+        public void Configure(EntityTypeBuilder<HouseNumber> builder)
         {
-            builder.HasIndex(x => x.Id);
             builder.HasKey(x => x.Id);
+            builder.HasIndex(x => x.Id);
             builder.Property(x => x.Id).ValueGeneratedOnAdd();
-            builder.Property(x => x.BirthDate).IsRequired();
-            builder.Property(x => x.Name).IsRequired();
-            builder.Property(x => x.DateOfEnding).IsRequired(false);
+            builder.Property(x => x.House).IsRequired();
         }
     }
 }

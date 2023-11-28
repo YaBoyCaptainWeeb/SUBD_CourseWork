@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace SUBD_CourseWork.Entities
 {
-    public class TypeOfCooperation
+    public class EmailAdress
     {
         public int Id { get; set; }
-        public string CoopType {get;set;}
-
-        public List<Teacher> Teachers { get; set; } = new();
+        public string Email { get; set; }
+        public int ContactDataId { get; set; }
+        public ContactData ContactData { get; set; } = new();
     }
 }

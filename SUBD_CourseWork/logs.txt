@@ -1,0 +1,304 @@
+info: 02.11.2023 14:09:26.891 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (58ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+info: 02.11.2023 14:12:16.679 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (58ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+info: 02.11.2023 14:12:17.086 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (290ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "__EFMigrationsHistory" (
+          "MigrationId" character varying(150) NOT NULL,
+          "ProductVersion" character varying(32) NOT NULL,
+          CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+      );
+info: 02.11.2023 14:12:17.133 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+info: 02.11.2023 14:12:17.137 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: 02.11.2023 14:12:17.151 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20231102090927_Migrate'.
+fail: 02.11.2023 14:12:17.214 RelationalEventId.CommandError[20102] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Failed executing DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TYPE public.academic_rank_type AS ENUM ('Доцент', 'Профессор');
+      CREATE TYPE public.degree_type AS ENUM ('Доктор', 'Кандидат');
+info: 02.11.2023 14:23:29.891 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (53ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+info: 02.11.2023 14:23:29.950 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+info: 02.11.2023 14:23:29.990 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+info: 02.11.2023 14:23:30.000 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: 02.11.2023 14:23:30.015 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20231102090927_Migrate'.
+fail: 02.11.2023 14:23:30.085 RelationalEventId.CommandError[20102] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Failed executing DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TYPE public.academic_rank_type AS ENUM ('Доцент', 'Профессор');
+      CREATE TYPE public.degree_type AS ENUM ('Доктор', 'Кандидат');
+info: 02.11.2023 14:24:05.190 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (54ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+info: 02.11.2023 14:24:19.215 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (53ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+info: 02.11.2023 14:24:19.273 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+info: 02.11.2023 14:24:19.313 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+info: 02.11.2023 14:24:19.324 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: 02.11.2023 14:24:19.339 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20231102090927_Migrate'.
+fail: 02.11.2023 14:24:19.410 RelationalEventId.CommandError[20102] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Failed executing DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TYPE public.academic_rank_type AS ENUM ('Доцент', 'Профессор');
+      CREATE TYPE public.degree_type AS ENUM ('Доктор', 'Кандидат');
+info: 02.11.2023 14:28:06.766 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (56ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+info: 02.11.2023 15:12:45.203 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (58ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+info: 02.11.2023 15:12:45.250 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+info: 02.11.2023 15:12:45.262 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: 02.11.2023 15:12:45.275 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20231102092806_Initial'.
+fail: 02.11.2023 15:12:45.345 RelationalEventId.CommandError[20102] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Failed executing DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public."academicRanks" (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "AcademicRankType" text NOT NULL,
+          "YearOfAward" timestamp with time zone NOT NULL,
+          CONSTRAINT "PK_academicRanks" PRIMARY KEY ("Id")
+      );
+info: 02.11.2023 19:33:38.476 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (57ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+info: 02.11.2023 19:33:51.989 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (54ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+info: 02.11.2023 19:33:52.049 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+info: 02.11.2023 19:33:52.349 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (189ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "__EFMigrationsHistory" (
+          "MigrationId" character varying(150) NOT NULL,
+          "ProductVersion" character varying(32) NOT NULL,
+          CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+      );
+info: 02.11.2023 19:33:52.395 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+info: 02.11.2023 19:33:52.399 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: 02.11.2023 19:33:52.421 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20231102092806_Initial'.
+fail: 02.11.2023 19:33:52.476 RelationalEventId.CommandError[20102] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Failed executing DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public."academicRanks" (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "AcademicRankType" text NOT NULL,
+          "YearOfAward" timestamp with time zone NOT NULL,
+          CONSTRAINT "PK_academicRanks" PRIMARY KEY ("Id")
+      );
