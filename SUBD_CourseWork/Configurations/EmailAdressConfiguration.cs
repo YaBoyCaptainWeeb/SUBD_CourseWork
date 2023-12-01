@@ -16,6 +16,7 @@ namespace SUBD_CourseWork.Configurations
             builder.HasKey(e => e.Id);
             builder.HasIndex(e => e.Id);
             builder.Property(x => x.Id).ValueGeneratedOnAdd();
+            builder.Property(x => x.Email).IsRequired();
         }
     }
 }

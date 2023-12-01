@@ -53,7 +53,6 @@ namespace SUBD_CourseWork
         public DbSet<Year> Years { get; set; } = null!;
         public DbSet<TypeOfWork> typeOfWorks { get; set; } = null!;
         public DbSet<IndividualPlan> individualPlans { get; set; } = null!;
-        public DbSet<ContactData> contactDatas { get; set; } = null!;
         public DbSet<EmailAdress> emailAdresses { get; set; } = null!;
         public DbSet<PhoneNumber> phoneNumbers { get; set; } = null!;
         public DbSet<HouseNumber> houseNumbers { get; set; } = null!;
@@ -61,7 +60,7 @@ namespace SUBD_CourseWork
 
         public ApplicationContext()
         {
-            //Database.EnsureDeleted();
+            Database.EnsureDeleted();
             Database.EnsureCreated();
         }
 
@@ -157,7 +156,6 @@ namespace SUBD_CourseWork
             modelBuilder.ApplyConfiguration(new YearConfiguration());
             modelBuilder.ApplyConfiguration(new HouseNumberConfiguration());
             modelBuilder.ApplyConfiguration(new StreetConfiguration());
-            modelBuilder.ApplyConfiguration(new ContactDataConfiguration());
             modelBuilder.ApplyConfiguration(new EmailAdressConfiguration());
             modelBuilder.ApplyConfiguration(new PhoneNumberConfiguration());
 

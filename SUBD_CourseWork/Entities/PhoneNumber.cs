@@ -10,7 +10,8 @@ namespace SUBD_CourseWork.Entities
     {
         public int Id { get; set; }
         public string Number { get; set; }
-        public int ContactDataId { get; set; }
-        public ContactData ContactData { get; set; } = new();
+        public int TeacherId { get; set; }
+        public Teacher Teacher { get; set; } = new();
+
     }
 }

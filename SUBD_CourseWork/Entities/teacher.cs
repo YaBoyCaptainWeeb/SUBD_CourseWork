@@ -19,8 +19,9 @@ namespace SUBD_CourseWork.Entities
 
         public int HouseNumberId { get; set; }
         public HouseNumber HouseNumber { get; set; }
-        public int ContactDataId { get; set; }
-        public ContactData ContactData { get; set; }
+
+        public List<PhoneNumber> PhoneNumbers { get; set; }
+        public List<EmailAdress> EmailAdresses { get; set; }
 
         public int DepartmentId { get; set; }
         
