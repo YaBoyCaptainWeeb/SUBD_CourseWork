@@ -60,8 +60,9 @@ namespace SUBD_CourseWork
 
         public ApplicationContext()
         {
-            Database.EnsureDeleted();
-            Database.EnsureCreated();
+            //Database.EnsureDeleted();
+            //Database.Migrate();
+            //Database.EnsureCreated();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -117,7 +118,8 @@ namespace SUBD_CourseWork
                 );
             modelBuilder.Entity<Faculty>().HasData( // Факультеты 
                 new Faculty { Id = 1, Name = "Институт Математики и информационных технологий", ShortName ="ИМИТ" , InstitutionId = 1},
-                new Faculty { Id = 2, Name = "Аэрокосмический институт", ShortName = "АЭИ", InstitutionId = 1}
+                new Faculty { Id = 2, Name = "Аэрокосмический институт", ShortName = "АЭИ", InstitutionId = 1},
+                new Faculty { Id = 3, Name = "Архитектурно-строительный факультет", ShortName = "АСФ", InstitutionId = 1 }
                 );
             modelBuilder.Entity<Department>().HasData( // Кафедры
                 new Department { Id = 1, Name = "Кафедра летательных аппаратов", ShortName = "КЛА", FacultyId = 2},
@@ -135,7 +137,14 @@ namespace SUBD_CourseWork
                 new Department { Id = 12, Name = "Кафедра прикладной информатики в экономике и управлении", ShortName = "КПИЭиУ", FacultyId = 1},
                 new Department { Id = 13, Name = "Кафедра прикладной математики", ShortName = "КПМ", FacultyId = 1},
                 new Department { Id = 14, Name = "Кафедра программного обеспечения вычислительной техники и автоматизированных систем", ShortName = "КПОВТиАС", FacultyId = 1},
-                new Department { Id = 15, Name = "Кафедра статистики и эконометрики", ShortName = "КСиЭ", FacultyId = 1}
+                new Department { Id = 15, Name = "Кафедра статистики и эконометрики", ShortName = "КСиЭ", FacultyId = 1},
+
+                new Department { Id = 16, Name = "Кафедра автомобильных дорог и строительных материалов", ShortName = "КАДиСМ", FacultyId = 3 },
+                new Department { Id = 17, Name = "Кафедра архитектуры", ShortName = "КА", FacultyId = 3 },
+                new Department { Id = 18, Name = "Кафедра начертательной геометрии, инженерной и компьютерной графики", ShortName = "КНГНиКГ", FacultyId = 3 },
+                new Department { Id = 19, Name = "Кафедра строительных конструкций", ShortName = "КСК", FacultyId = 3 },
+                new Department { Id = 20, Name = "Кафедра теплогазоснабжения, вентиляции и гидромеханики", ShortName = "КТВиГ", FacultyId = 3 },
+                new Department { Id = 21, Name = "Кафедра технологии строительного производства", ShortName = "КТСП", FacultyId = 3 }
                 );
 
             // Конфигурации
