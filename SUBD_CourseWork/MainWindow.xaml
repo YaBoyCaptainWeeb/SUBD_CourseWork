@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Индивидуальный план преподавателя" Height="450" Width="800">
     <Grid>
-        <TextBlock x:Name="TestBlock"/>
+        <TextBlock x:Name="TestBlock" Panel.ZIndex="3"/>
         
         <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" CanContentScroll="False">
             <DataGrid Name="TeachersGrid" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" AutoGenerateColumns="True">

@@ -10,12 +10,12 @@ namespace SUBD_CourseWork.Entities
     {
         public int Id { get; set; }
         public string DegreeType { get; set; }
-        public DateTime YearOfAward { get; set; }
+        public DateOnly YearOfAward { get; set; }
 
         public int DisciplineId { get; set; }
 
         public Discipline Discipline { get; set; }
 
-        public Teacher Teacher { get; set; } = new();
+        public Teacher Teacher { get; set; }
     }
 }

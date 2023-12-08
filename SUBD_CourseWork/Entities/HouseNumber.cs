@@ -10,6 +10,8 @@ namespace SUBD_CourseWork.Entities
     {
         public int Id { get; set; }
         public int House { get; set; }
+        public int StreetId { get; set; }
+        public Street street { get; set; }
         public List<Teacher> Teachers { get; set; } = new();
     }
 }

@@ -15,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Bogus;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
@@ -39,6 +40,7 @@ namespace SUBD_CourseWork
     }
     public class ApplicationContext : DbContext
     {
+        private Fakers _fakers = new Fakers(); // Генератор данных
         // Сущности
         readonly StreamWriter logStream = new StreamWriter("logs.txt", true);
         public DbSet<Teacher> teachers { get; set; } = null!;
@@ -80,18 +82,20 @@ namespace SUBD_CourseWork
                 new TypeOfCooperation { Id = 2, CoopType = "Совмещает"}
                 );
             modelBuilder.Entity<JobTitle>().HasData( // Должность
-                new JobTitle { Id = 1, JobTitlesType = "Асссистент"},
-                new JobTitle { Id = 2, JobTitlesType = "Преподаватель"},
-                new JobTitle { Id = 3, JobTitlesType = "Старший преподаватель"},
-                new JobTitle { Id = 4, JobTitlesType = "Доцент"},
-                new JobTitle { Id = 5, JobTitlesType = "Профессор"}
+                new JobTitle { Id = 1, JobTitlesType = "Лаборант"},
+                new JobTitle { Id = 2, JobTitlesType = "Асссистент"},
+                new JobTitle { Id = 3, JobTitlesType = "Преподаватель"},
+                new JobTitle { Id = 4, JobTitlesType = "Старший преподаватель"},
+                new JobTitle { Id = 5, JobTitlesType = "Доцент"},
+                new JobTitle { Id = 6, JobTitlesType = "Профессор"},
+                new JobTitle { Id = 7, JobTitlesType = "Заведующий кафедрой"}
                 );
             modelBuilder.Entity<Discipline>().HasData( // Научная специальность
-                new Discipline { Id = 1, DisciplineType = "Технических наук"},
-                new Discipline { Id = 2, DisciplineType = "Экономических наук"},
-                new Discipline { Id = 3, DisciplineType = "Математических наук" },
-                new Discipline { Id = 4, DisciplineType = "Информационных наук" },
-                new Discipline { Id = 5, DisciplineType = "Философских наук"}
+                new Discipline { Id = 1, DisciplineType = "Гуманитарные науки"},
+                new Discipline { Id = 2, DisciplineType = "Общественные науки"},
+                new Discipline { Id = 3, DisciplineType = "Естественные науки" },
+                new Discipline { Id = 4, DisciplineType = "Формальные науки" },
+                new Discipline { Id = 5, DisciplineType = "Прикладные науки"}
                 );
             modelBuilder.Entity<TypeOfWork>().HasData( // Виды работы
                 new TypeOfWork { Id = 1, Name = "Учебная работа" },
@@ -103,16 +107,16 @@ namespace SUBD_CourseWork
                 new TypeOfWork { Id = 7, Name = "Прочие виды работы"}
                 );
 
-            var format = new DateTimeFormatInfo()
-            {
-                ShortDatePattern = "dd/MM/yyyy"
-            };
-            DateTime time = Convert.ToDateTime("24/10/2003", format);
+            //var format = new DateTimeFormatInfo()
+            //{
+            //    ShortDatePattern = "dd/MM/yyyy"
+            //};
+            //DateTime time = Convert.ToDateTime("24/10/2003", format);
 
-            modelBuilder.Entity<AcademicRank>().HasData( // Академические звания
-                new AcademicRank { Id = 1, AcademicRankType = "Доцент", YearOfAward = time}
+            //modelBuilder.Entity<AcademicRank>().HasData( // Академические звания
+            //    new AcademicRank { Id = 1, AcademicRankType = "Доцент", YearOfAward = time}
                 
-                );
+            //    );
             modelBuilder.Entity<Institution>().HasData( // Институты
                 new Institution { Id = 1, Name = "Оренбургский государственный университет", ShortName = "ОГУ"}
                 );
@@ -147,6 +151,14 @@ namespace SUBD_CourseWork
                 new Department { Id = 21, Name = "Кафедра технологии строительного производства", ShortName = "КТСП", FacultyId = 3 }
                 );
 
+            int housesCount = 50, streetsCount = 20;
+            int teachersCount = 70;
+
+            modelBuilder.Entity<Street>().HasData(_fakers.GetStreetsGenerator().Generate(streetsCount)); // Генерация улиц
+            modelBuilder.Entity<HouseNumber>().HasData(_fakers.GetHouseNumberGenerator(streetsCount).Generate(housesCount)); // Генерация номеров домов
+            modelBuilder.Entity<AcademicRank>().HasData(_fakers.GetAcademicRankGenerator().Generate(teachersCount)); // Генерация ученых званий
+            modelBuilder.Entity<Degree>().HasData(_fakers.GetDegreesGenerator().Generate(teachersCount)); // Генерация ученых степеней
+
             // Конфигурации
             modelBuilder.HasDefaultSchema("public");
             modelBuilder.UseIdentityColumns();
@@ -176,13 +188,10 @@ namespace SUBD_CourseWork
         public MainWindow()
         {
             InitializeComponent();
-            //var d = db.teachers.Include(f => f.Faculty).Include(j => j.JobTitle).Include(t => t.TypeOfCooperation).Include(d => d.Degree).Include(a => a.AcademicRank).Include(i => i.Institution).ToList();
-            //var d = db.institutions.Include(x => x.Faculties).ThenInclude(x => x.Departments).ToList();
             var d = db.individualPlans.Include(x => x.TypeOfWork).ToList();
-            //var x = d[0].Faculties[0].Departments[0];
+            var b = db.houseNumbers.Include(x => x.street).ToList();
             TeachersGrid.ItemsSource = d;
             //var logStream = new StreamReader("C:\\Users\\User\\source\\repos\\SUBD_CourseWork\\SUBD_CourseWork\\bin\\Debug\\net6.0-windows\\logs.txt", UTF8Encoding.UTF8).ToString();
-            //TestBlock.Text = high.Highlight("SQL", logStream);
         }
     }
 }

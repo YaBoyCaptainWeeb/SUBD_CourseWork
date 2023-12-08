@@ -11,7 +11,7 @@ namespace SUBD_CourseWork.Entities
     {
         public int Id { get; set; }
         public string AcademicRankType { get; set; }
-        public DateTime YearOfAward { get; set; }
+        public DateOnly YearOfAward { get; set; }
 
         public Teacher Teacher { get; set; }
     }

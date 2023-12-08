@@ -11,11 +11,11 @@ namespace SUBD_CourseWork.Entities
         public string Surname { get; set; }
         public string Name { get; set; }
         public string LastName { get; set; }
-        public DateTime BirthDate { get; set; }
-        public DateTime DateOfBeginning { get; set; }
-        public DateTime? DateOfEnding { get; set; }
+        public DateOnly BirthDate { get; set; }
+        public DateOnly DateOfBeginning { get; set; }
+        public DateOnly? DateOfEnding { get; set; }
         public double Wage { get; set; }
-        public DateTime ElectedDate { get; set; }
+        public DateOnly ElectedDate { get; set; }
 
         public int HouseNumberId { get; set; }
         public HouseNumber HouseNumber { get; set; }

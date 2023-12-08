@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using SUBD_CourseWork;
@@ -11,9 +12,11 @@ using SUBD_CourseWork;
 namespace SUBD_CourseWork.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    partial class ApplicationContextModelSnapshot : ModelSnapshot
+    [Migration("20231208101953_AcademicRanksGenerated")]
+    partial class AcademicRanksGenerated
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -492,498 +495,6 @@ namespace SUBD_CourseWork.Migrations
                     b.HasIndex("Id");
 
                     b.ToTable("degrees", "public");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2015, 12, 28)
-                        },
-                        new
-                        {
-                            Id = 2,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 3,
-                            YearOfAward = new DateOnly(2020, 10, 29)
-                        },
-                        new
-                        {
-                            Id = 3,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 3,
-                            YearOfAward = new DateOnly(2010, 9, 6)
-                        },
-                        new
-                        {
-                            Id = 4,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2010, 8, 5)
-                        },
-                        new
-                        {
-                            Id = 5,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2012, 2, 20)
-                        },
-                        new
-                        {
-                            Id = 6,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 2,
-                            YearOfAward = new DateOnly(2018, 6, 6)
-                        },
-                        new
-                        {
-                            Id = 7,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2021, 4, 10)
-                        },
-                        new
-                        {
-                            Id = 8,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2018, 10, 2)
-                        },
-                        new
-                        {
-                            Id = 9,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2019, 11, 14)
-                        },
-                        new
-                        {
-                            Id = 10,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 2,
-                            YearOfAward = new DateOnly(2018, 11, 30)
-                        },
-                        new
-                        {
-                            Id = 11,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2022, 6, 4)
-                        },
-                        new
-                        {
-                            Id = 12,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 3,
-                            YearOfAward = new DateOnly(2022, 1, 15)
-                        },
-                        new
-                        {
-                            Id = 13,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2023, 2, 7)
-                        },
-                        new
-                        {
-                            Id = 14,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 2,
-                            YearOfAward = new DateOnly(2018, 6, 17)
-                        },
-                        new
-                        {
-                            Id = 15,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2020, 12, 13)
-                        },
-                        new
-                        {
-                            Id = 16,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2007, 10, 5)
-                        },
-                        new
-                        {
-                            Id = 17,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2012, 4, 13)
-                        },
-                        new
-                        {
-                            Id = 18,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2007, 8, 28)
-                        },
-                        new
-                        {
-                            Id = 19,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2010, 6, 23)
-                        },
-                        new
-                        {
-                            Id = 20,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2023, 4, 1)
-                        },
-                        new
-                        {
-                            Id = 21,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2019, 6, 16)
-                        },
-                        new
-                        {
-                            Id = 22,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2007, 8, 13)
-                        },
-                        new
-                        {
-                            Id = 23,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2019, 11, 19)
-                        },
-                        new
-                        {
-                            Id = 24,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2011, 5, 25)
-                        },
-                        new
-                        {
-                            Id = 25,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2014, 4, 7)
-                        },
-                        new
-                        {
-                            Id = 26,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2008, 8, 6)
-                        },
-                        new
-                        {
-                            Id = 27,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2017, 3, 17)
-                        },
-                        new
-                        {
-                            Id = 28,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2014, 4, 26)
-                        },
-                        new
-                        {
-                            Id = 29,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 2,
-                            YearOfAward = new DateOnly(2009, 3, 10)
-                        },
-                        new
-                        {
-                            Id = 30,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 3,
-                            YearOfAward = new DateOnly(2010, 1, 13)
-                        },
-                        new
-                        {
-                            Id = 31,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 3,
-                            YearOfAward = new DateOnly(2013, 9, 30)
-                        },
-                        new
-                        {
-                            Id = 32,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2019, 4, 14)
-                        },
-                        new
-                        {
-                            Id = 33,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2020, 7, 27)
-                        },
-                        new
-                        {
-                            Id = 34,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 2,
-                            YearOfAward = new DateOnly(2021, 8, 14)
-                        },
-                        new
-                        {
-                            Id = 35,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2008, 4, 18)
-                        },
-                        new
-                        {
-                            Id = 36,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2011, 4, 15)
-                        },
-                        new
-                        {
-                            Id = 37,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 2,
-                            YearOfAward = new DateOnly(2006, 3, 30)
-                        },
-                        new
-                        {
-                            Id = 38,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2018, 4, 26)
-                        },
-                        new
-                        {
-                            Id = 39,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2017, 12, 26)
-                        },
-                        new
-                        {
-                            Id = 40,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2022, 2, 8)
-                        },
-                        new
-                        {
-                            Id = 41,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 3,
-                            YearOfAward = new DateOnly(2015, 1, 29)
-                        },
-                        new
-                        {
-                            Id = 42,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 2,
-                            YearOfAward = new DateOnly(2022, 12, 28)
-                        },
-                        new
-                        {
-                            Id = 43,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 2,
-                            YearOfAward = new DateOnly(2023, 1, 15)
-                        },
-                        new
-                        {
-                            Id = 44,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 2,
-                            YearOfAward = new DateOnly(2014, 2, 2)
-                        },
-                        new
-                        {
-                            Id = 45,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2018, 9, 17)
-                        },
-                        new
-                        {
-                            Id = 46,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 3,
-                            YearOfAward = new DateOnly(2021, 8, 2)
-                        },
-                        new
-                        {
-                            Id = 47,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2011, 7, 10)
-                        },
-                        new
-                        {
-                            Id = 48,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2017, 11, 23)
-                        },
-                        new
-                        {
-                            Id = 49,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2022, 10, 2)
-                        },
-                        new
-                        {
-                            Id = 50,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2009, 12, 5)
-                        },
-                        new
-                        {
-                            Id = 51,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2012, 6, 12)
-                        },
-                        new
-                        {
-                            Id = 52,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2012, 9, 4)
-                        },
-                        new
-                        {
-                            Id = 53,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2021, 8, 6)
-                        },
-                        new
-                        {
-                            Id = 54,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2016, 7, 11)
-                        },
-                        new
-                        {
-                            Id = 55,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2019, 8, 8)
-                        },
-                        new
-                        {
-                            Id = 56,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2008, 3, 18)
-                        },
-                        new
-                        {
-                            Id = 57,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2010, 7, 16)
-                        },
-                        new
-                        {
-                            Id = 58,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2022, 12, 9)
-                        },
-                        new
-                        {
-                            Id = 59,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2022, 2, 27)
-                        },
-                        new
-                        {
-                            Id = 60,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 3,
-                            YearOfAward = new DateOnly(2011, 4, 9)
-                        },
-                        new
-                        {
-                            Id = 61,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2008, 11, 5)
-                        },
-                        new
-                        {
-                            Id = 62,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2023, 5, 6)
-                        },
-                        new
-                        {
-                            Id = 63,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 3,
-                            YearOfAward = new DateOnly(2020, 3, 13)
-                        },
-                        new
-                        {
-                            Id = 64,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 3,
-                            YearOfAward = new DateOnly(2022, 8, 6)
-                        },
-                        new
-                        {
-                            Id = 65,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 3,
-                            YearOfAward = new DateOnly(2023, 3, 8)
-                        },
-                        new
-                        {
-                            Id = 66,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 2,
-                            YearOfAward = new DateOnly(2011, 6, 11)
-                        },
-                        new
-                        {
-                            Id = 67,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2017, 6, 3)
-                        },
-                        new
-                        {
-                            Id = 68,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2012, 5, 24)
-                        },
-                        new
-                        {
-                            Id = 69,
-                            DegreeType = "Доктор наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2020, 8, 12)
-                        },
-                        new
-                        {
-                            Id = 70,
-                            DegreeType = "Кандидат наук",
-                            DisciplineId = 2,
-                            YearOfAward = new DateOnly(2020, 4, 12)
-                        });
                 });
 
             modelBuilder.Entity("SUBD_CourseWork.Entities.Department", b =>
@@ -1184,27 +695,27 @@ namespace SUBD_CourseWork.Migrations
                         new
                         {
                             Id = 1,
-                            DisciplineType = "Гуманитарные науки"
+                            DisciplineType = "Технических наук"
                         },
                         new
                         {
                             Id = 2,
-                            DisciplineType = "Общественные науки"
+                            DisciplineType = "Экономических наук"
                         },
                         new
                         {
                             Id = 3,
-                            DisciplineType = "Естественные науки"
+                            DisciplineType = "Математических наук"
                         },
                         new
                         {
                             Id = 4,
-                            DisciplineType = "Формальные науки"
+                            DisciplineType = "Информационных наук"
                         },
                         new
                         {
                             Id = 5,
-                            DisciplineType = "Прикладные науки"
+                            DisciplineType = "Философских наук"
                         });
                 });
 
@@ -1309,13 +820,13 @@ namespace SUBD_CourseWork.Migrations
                         {
                             Id = 1,
                             House = 50,
-                            StreetId = 9
+                            StreetId = 19
                         },
                         new
                         {
                             Id = 2,
                             House = 21,
-                            StreetId = 11
+                            StreetId = 19
                         },
                         new
                         {
@@ -1333,85 +844,85 @@ namespace SUBD_CourseWork.Migrations
                         {
                             Id = 5,
                             House = 79,
-                            StreetId = 13
+                            StreetId = 3
                         },
                         new
                         {
                             Id = 6,
                             House = 97,
-                            StreetId = 19
+                            StreetId = 14
                         },
                         new
                         {
                             Id = 7,
                             House = 98,
-                            StreetId = 5
+                            StreetId = 7
                         },
                         new
                         {
                             Id = 8,
                             House = 80,
-                            StreetId = 17
+                            StreetId = 13
                         },
                         new
                         {
                             Id = 9,
                             House = 31,
-                            StreetId = 1
+                            StreetId = 11
                         },
                         new
                         {
                             Id = 10,
                             House = 25,
-                            StreetId = 16
+                            StreetId = 1
                         },
                         new
                         {
                             Id = 11,
                             House = 76,
-                            StreetId = 12
+                            StreetId = 7
                         },
                         new
                         {
                             Id = 12,
                             House = 72,
-                            StreetId = 4
+                            StreetId = 8
                         },
                         new
                         {
                             Id = 13,
                             House = 41,
-                            StreetId = 12
+                            StreetId = 7
                         },
                         new
                         {
                             Id = 14,
                             House = 64,
-                            StreetId = 13
+                            StreetId = 6
                         },
                         new
                         {
                             Id = 15,
                             House = 11,
-                            StreetId = 1
+                            StreetId = 19
                         },
                         new
                         {
                             Id = 16,
                             House = 48,
-                            StreetId = 1
+                            StreetId = 8
                         },
                         new
                         {
                             Id = 17,
                             House = 86,
-                            StreetId = 11
+                            StreetId = 3
                         },
                         new
                         {
                             Id = 18,
                             House = 16,
-                            StreetId = 6
+                            StreetId = 9
                         },
                         new
                         {
@@ -1423,67 +934,67 @@ namespace SUBD_CourseWork.Migrations
                         {
                             Id = 20,
                             House = 68,
-                            StreetId = 15
+                            StreetId = 8
                         },
                         new
                         {
                             Id = 21,
                             House = 51,
-                            StreetId = 9
+                            StreetId = 11
                         },
                         new
                         {
                             Id = 22,
                             House = 94,
-                            StreetId = 2
+                            StreetId = 3
                         },
                         new
                         {
                             Id = 23,
                             House = 72,
-                            StreetId = 3
+                            StreetId = 10
                         },
                         new
                         {
                             Id = 24,
                             House = 35,
-                            StreetId = 14
+                            StreetId = 17
                         },
                         new
                         {
                             Id = 25,
                             House = 98,
-                            StreetId = 7
+                            StreetId = 10
                         },
                         new
                         {
                             Id = 26,
                             House = 36,
-                            StreetId = 14
+                            StreetId = 7
                         },
                         new
                         {
                             Id = 27,
                             House = 89,
-                            StreetId = 3
+                            StreetId = 10
                         },
                         new
                         {
                             Id = 28,
                             House = 72,
-                            StreetId = 17
+                            StreetId = 1
                         },
                         new
                         {
                             Id = 29,
                             House = 25,
-                            StreetId = 15
+                            StreetId = 4
                         },
                         new
                         {
                             Id = 30,
                             House = 90,
-                            StreetId = 9
+                            StreetId = 8
                         },
                         new
                         {
@@ -1495,115 +1006,115 @@ namespace SUBD_CourseWork.Migrations
                         {
                             Id = 32,
                             House = 71,
-                            StreetId = 17
+                            StreetId = 6
                         },
                         new
                         {
                             Id = 33,
                             House = 97,
-                            StreetId = 15
+                            StreetId = 6
                         },
                         new
                         {
                             Id = 34,
                             House = 67,
-                            StreetId = 8
+                            StreetId = 15
                         },
                         new
                         {
                             Id = 35,
                             House = 81,
-                            StreetId = 12
+                            StreetId = 4
                         },
                         new
                         {
                             Id = 36,
                             House = 94,
-                            StreetId = 5
+                            StreetId = 19
                         },
                         new
                         {
                             Id = 37,
                             House = 15,
-                            StreetId = 14
+                            StreetId = 19
                         },
                         new
                         {
                             Id = 38,
                             House = 54,
-                            StreetId = 11
+                            StreetId = 5
                         },
                         new
                         {
                             Id = 39,
                             House = 59,
-                            StreetId = 16
+                            StreetId = 1
                         },
                         new
                         {
                             Id = 40,
                             House = 65,
-                            StreetId = 14
+                            StreetId = 11
                         },
                         new
                         {
                             Id = 41,
                             House = 90,
-                            StreetId = 11
+                            StreetId = 2
                         },
                         new
                         {
                             Id = 42,
                             House = 93,
-                            StreetId = 7
+                            StreetId = 12
                         },
                         new
                         {
                             Id = 43,
                             House = 10,
-                            StreetId = 7
+                            StreetId = 4
                         },
                         new
                         {
                             Id = 44,
                             House = 22,
-                            StreetId = 20
+                            StreetId = 18
                         },
                         new
                         {
                             Id = 45,
                             House = 84,
-                            StreetId = 2
+                            StreetId = 3
                         },
                         new
                         {
                             Id = 46,
                             House = 31,
-                            StreetId = 12
+                            StreetId = 4
                         },
                         new
                         {
                             Id = 47,
                             House = 74,
-                            StreetId = 9
+                            StreetId = 18
                         },
                         new
                         {
                             Id = 48,
                             House = 79,
-                            StreetId = 19
+                            StreetId = 11
                         },
                         new
                         {
                             Id = 49,
                             House = 11,
-                            StreetId = 6
+                            StreetId = 2
                         },
                         new
                         {
                             Id = 50,
                             House = 41,
-                            StreetId = 4
+                            StreetId = 5
                         });
                 });
 

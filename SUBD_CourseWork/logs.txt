@@ -3397,4 +3397,1908 @@ info: 07.12.2023 14:35:28.249 RelationalEventId.CommandExecuted[20101] (Microsof
 info: 07.12.2023 14:35:28.274 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
       Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
       CREATE INDEX "IX_teachers_DepartmentId" ON public.teachers ("DepartmentId");
-info: 07.12.2023 14:35:28.299 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFramework
+info: 07.12.2023 14:35:28.299 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkinfo: 07.12.2023 15:36:27.313 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (59ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+info: 07.12.2023 15:36:27.362 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+info: 07.12.2023 15:36:27.374 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: 07.12.2023 15:36:27.390 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20231207103551_WithData'.
+info: 07.12.2023 15:36:27.441 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public.streets SET "Name" = 'Кирова площадь'
+      WHERE "Id" = 11;
+info: 07.12.2023 15:36:27.442 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public.streets SET "Name" = 'Молодежная ул.'
+      WHERE "Id" = 12;
+info: 07.12.2023 15:36:27.644 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (202ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public.streets SET "Name" = 'проспект Зеленая'
+      WHERE "Id" = 13;
+info: 07.12.2023 15:36:27.644 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public.streets SET "Name" = 'Матросова площадь'
+      WHERE "Id" = 14;
+info: 07.12.2023 15:36:27.645 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public.streets SET "Name" = 'площадь Полевая'
+      WHERE "Id" = 15;
+info: 07.12.2023 15:36:27.645 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public.streets SET "Name" = 'Красная ул.'
+      WHERE "Id" = 16;
+info: 07.12.2023 15:36:27.645 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public.streets SET "Name" = 'ул. Западная'
+      WHERE "Id" = 17;
+info: 07.12.2023 15:36:27.646 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public.streets SET "Name" = 'Партизанская пр.'
+      WHERE "Id" = 18;
+info: 07.12.2023 15:36:27.646 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public.streets SET "Name" = 'пл. Больничная'
+      WHERE "Id" = 19;
+info: 07.1info: 07.12.2023 15:37:41.494 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (71ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+info: 07.12.2023 15:37:41.547 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+info: 07.12.2023 15:37:41.561 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: 07.12.2023 15:37:41.587 RelationalEventId.MigrationReverting[20401] (Microsoft.EntityFrameworkCore.Migrations) 
+      Reverting migration '20231207103551_WithData'.
+info: 07.12.2023 15:37:41.646 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public.streets SET "Name" = 'Пролетарская ул.'
+      WHERE "Id" = 11;
+info: 07.12.2023 15:37:41.647 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public.streets SET "Name" = 'пл. Трактовая'
+      WHERE "Id" = 12;
+info: 07.12.2023 15:37:41.829 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (182ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public.streets SET "Name" = 'пр. Горная'
+      WHERE "Id" = 13;
+info: 07.12.2023 15:37:41.830 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public.streets SET "Name" = 'площадь Лермонтова'
+      WHERE "Id" = 14;
+info: 07.12.2023 15:37:41.830 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public.streets SET "Name" = 'проспект Свободы'
+      WHERE "Id" = 15;
+info: 07.12.2023 15:37:41.830 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public.streets SET "Name" = 'Лермонтова площадь'
+      WHERE "Id" = 16;
+info: 07.12.2023 15:37:41.830 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public.streets SET "Name" = 'Дорожная площадь'
+      WHERE "Id" = 17;
+info: 07.12.2023 15:37:41.831 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public.streets SET "Name" = 'пр. Лесная'
+      WHERE "Id" = 18;
+info: 07.12.2023 15:37:41.831 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public.streets SET "Name" = 'Маяковского ул.'
+      WHERE "Id" = 19;
+ininfo: 08.12.2023 10:48:54.553 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (50ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      REVOKE CONNECT ON DATABASE "CourseWorkDB" FROM PUBLIC;
+      SELECT pg_terminate_backend(pg_stat_activity.pid) FROM pg_stat_activity WHERE datname = 'CourseWorkDB';
+info: 08.12.2023 10:48:54.953 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (399ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DROP DATABASE "CourseWorkDB";
+info: 08.12.2023 10:48:55.413 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (282ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE DATABASE "CourseWorkDB";
+info: 08.12.2023 10:48:55.815 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (63ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public."academicRanks" (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "AcademicRankType" text NOT NULL,
+          "YearOfAward" timestamp without time zone NOT NULL,
+          CONSTRAINT "PK_academicRanks" PRIMARY KEY ("Id")
+      );
+info: 08.12.2023 10:48:56.037 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (222ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public.disciplines (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "DisciplineType" text NOT NULL,
+          CONSTRAINT "PK_disciplines" PRIMARY KEY ("Id")
+      );
+info: 08.12.2023 10:48:56.180 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (143ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public.institutions (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "Name" text NOT NULL,
+          "ShortName" text NULL,
+          CONSTRAINT "PK_institutions" PRIMARY KEY ("Id")
+      );
+info: 08.12.2023 10:48:56.230 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (49ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public."jobTitles" (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "JobTitlesType" text NOT NULL,
+          CONSTRAINT "PK_jobTitles" PRIMARY KEY ("Id")
+      );
+info: 08.12.2023 10:48:56.279 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (49ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public.streets (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "Name" text NOT NULL,
+          CONSTRAINT "PK_streets" PRIMARY KEY ("Id")
+      );
+info: 08.12.2023 10:48:56.328 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (49ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public."typeOfCooperations" (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "CoopType" text NOT NULL,
+          CONSTRAINT "PK_typeOfCooperations" PRIMARY KEY ("Id")
+      );
+info: 08.12.2023 10:48:56.377 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (49ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public."typeOfWorks" (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "Name" text NOT NULL,
+          "ShortName" text NULL,
+          CONSTRAINT "PK_typeOfWorks" PRIMARY KEY ("Id")
+      );
+info: 08.12.2023 10:48:56.402 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public."Years" (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "startOfYear" timestamp without time zone NOT NULL,
+          "endOfYear" timestamp without time zone NOT NULL,
+          CONSTRAINT "PK_Years" PRIMARY KEY ("Id")
+      );
+info: 08.12.2023 10:48:56.453 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (51ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public.degrees (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "DegreeType" text NOT NULL,
+          "YearOfAward" timestamp without time zone NOT NULL,
+          "DisciplineId" integer NOT NULL,
+          CONSTRAINT "PK_degrees" PRIMARY KEY ("Id"),
+          CONSTRAINT "FK_degrees_disciplines_DisciplineId" FOREIGN KEY ("DisciplineId") REFERENCES public.disciplines ("Id") ON DELETE CASCADE
+      );
+info: 08.12.2023 10:48:56.512 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (58ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public.faculties (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "Name" text NOT NULL,
+          "ShortName" text NULL,
+          "InstitutionId" integer NOT NULL,
+          CONSTRAINT "PK_faculties" PRIMARY KEY ("Id"),
+          CONSTRAINT "FK_faculties_institutions_InstitutionId" FOREIGN KEY ("InstitutionId") REFERENCES public.institutions ("Id") ON DELETE CASCADE
+      );
+info: 08.12.2023 10:48:56.537 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public."houseNumbers" (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "House" integer NOT NULL,
+          "StreetId" integer NOT NULL,
+          CONSTRAINT "PK_houseNumbers" PRIMARY KEY ("Id"),
+          CONSTRAINT "FK_houseNumbers_streets_StreetId" FOREIGN KEY ("StreetId") REFERENCES public.streets ("Id") ON DELETE CASCADE
+      );
+info: 08.12.2023 10:48:56.587 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (50ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public.departments (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "Name" text NOT NULL,
+          "ShortName" text NULL,
+          "FacultyId" integer NULL,
+          CONSTRAINT "PK_departments" PRIMARY KEY ("Id"),
+          CONSTRAINT "FK_departments_faculties_FacultyId" FOREIGN KEY ("FacultyId") REFERENCES public.faculties ("Id")
+      );
+info: 08.12.2023 10:48:56.648 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (62ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public.teachers (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "Surname" text NOT NULL,
+          "Name" text NOT NULL,
+          "LastName" text NOT NULL,
+          "BirthDate" timestamp without time zone NOT NULL,
+          "DateOfBeginning" timestamp without time zone NOT NULL,
+          "DateOfEnding" timestamp without time zone NULL,
+          "Wage" double precision NOT NULL,
+          "ElectedDate" timestamp without time zone NOT NULL,
+          "HouseNumberId" integer NOT NULL,
+          "DepartmentId" integer NOT NULL,
+          "JobTitleId" integer NOT NULL,
+          "TypeOfCooperationId" integer NOT NULL,
+          "DegreeId" integer NOT NULL,
+          "AcademicRankId" integer NOT NULL,
+          CONSTRAINT "PK_teachers" PRIMARY KEY ("Id"),
+          CONSTRAINT "FK_teachers_academicRanks_AcademicRankId" FOREIGN KEY ("AcademicRankId") REFERENCES public."academicRanks" ("Id") ON DELETE CASCADE,
+          CONSTRAINT "FK_teachers_degrees_DegreeId" FOREIGN KEY ("DegreeId") REFERENCES public.degrees ("Id") ON DELETE CASCADE,
+          CONSTRAINT "FK_teachers_departments_DepartmentId" FOREIGN KEY ("DepartmentId") REFERENCES public.departments ("Id") ON DELETE CASCADE,
+          CONSTRAINT "FK_teachers_houseNumbers_HouseNumberId" FOREIGN KEY ("HouseNumberId") REFERENCES public."houseNumbers" ("Id") ON DELETE CASCADE,
+          CONSTRAINT "FK_teachers_jobTitles_JobTitleId" FOREIGN KEY ("JobTitleId") REFERENCES public."jobTitles" ("Id") ON DELETE CASCADE,
+          CONSTRAINT "FK_teachers_typeOfCooperations_TypeOfCooperationId" FOREIGN KEY ("TypeOfCooperationId") REFERENCES public."typeOfCooperations" ("Id") ON DELETE CASCADE
+      );
+info: 08.12.2023 10:48:56.707 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (59ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public."emailAdresses" (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "Email" text NOT NULL,
+          "TeacherId" integer NOT NULL,
+          CONSTRAINT "PK_emailAdresses" PRIMARY KEY ("Id"),
+          CONSTRAINT "FK_emailAdresses_teachers_TeacherId" FOREIGN KEY ("TeacherId") REFERENCES public.teachers ("Id") ON DELETE CASCADE
+      );
+info: 08.12.2023 10:48:56.744 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public."individualPlans" (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "TypeOfWorkId" integer NOT NULL,
+          "plannedForFallSemestre" integer NOT NULL,
+          "plannedForSpringSemestre" integer NOT NULL,
+          "factForFallSemestre" integer NOT NULL,
+          "factForSpringSemestre" integer NOT NULL,
+          "teacherId" integer NOT NULL,
+          "YearId" integer NOT NULL,
+          CONSTRAINT "PK_individualPlans" PRIMARY KEY ("Id"),
+          CONSTRAINT "FK_individualPlans_Years_YearId" FOREIGN KEY ("YearId") REFERENCES public."Years" ("Id") ON DELETE CASCADE,
+          CONSTRAINT "FK_individualPlans_teachers_teacherId" FOREIGN KEY ("teacherId") REFERENCES public.teachers ("Id") ON DELETE CASCADE,
+          CONSTRAINT "FK_individualPlans_typeOfWorks_TypeOfWorkId" FOREIGN KEY ("TypeOfWorkId") REFERENCES public."typeOfWorks" ("Id") ON DELETE CASCADE
+      );
+info: 08.12.2023 10:48:56.803 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (59ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public."phoneNumbers" (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "Number" text NOT NULL,
+          "TeacherId" integer NOT NULL,
+          CONSTRAINT "PK_phoneNumbers" PRIMARY KEY ("Id"),
+          CONSTRAINT "FK_phoneNumbers_teachers_TeacherId" FOREIGN KEY ("TeacherId") REFERENCES public.teachers ("Id") ON DELETE CASCADE
+      );
+info: 08.12.2023 10:48:56.804 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (1, 'Доцент', TIMESTAMP '2003-10-24 00:00:00');
+info: 08.12.2023 10:48:56.805 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO public.disciplines ("Id", "DisciplineType")
+      VALUES (1, 'Технических наук');
+      INSERT INTO public.disciplines ("Id", "DisciplineType")
+      VALUES (2, 'Экономических наук');
+      INSERT INTO public.disciplines ("Id", "DisciplineType")
+      VALUES (3, 'Математических наук');
+      INSERT INTO public.disciplines ("Id", "DisciplineType")
+      VALUES (4, 'Информационных наук');
+      INSERT INTO public.disciplines ("Id", "DisciplineType")
+      VALUES (5, 'Философских наук');
+info: 08.12.2023 10:48:56.806 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO public.institutions ("Id", "Name", "ShortName")
+      VALUES (1, 'Оренбургский государственный университет', 'ОГУ');
+info: 08.12.2023 10:48:56.807 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO public."jobTitles" ("Id", "JobTitlesType")
+      VALUES (1, 'Асссистент');
+      INSERT INTO public."jobTitles" ("Id", "JobTitlesType")
+      VALUES (2, 'Преподаватель');
+      INSERT INTO public."jobTitles" ("Id", "JobTitlesType")
+      VALUES (3, 'Старший преподаватель');
+      INSERT INTO public."jobTitles" ("Id", "JobTitlesType")
+      VALUES (4, 'Доцент');
+      INSERT INTO public."jobTitles" ("Id", "JobTitlesType")
+      VALUES (5, 'Профессор');
+info: 08.12.2023 10:48:56.808 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (1, 'пр. Набережная');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (2, 'Пионерская улица');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (3, 'улица Дорожная');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (4, 'пл. Шоссейная');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (5, 'пл. Пролетарская');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (6, 'Вокзальная площадь');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (7, 'Труда проспект');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (8, 'Сосновая пл.');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (9, 'Механизаторов площадь');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (10, 'Совхозная пл.');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (11, 'ул. Набережная');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (12, 'улица Мира');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (13, 'улица Партизанская');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (14, 'Мира площадь');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (15, 'Мира ул.');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (16, 'Степная улица');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (17, 'Строительная улица');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (18, 'пр. Дзержинского');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (19, 'проспект Крупской');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (20, 'ул. Пролетарская');
+info: 08.12.2023 10:48:56.809 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO public."typeOfCooperations" ("Id", "CoopType")
+      VALUES (1, 'Штатный');
+      INSERT INTO public."typeOfCooperations" ("Id", "CoopType")
+      VALUES (2, 'Совмещает');
+info: 08.12.2023 10:48:56.810 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO public."typeOfWorks" ("Id", "Name", "ShortName")
+      VALUES (1, 'Учебная работа', NULL);
+      INSERT INTO public."typeOfWorks" ("Id", "Name", "ShortName")
+      VALUES (2, 'Учебно-методическая работа', NULL);
+      INSERT INTO public."typeOfWorks" ("Id", "Name", "ShortName")
+      VALUES (3, 'Научно-методическая', NULL);
+      INSERT INTO public."typeOfWorks" ("Id", "Name", "ShortName")
+      VALUES (4, 'Научно-исслеовательнская работа', NULL);
+      INSERT INTO public."typeOfWorks" ("Id", "Name", "ShortName")
+      VALUES (5, 'Организационно-методическая работа', NULL);
+      INSERT INTO public."typeOfWorks" ("Id", "Name", "ShortName")
+      VALUES (6, 'Внеурочная работа со студентами', NULL);
+      INSERT INTO public."typeOfWorks" ("Id", "Name", "ShortName")
+      VALUES (7, 'Прочие виды работы', NULL);
+info: 08.12.2023 10:48:56.811 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO public.faculties ("Id", "InstitutionId", "Name", "ShortName")
+      VALUES (1, 1, 'Институт Математики и информационных технологий', 'ИМИТ');
+      INSERT INTO public.faculties ("Id", "InstitutionId", "Name", "ShortName")
+      VALUES (2, 1, 'Аэрокосмический институт', 'АЭИ');
+      INSERT INTO public.faculties ("Id", "InstitutionId", "Name", "ShortName")
+      VALUES (3, 1, 'Архитектурно-строительный факультет', 'АСФ');
+info: 08.12.2023 10:48:56.813 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (1, 50, 1);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (2, 21, 17);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (3, 39, 11);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (4, 82, 3);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (5, 79, 15);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (6, 97, 4);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (7, 98, 1);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (8, 80, 2);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (9, 31, 3);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (10, 25, 11);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (11, 76, 4);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (12, 72, 11);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (13, 41, 13);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (14, 64, 17);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (15, 11, 11);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (16, 48, 12);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (17, 86, 5);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (18, 16, 7);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (19, 6, 5);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (20, 68, 5);
+info: 08.12.2023 10:48:56.815 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (1, 2, 'Кафедра летательных аппаратов', 'КЛА');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (2, 2, 'Кафедра материаловедения и технологии материалов', 'КМТМ');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (3, 2, 'Кафедра механики материалов, конструкций и машин', 'КММКиМ');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (4, 2, 'Кафедра систем автоматизации производства', 'КСАП');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (5, 2, 'Кафедра технологии машиностроения, металлообрабатывающих станков и комплексов', 'КТММСиК');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (6, 2, 'Кафедра управления и информатики в технических системах', 'КУиИТС');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (7, 1, 'Кафедра вычислительной техники и защиты информации', 'КВТИИ');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (8, 1, 'Кафедра информатики', 'КИ');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (9, 1, 'Кафедра компьютерной безопасности и математического обеспечения информационных систем', 'ККБиМОИС');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (10, 1, 'Кафедра математики и цифровых технологий', 'КМиЦТ');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (11, 1, 'Кафедра математических методов и моделей в экономике', 'КММиМЭ');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (12, 1, 'Кафедра прикладной информатики в экономике и управлении', 'КПИЭиУ');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (13, 1, 'Кафедра прикладной математики', 'КПМ');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (14, 1, 'Кафедра программного обеспечения вычислительной техники и автоматизированных систем', 'КПОВТиАС');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (15, 1, 'Кафедра статистики и эконометрики', 'КСиЭ');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (16, 3, 'Кафедра автомобильных дорог и строительных материалов', 'КАДиСМ');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (17, 3, 'Кафедра архитектуры', 'КА');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (18, 3, 'Кафедра начертательной геометрии, инженерной и компьютерной графики', 'КНГНиКГ');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (19, 3, 'Кафедра строительных конструкций', 'КСК');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (20, 3, 'Кафедра теплогазоснабжения, вентиляции и гидромеханики', 'КТВиГ');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (21, 3, 'Кафедра технологии строительного производства', 'КТСП');
+info: 08.12.2023 10:48:56.850 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_academicRanks_Id" ON public."academicRanks" ("Id");
+info: 08.12.2023 10:48:56.875 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_degrees_DisciplineId" ON public.degrees ("DisciplineId");
+info: 08.12.2023 10:48:56.900 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_degrees_Id" ON public.degrees ("Id");
+info: 08.12.2023 10:48:56.924 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_departments_FacultyId" ON public.departments ("FacultyId");
+info: 08.12.2023 10:48:56.949 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_departments_Id" ON public.departments ("Id");
+info: 08.12.2023 10:48:56.985 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_disciplines_Id" ON public.disciplines ("Id");
+info: 08.12.2023 10:48:57.009 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_emailAdresses_Id" ON public."emailAdresses" ("Id");
+info: 08.12.2023 10:48:57.033 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_emailAdresses_TeacherId" ON public."emailAdresses" ("TeacherId");
+info: 08.12.2023 10:48:57.058 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_faculties_Id" ON public.faculties ("Id");
+info: 08.12.2023 10:48:57.082 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_faculties_InstitutionId" ON public.faculties ("InstitutionId");
+info: 08.12.2023 10:48:57.107 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_houseNumbers_Id" ON public."houseNumbers" ("Id");
+info: 08.12.2023 10:48:57.143 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_houseNumbers_StreetId" ON public."houseNumbers" ("StreetId");
+info: 08.12.2023 10:48:57.168 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_individualPlans_Id" ON public."individualPlans" ("Id");
+info: 08.12.2023 10:48:57.193 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE UNIQUE INDEX "IX_individualPlans_teacherId" ON public."individualPlans" ("teacherId");
+info: 08.12.2023 10:48:57.217 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_individualPlans_TypeOfWorkId" ON public."individualPlans" ("TypeOfWorkId");
+info: 08.12.2023 10:48:57.241 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE UNIQUE INDEX "IX_individualPlans_YearId" ON public."individualPlans" ("YearId");
+info: 08.12.2023 10:48:57.267 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_institutions_Id" ON public.institutions ("Id");
+info: 08.12.2023 10:48:57.302 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_jobTitles_Id" ON public."jobTitles" ("Id");
+info: 08.12.2023 10:48:57.327 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_phoneNumbers_Id" ON public."phoneNumbers" ("Id");
+info: 08.12.2023 10:48:57.351 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_phoneNumbers_TeacherId" ON public."phoneNumbers" ("TeacherId");
+info: 08.12.2023 10:48:57.377 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_streets_Id" ON public.streets ("Id");
+info: 08.12.2023 10:48:57.401 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE UNIQUE INDEX "IX_teachers_AcademicRankId" ON public.teachers ("AcademicRankId");
+info: 08.12.2023 10:48:57.425 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE UNIQUE INDEX "IX_teachers_DegreeId" ON public.teachers ("DegreeId");
+info: 08.12.2023 10:48:57.449 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_teachers_DepartmentId" ON public.teachers ("DepartmentId");
+info: 08.12.2023 10:48:57.475 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_teachers_HouseNumberId" ON public.teachers ("HouseNumberId");
+info: 08.12.2023 10:48:57.499 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_teachers_Id" ON public.teachers ("Id");
+info: 08.12.2023 10:48:57.535 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='3info: 08.12.2023 10:52:07.646 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (356ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE DATABASE "CourseWorkDB";
+info: 08.12.2023 10:52:07.871 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (30ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "__EFMigrationsHistory" (
+          "MigrationId" character varying(150) NOT NULL,
+          "ProductVersion" character varying(32) NOT NULL,
+          CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+      );
+info: 08.12.2023 10:52:07.931 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+info: 08.12.2023 10:52:07.934 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: 08.12.2023 10:52:07.947 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20231207092406_BaseVersion'.
+info: 08.12.2023 10:52:08.064 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (55ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public."academicRanks" (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "AcademicRankType" text NOT NULL,
+          "YearOfAward" timestamp without time zone NOT NULL,
+          CONSTRAINT "PK_academicRanks" PRIMARY KEY ("Id")
+      );
+info: 08.12.2023 10:52:08.113 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (49ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public.disciplines (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "DisciplineType" text NOT NULL,
+          CONSTRAINT "PK_disciplines" PRIMARY KEY ("Id")
+      );
+info: 08.12.2023 10:52:08.162 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (49ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public.institutions (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "Name" text NOT NULL,
+          "ShortName" text NULL,
+          CONSTRAINT "PK_institutions" PRIMARY KEY ("Id")
+      );
+info: 08.12.2023 10:52:08.211 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (49ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public."jobTitles" (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "JobTitlesType" text NOT NULL,
+          CONSTRAINT "PK_jobTitles" PRIMARY KEY ("Id")
+      );
+info: 08.12.2023 10:52:08.294 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (82ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public.streets (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "Name" text NOT NULL,
+          CONSTRAINT "PK_streets" PRIMARY KEY ("Id")
+      );
+info: 08.12.2023 10:52:08.343 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (49ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public."typeOfCooperations" (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "CoopType" text NOT NULL,
+          CONSTRAINT "PK_typeOfCooperations" PRIMARY KEY ("Id")
+      );
+info: 08.12.2023 10:52:08.392 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (49ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public."typeOfWorks" (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "Name" text NOT NULL,
+          "ShortName" text NULL,
+          CONSTRAINT "PK_typeOfWorks" PRIMARY KEY ("Id")
+      );
+info: 08.12.2023 10:52:08.417 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public."Years" (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "startOfYear" timestamp without time zone NOT NULL,
+          "endOfYear" timestamp without time zone NOT NULL,
+          CONSTRAINT "PK_Years" PRIMARY KEY ("Id")
+      );
+info: 08.12.2023 10:52:08.468 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (51ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public.degrees (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "DegreeType" text NOT NULL,
+          "YearOfAward" timestamp without time zone NOT NULL,
+          "DisciplineId" integer NOT NULL,
+          CONSTRAINT "PK_degrees" PRIMARY KEY ("Id"),
+          CONSTRAINT "FK_degrees_disciplines_DisciplineId" FOREIGN KEY ("DisciplineId") REFERENCES public.disciplines ("Id") ON DELETE CASCADE
+      );
+info: 08.12.2023 10:52:08.527 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (58ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public.faculties (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "Name" text NOT NULL,
+          "ShortName" text NULL,
+          "InstitutionId" integer NOT NULL,
+          CONSTRAINT "PK_faculties" PRIMARY KEY ("Id"),
+          CONSTRAINT "FK_faculties_institutions_InstitutionId" FOREIGN KEY ("InstitutionId") REFERENCES public.institutions ("Id") ON DELETE CASCADE
+      );
+info: 08.12.2023 10:52:08.552 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public."houseNumbers" (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "House" integer NOT NULL,
+          "StreetId" integer NULL,
+          CONSTRAINT "PK_houseNumbers" PRIMARY KEY ("Id"),
+          CONSTRAINT "FK_houseNumbers_streets_StreetId" FOREIGN KEY ("StreetId") REFERENCES public.streets ("Id")
+      );
+info: 08.12.2023 10:52:08.601 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (49ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public.departments (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "Name" text NOT NULL,
+          "ShortName" text NULL,
+          "FacultyId" integer NULL,
+          CONSTRAINT "PK_departments" PRIMARY KEY ("Id"),
+          CONSTRAINT "FK_departments_faculties_FacultyId" FOREIGN KEY ("FacultyId") REFERENCES public.faculties ("Id")
+      );
+info: 08.12.2023 10:52:08.652 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (51ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public.teachers (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "Surname" text NOT NULL,
+          "Name" text NOT NULL,
+          "LastName" text NOT NULL,
+          "BirthDate" timestamp without time zone NOT NULL,
+          "DateOfBeginning" timestamp without time zone NOT NULL,
+          "DateOfEnding" timestamp without time zone NULL,
+          "Wage" double precision NOT NULL,
+          "ElectedDate" timestamp without time zone NOT NULL,
+          "HouseNumberId" integer NOT NULL,
+          "DepartmentId" integer NOT NULL,
+          "JobTitleId" integer NOT NULL,
+          "TypeOfCooperationId" integer NOT NULL,
+          "DegreeId" integer NOT NULL,
+          "AcademicRankId" integer NOT NULL,
+          CONSTRAINT "PK_teachers" PRIMARY KEY ("Id"),
+          CONSTRAINT "FK_teachers_academicRanks_AcademicRankId" FOREIGN KEY ("AcademicRankId") REFERENCES public."academicRanks" ("Id") ON DELETE CASCADE,
+          CONSTRAINT "FK_teachers_degrees_DegreeId" FOREIGN KEY ("DegreeId") REFERENCES public.degrees ("Id") ON DELETE CASCADE,
+          CONSTRAINT "FK_teachers_departments_DepartmentId" FOREIGN KEY ("DepartmentId") REFERENCES public.departments ("Id") ON DELETE CASCADE,
+          CONSTRAINT "FK_teachers_houseNumbers_HouseNumberId" FOREIGN KEY ("HouseNumberId") REFERENCES public."houseNumbers" ("Id") ON DELETE CASCADE,
+          CONSTRAINT "FK_teachers_jobTitles_JobTitleId" FOREIGN KEY ("JobTitleId") REFERENCES public."jobTitles" ("Id") ON DELETE CASCADE,
+          CONSTRAINT "FK_teachers_typeOfCooperations_TypeOfCooperationId" FOREIGN KEY ("TypeOfCooperationId") REFERENCES public."typeOfCooperations" ("Id") ON DELETE CASCADE
+      );
+info: 08.12.2023 10:52:08.712 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (60ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public."emailAdresses" (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "Email" text NOT NULL,
+          "TeacherId" integer NOT NULL,
+          CONSTRAINT "PK_emailAdresses" PRIMARY KEY ("Id"),
+          CONSTRAINT "FK_emailAdresses_teachers_TeacherId" FOREIGN KEY ("TeacherId") REFERENCES public.teachers ("Id") ON DELETE CASCADE
+      );
+info: 08.12.2023 10:52:08.748 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public."individualPlans" (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "TypeOfWorkId" integer NOT NULL,
+          "plannedForFallSemestre" integer NOT NULL,
+          "plannedForSpringSemestre" integer NOT NULL,
+          "factForFallSemestre" integer NOT NULL,
+          "factForSpringSemestre" integer NOT NULL,
+          "teacherId" integer NOT NULL,
+          "YearId" integer NOT NULL,
+          CONSTRAINT "PK_individualPlans" PRIMARY KEY ("Id"),
+          CONSTRAINT "FK_individualPlans_Years_YearId" FOREIGN KEY ("YearId") REFERENCES public."Years" ("Id") ON DELETE CASCADE,
+          CONSTRAINT "FK_individualPlans_teachers_teacherId" FOREIGN KEY ("teacherId") REFERENCES public.teachers ("Id") ON DELETE CASCADE,
+          CONSTRAINT "FK_individualPlans_typeOfWorks_TypeOfWorkId" FOREIGN KEY ("TypeOfWorkId") REFERENCES public."typeOfWorks" ("Id") ON DELETE CASCADE
+      );
+info: 08.12.2023 10:52:08.808 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (59ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE public."phoneNumbers" (
+          "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+          "Number" text NOT NULL,
+          "TeacherId" integer NOT NULL,
+          CONSTRAINT "PK_phoneNumbers" PRIMARY KEY ("Id"),
+          CONSTRAINT "FK_phoneNumbers_teachers_TeacherId" FOREIGN KEY ("TeacherId") REFERENCES public.teachers ("Id") ON DELETE CASCADE
+      );
+info: 08.12.2023 10:52:08.809 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (1, 'Доцент', TIMESTAMP '2003-10-24 00:00:00');
+info: 08.12.2023 10:52:08.812 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO public.disciplines ("Id", "DisciplineType")
+      VALUES (1, 'Технических наук');
+      INSERT INTO public.disciplines ("Id", "DisciplineType")
+      VALUES (2, 'Экономических наук');
+      INSERT INTO public.disciplines ("Id", "DisciplineType")
+      VALUES (3, 'Математических наук');
+      INSERT INTO public.disciplines ("Id", "DisciplineType")
+      VALUES (4, 'Информационных наук');
+      INSERT INTO public.disciplines ("Id", "DisciplineType")
+      VALUES (5, 'Философских наук');
+info: 08.12.2023 10:52:08.813 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO public.institutions ("Id", "Name", "ShortName")
+      VALUES (1, 'Оренбургский государственный университет', 'ОГУ');
+info: 08.12.2023 10:52:08.814 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO public."jobTitles" ("Id", "JobTitlesType")
+      VALUES (1, 'Асссистент');
+      INSERT INTO public."jobTitles" ("Id", "JobTitlesType")
+      VALUES (2, 'Преподаватель');
+      INSERT INTO public."jobTitles" ("Id", "JobTitlesType")
+      VALUES (3, 'Старший преподаватель');
+      INSERT INTO public."jobTitles" ("Id", "JobTitlesType")
+      VALUES (4, 'Доцент');
+      INSERT INTO public."jobTitles" ("Id", "JobTitlesType")
+      VALUES (5, 'Профессор');
+info: 08.12.2023 10:52:08.815 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO public."typeOfCooperations" ("Id", "CoopType")
+      VALUES (1, 'Штатный');
+      INSERT INTO public."typeOfCooperations" ("Id", "CoopType")
+      VALUES (2, 'Совмещает');
+info: 08.12.2023 10:52:08.816 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO public."typeOfWorks" ("Id", "Name", "ShortName")
+      VALUES (1, 'Учебная работа', NULL);
+      INSERT INTO public."typeOfWorks" ("Id", "Name", "ShortName")
+      VALUES (2, 'Учебно-методическая работа', NULL);
+      INSERT INTO public."typeOfWorks" ("Id", "Name", "ShortName")
+      VALUES (3, 'Научно-методическая', NULL);
+      INSERT INTO public."typeOfWorks" ("Id", "Name", "ShortName")
+      VALUES (4, 'Научно-исслеовательнская работа', NULL);
+      INSERT INTO public."typeOfWorks" ("Id", "Name", "ShortName")
+      VALUES (5, 'Организационно-методическая работа', NULL);
+      INSERT INTO public."typeOfWorks" ("Id", "Name", "ShortName")
+      VALUES (6, 'Внеурочная работа со студентами', NULL);
+      INSERT INTO public."typeOfWorks" ("Id", "Name", "ShortName")
+      VALUES (7, 'Прочие виды работы', NULL);
+info: 08.12.2023 10:52:08.817 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO public.faculties ("Id", "InstitutionId", "Name", "ShortName")
+      VALUES (1, 1, 'Институт Математики и информационных технологий', 'ИМИТ');
+      INSERT INTO public.faculties ("Id", "InstitutionId", "Name", "ShortName")
+      VALUES (2, 1, 'Аэрокосмический институт', 'АЭИ');
+      INSERT INTO public.faculties ("Id", "InstitutionId", "Name", "ShortName")
+      VALUES (3, 1, 'Архитектурно-строительный факультет', 'АСФ');
+      INSERT INTO public.faculties ("Id", "InstitutionId", "Name", "ShortName")
+      VALUES (4, 1, 'Институт менеджмента, экономики и предпринимательства', 'ИМЭиП');
+info: 08.12.2023 10:52:08.820 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (1, 2, 'Кафедра летательных аппаратов', 'КЛА');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (2, 2, 'Кафедра материаловедения и технологии материалов', 'КМТМ');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (3, 2, 'Кафедра механики материалов, конструкций и машин', 'КММКиМ');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (4, 2, 'Кафедра систем автоматизации производства', 'КСАП');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (5, 2, 'Кафедра технологии машиностроения, металлообрабатывающих станков и комплексов', 'КТММСиК');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (6, 2, 'Кафедра управления и информатики в технических системах', 'КУиИТС');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (7, 1, 'Кафедра вычислительной техники и защиты информации', 'КВТИИ');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (8, 1, 'Кафедра информатики', 'КИ');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (9, 1, 'Кафедра компьютерной безопасности и математического обеспечения информационных систем', 'ККБиМОИС');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (10, 1, 'Кафедра математики и цифровых технологий', 'КМиЦТ');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (11, 1, 'Кафедра математических методов и моделей в экономике', 'КММиМЭ');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (12, 1, 'Кафедра прикладной информатики в экономике и управлении', 'КПИЭиУ');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (13, 1, 'Кафедра прикладной математики', 'КПМ');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (14, 1, 'Кафедра программного обеспечения вычислительной техники и автоматизированных систем', 'КПОВТиАС');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (15, 1, 'Кафедра статистики и эконометрики', 'КСиЭ');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (16, 3, 'Кафедра автомобильных дорог и строительных материалов', 'КАДиСМ');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (17, 3, 'Кафедра архитектуры', 'КА');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (18, 3, 'Кафедра начертательной геометрии, инженерной и компьютерной графики', 'КНГНиКГ');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (19, 3, 'Кафедра строительных конструкций', 'КСК');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (20, 3, 'Кафедра теплогазоснабжения, вентиляции и гидромеханики', 'КТВиГ');
+      INSERT INTO public.departments ("Id", "FacultyId", "Name", "ShortName")
+      VALUES (21, 3, 'Кафедра технологии строительного производства', 'КТСП');
+info: 08.12.2023 10:52:08.855 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_academicRanks_Id" ON public."academicRanks" ("Id");
+info: 08.12.2023 10:52:08.879 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_degrees_DisciplineId" ON public.degrees ("DisciplineId");
+info: 08.12.2023 10:52:08.903 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_degrees_Id" ON public.degrees ("Id");
+info: 08.12.2023 10:52:08.939 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_departments_FacultyId" ON public.departments ("FacultyId");
+info: 08.12.2023 10:52:08.964 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_departments_Id" ON public.departments ("Id");
+info: 08.12.2023 10:52:08.999 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_disciplines_Id" ON public.disciplines ("Id");
+info: 08.12.2023 10:52:09.024 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_emailAdresses_Id" ON public."emailAdresses" ("Id");
+info: 08.12.2023 10:52:09.049 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_emailAdresses_TeacherId" ON public."emailAdresses" ("TeacherId");
+info: 08.12.2023 10:52:09.085 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_faculties_Id" ON public.faculties ("Id");
+info: 08.12.2023 10:52:09.109 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_faculties_InstitutionId" ON public.faculties ("InstitutionId");
+info: 08.12.2023 10:52:09.133 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_houseNumbers_Id" ON public."houseNumbers" ("Id");
+info: 08.12.2023 10:52:09.158 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_houseNumbers_StreetId" ON public."houseNumbers" ("StreetId");
+info: 08.12.2023 10:52:09.183 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_individualPlans_Id" ON public."individualPlans" ("Id");
+info: 08.12.2023 10:52:09.207 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE UNIQUE INDEX "IX_individualPlans_teacherId" ON public."individualPlans" ("teacherId");
+info: 08.12.2023 10:52:09.232 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_individualPlans_TypeOfWorkId" ON public."individualPlans" ("TypeOfWorkId");
+info: 08.12.2023 10:52:09.257 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE UNIQUE INDEX "IX_individualPlans_YearId" ON public."individualPlans" ("YearId");
+info: 08.12.2023 10:52:09.292 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_institutions_Id" ON public.institutions ("Id");
+info: 08.12.2023 10:52:09.317 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_jobTitles_Id" ON public."jobTitles" ("Id");
+info: 08.12.2023 10:52:09.341 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_phoneNumbers_Id" ON public."phoneNumbers" ("Id");
+info: 08.12.2023 10:52:09.366 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_phoneNumbers_TeacherId" ON public."phoneNumbers" ("TeacherId");
+info: 08.12.2023 10:52:09.391 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_streets_Id" ON public.streets ("Id");
+info: 08.12.2023 10:52:09.415 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE UNIQUE INDEX "IX_teachers_AcademicRankId" ON public.teachers ("AcademicRankId");
+info: 08.12.2023 10:52:09.440 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE UNIQUE INDEX "IX_teachers_DegreeId" ON public.teachers ("DegreeId");
+info: 08.12.2023 10:52:09.464 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_teachers_DepartmentId" ON public.teachers ("DepartmentId");
+info: 08.12.2023 10:52:09.489 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_teachers_HouseNumberId" ON public.teachers ("HouseNumberId");
+info: 08.12.2023 10:52:09.514 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_teachers_Id" ON public.teachers ("Id");
+info: 08.12.2023 10:52:09.539 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_teachers_JobTitleId" ON public.teachers ("JobTitleId");
+info: 08.12.2023 10:52:09.574 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (34ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_teachers_TypeOfCooperationId" ON public.teachers ("TypeOfCooperationId");
+info: 08.12.2023 10:52:09.599 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_typeOfCooperations_Id" ON public."typeOfCooperations" ("Id");
+info: 08.12.2023 10:52:09.624 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_typeOfWorks_Id" ON public."typeOfWorks" ("Id");
+info: 08.12.2023 10:52:09.649 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_Years_Id" ON public."Years" ("Id");
+info: 08.12.2023 10:52:09.659 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT setval(
+    pg_get_serial_sequence('public."academicRanks"', 'Id'),
+    GREATEST(
+        (SELECT MAX("Id") FROM public."academicRanks") + 1,
+        nextval(pg_get_serial_sequence('public."academicRanks"', 'Id'))),
+    false);
+      SELECT setval(
+    pg_get_serial_sequence('public.disciplines', 'Id'),
+    GREATEST(
+        (SELECT MAX("Id") FROM public.disciplines) + 1,
+        nextval(pg_get_serial_sequence('public.disciplines', 'Id'))),
+    false);
+      SELECT setval(
+    pg_get_serial_sequence('public.institutions', 'Id'),
+    GREATEST(
+        (SELECT MAX("Id") FROM public.institutions) + 1,
+        nextval(pg_get_serial_sequence('public.institutions', 'Id'))),
+    false);
+      SELECT setval(
+    pg_get_serial_sequence('public."jobTitles"', 'Id'),
+    GREATEST(
+        (SELECT MAX("Id") FROM public."jobTitles") + 1,
+        nextval(pg_get_serial_sequence('public."jobTitles"', 'Id'))),
+    false);
+      SELECT setval(
+    pg_get_serial_sequence('public."typeOfCooperations"', 'Id'),
+    GREATEST(
+        (SELECT MAX("Id") FROM public."typeOfCooperations") + 1,
+        nextval(pg_get_serial_sequence('public."typeOfCooperations"', 'Id'))),
+    false);
+      SELECT setval(
+    pg_get_serial_sequence('public."typeOfWorks"', 'Id'),
+    GREATEST(
+        (SELECT MAX("Id") FROM public."typeOfWorks") + 1,
+        nextval(pg_get_serial_sequence('public."typeOfWorks"', 'Id'))),
+    false);
+      SELECT setval(
+    pg_get_serial_sequence('public.faculties', 'Id'),
+    GREATEST(
+        (SELECT MAX("Id") FROM public.faculties) + 1,
+        nextval(pg_get_serial_sequence('public.faculties', 'Id'))),
+    false);
+      SELECT setval(
+    pg_get_serial_sequence('public.departments', 'Id'),
+    GREATEST(
+        (SELECT MAX("Id") FROM public.departments) + 1,
+        nextval(pg_get_serial_sequence('public.departments', 'Id'))),
+    false);
+info: 08.12.2023 10:52:09.659 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+      VALUES ('20231207092406_BaseVersion', '7.0.13');
+info: 08.12.2023 10:52:09.664 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20231207094114_BaseVersion1'.
+info: 08.12.2023 10:52:09.690 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      DELETE FROM public.faculties
+      WHERE "Id" = 4;
+info: 08.12.2023 10:52:11.045 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1,355ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+      VALUES ('20231207094114_BaseVersion1', '7.0.13');
+info: 08.12.2023 10:52:11.046 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20231208054857_GeneratedData'.
+info: 08.12.2023 10:52:11.067 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE public."houseNumbers" DROP CONSTRAINT "FK_houseNumbers_streets_StreetId";
+info: 08.12.2023 10:52:11.070 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 0 WHERE "StreetId" IS NULL;
+      ALTER TABLE public."houseNumbers" ALTER COLUMN "StreetId" SET NOT NULL;
+      ALTER TABLE public."houseNumbers" ALTER COLUMN "StreetId" SET DEFAULT 0;
+info: 08.12.2023 10:52:12.462 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1,392ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (1, 'пр. Набережная');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (2, 'Пионерская улица');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (3, 'улица Дорожная');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (4, 'пл. Шоссейная');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (5, 'пл. Пролетарская');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (6, 'Вокзальная площадь');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (7, 'Труда проспект');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (8, 'Сосновая пл.');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (9, 'Механизаторов площадь');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (10, 'Совхозная пл.');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (11, 'ул. Набережная');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (12, 'улица Мира');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (13, 'улица Партизанская');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (14, 'Мира площадь');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (15, 'Мира ул.');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (16, 'Степная улица');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (17, 'Строительная улица');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (18, 'пр. Дзержинского');
+      INSERT INTO public.streets ("Id", "Name")
+      VALUES (19, 'проспекinfo: 08.12.2023 15:13:44.788 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (62ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+info: 08.12.2023 15:13:44.837 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+info: 08.12.2023 15:13:44.850 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: 08.12.2023 15:13:44.866 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20231208101219_AcademicRanksGenerated'.
+info: 08.12.2023 15:13:47.521 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2,579ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE public."Years" ALTER COLUMN "startOfYear" TYPE date;
+info: 08.12.2023 15:13:47.625 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (104ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE public."Years" ALTER COLUMN "endOfYear" TYPE date;
+info: 08.12.2023 15:13:47.926 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (300ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE public.teachers ALTER COLUMN "ElectedDate" TYPE date;
+info: 08.12.2023 15:13:48.147 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (221ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE public.teachers ALTER COLUMN "DateOfEnding" TYPE date;
+info: 08.12.2023 15:13:48.390 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (243ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE public.teachers ALTER COLUMN "DateOfBeginning" TYPE date;
+info: 08.12.2023 15:13:48.645 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (255ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE public.teachers ALTER COLUMN "BirthDate" TYPE date;
+info: 08.12.2023 15:13:48.744 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (98ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE public.degrees ALTER COLUMN "YearOfAward" TYPE date;
+info: 08.12.2023 15:13:48.876 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (131ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE public."academicRanks" ALTER COLUMN "YearOfAward" TYPE date;
+info: 08.12.2023 15:13:48.947 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (72ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."academicRanks" SET "YearOfAward" = DATE '2015-12-28'
+      WHERE "Id" = 1;
+info: 08.12.2023 15:13:48.958 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (2, 'Доцент', DATE '2020-10-29');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (3, 'Доцент', DATE '2010-09-06');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (4, 'Доцент', DATE '2010-08-05');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (5, 'Профессор', DATE '2012-02-20');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (6, 'Профессор', DATE '2018-06-06');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (7, 'Доцент', DATE '2021-04-10');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (8, 'Доцент', DATE '2018-10-02');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (9, 'Профессор', DATE '2019-11-14');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (10, 'Профессор', DATE '2018-11-30');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (11, 'Доцент', DATE '2022-06-04');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (12, 'Профессор', DATE '2022-01-15');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (13, 'Профессор', DATE '2023-02-07');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (14, 'Профессор', DATE '2018-06-17');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (15, 'Доцент', DATE '2020-12-13');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (16, 'Доцент', DATE '2007-10-05');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (17, 'Доцент', DATE '2012-04-13');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (18, 'Доцент', DATE '2007-08-28');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (19, 'Доцент', DATE '2010-06-23');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (20, 'Профессор', DATE '2023-04-01');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (21, 'Доцент', DATE '2019-06-16');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (22, 'Профессор', DATE '2007-08-13');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (23, 'Доцент', DATE '2019-11-19');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (24, 'Доцент', DATE '2011-05-25');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (25, 'Профессор', DATE '2014-04-07');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (26, 'Доцент', DATE '2008-08-06');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (27, 'Профессор', DATE '2017-03-17');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (28, 'Доцент', DATE '2014-04-26');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (29, 'Профессор', DATE '2009-03-10');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (30, 'Доцент', DATE '2010-01-13');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (31, 'Доцент', DATE '2013-09-30');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (32, 'Профессор', DATE '2019-04-14');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (33, 'Доцент', DATE '2020-07-27');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (34, 'Профессор', DATE '2021-08-14');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (35, 'Профессор', DATE '2008-04-18');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (36, 'Профессор', DATE '2011-04-15');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (37, 'Доцент', DATE '2006-03-30');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (38, 'Профессор', DATE '2018-04-26');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (39, 'Доцент', DATE '2017-12-26');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (40, 'Профессор', DATE '2022-02-08');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (41, 'Профессор', DATE '2015-01-29');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (42, 'Доцент', DATE '2022-12-28');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (43, 'Профессор', DATE '2023-01-15');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (44, 'Доцент', DATE '2014-02-02');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (45, 'Профессор', DATE '2018-09-17');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (46, 'Доцент', DATE '2021-08-02');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (47, 'Доцент', DATE '2011-07-10');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (48, 'Профессор', DATE '2017-11-23');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (49, 'Профессор', DATE '2022-10-02');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (50, 'Профессор', DATE '2009-12-05');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (51, 'Доцент', DATE '2012-06-12');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (52, 'Профессор', DATE '2012-09-04');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (53, 'Профессор', DATE '2021-08-06');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (54, 'Профессор', DATE '2016-07-11');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (55, 'Доцент', DATE '2019-08-08');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (56, 'Доцент', DATE '2008-03-18');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (57, 'Доцент', DATE '2010-07-16');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (58, 'Профессор', DATE '2022-12-09');
+      INSERT INTO public."academicRanks" ("Id", "Academiinfo: 08.12.2023 15:20:35.836 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (70ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+info: 08.12.2023 15:20:35.893 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+info: 08.12.2023 15:20:35.908 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: 08.12.2023 15:20:35.925 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20231208101953_AcademicRanksGenerated'.
+info: 08.12.2023 15:20:36.178 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (165ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE public."Years" ALTER COLUMN "startOfYear" TYPE date;
+info: 08.12.2023 15:20:36.237 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (58ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE public."Years" ALTER COLUMN "endOfYear" TYPE date;
+info: 08.12.2023 15:20:36.469 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (233ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE public.teachers ALTER COLUMN "ElectedDate" TYPE date;
+info: 08.12.2023 15:20:36.691 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (222ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE public.teachers ALTER COLUMN "DateOfEnding" TYPE date;
+info: 08.12.2023 15:20:36.913 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (222ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE public.teachers ALTER COLUMN "DateOfBeginning" TYPE date;
+info: 08.12.2023 15:20:37.135 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (221ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE public.teachers ALTER COLUMN "BirthDate" TYPE date;
+info: 08.12.2023 15:20:37.233 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (99ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE public.degrees ALTER COLUMN "YearOfAward" TYPE date;
+info: 08.12.2023 15:20:37.307 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (74ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE public."academicRanks" ALTER COLUMN "YearOfAward" TYPE date;
+info: 08.12.2023 15:20:37.309 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."academicRanks" SET "YearOfAward" = DATE '2015-12-28'
+      WHERE "Id" = 1;
+info: 08.12.2023 15:20:37.317 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (2, 'Доцент', DATE '2020-10-29');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (3, 'Доцент', DATE '2010-09-06');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (4, 'Доцент', DATE '2010-08-05');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (5, 'Профессор', DATE '2012-02-20');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (6, 'Профессор', DATE '2018-06-06');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (7, 'Доцент', DATE '2021-04-10');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (8, 'Доцент', DATE '2018-10-02');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (9, 'Профессор', DATE '2019-11-14');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (10, 'Профессор', DATE '2018-11-30');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (11, 'Доцент', DATE '2022-06-04');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (12, 'Профессор', DATE '2022-01-15');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (13, 'Профессор', DATE '2023-02-07');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (14, 'Профессор', DATE '2018-06-17');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (15, 'Доцент', DATE '2020-12-13');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (16, 'Доцент', DATE '2007-10-05');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (17, 'Доцент', DATE '2012-04-13');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (18, 'Доцент', DATE '2007-08-28');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (19, 'Доцент', DATE '2010-06-23');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (20, 'Профессор', DATE '2023-04-01');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (21, 'Доцент', DATE '2019-06-16');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (22, 'Профессор', DATE '2007-08-13');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (23, 'Доцент', DATE '2019-11-19');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (24, 'Доцент', DATE '2011-05-25');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (25, 'Профессор', DATE '2014-04-07');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (26, 'Доцент', DATE '2008-08-06');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (27, 'Профессор', DATE '2017-03-17');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (28, 'Доцент', DATE '2014-04-26');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (29, 'Профессор', DATE '2009-03-10');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (30, 'Доцент', DATE '2010-01-13');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (31, 'Доцент', DATE '2013-09-30');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (32, 'Профессор', DATE '2019-04-14');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (33, 'Доцент', DATE '2020-07-27');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (34, 'Профессор', DATE '2021-08-14');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (35, 'Профессор', DATE '2008-04-18');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (36, 'Профессор', DATE '2011-04-15');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (37, 'Доцент', DATE '2006-03-30');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (38, 'Профессор', DATE '2018-04-26');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (39, 'Доцент', DATE '2017-12-26');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (40, 'Профессор', DATE '2022-02-08');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (41, 'Профессор', DATE '2015-01-29');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (42, 'Доцент', DATE '2022-12-28');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (43, 'Профессор', DATE '2023-01-15');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (44, 'Доцент', DATE '2014-02-02');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (45, 'Профессор', DATE '2018-09-17');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (46, 'Доцент', DATE '2021-08-02');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (47, 'Доцент', DATE '2011-07-10');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (48, 'Профессор', DATE '2017-11-23');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (49, 'Профессор', DATE '2022-10-02');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (50, 'Профессор', DATE '2009-12-05');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (51, 'Доцент', DATE '2012-06-12');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (52, 'Профессор', DATE '2012-09-04');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (53, 'Профессор', DATE '2021-08-06');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (54, 'Профессор', DATE '2016-07-11');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (55, 'Доцент', DATE '2019-08-08');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (56, 'Доцент', DATE '2008-03-18');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (57, 'Доцент', DATE '2010-07-16');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (58, 'Профессор', DATE '2022-12-09');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (59, 'Доцент', DATE '2022-02-27');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (60, 'Доцент', DATE '2011-04-09');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (61, 'Доцент', DATE '2008-11-05');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (62, 'Профессор', DATE '2023-05-06');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (63, 'Профессор', DATE '2020-03-13');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (64, 'Доцент', DATE '2022-08-06');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (65, 'Профессор', DATE '2023-03-08');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (66, 'Профессор', DATE '2011-06-11');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (67, 'Профессор', DATE '2017-06-03');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (68, 'Профессор', DATE '2012-05-24');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (69, 'Профессор', DATE '2020-08-12');
+      INSERT INTO public."academicRanks" ("Id", "AcademicRankType", "YearOfAward")
+      VALUES (70, 'Доцент', DATE '2020-04-12');
+info: 08.12.2023 15:20:37.321 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 19
+      WHERE "Id" = 1;
+info: 08.12.2023 15:20:37.322 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 19
+      WHERE "Id" = 2;
+info: 08.12.2023 15:20:37.322 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 5
+      WHERE "Id" = 3;
+info: 08.12.2023 15:20:37.323 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 2
+      WHERE "Id" = 4;
+info: 08.12.2023 15:20:37.323 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 3
+      WHERE "Id" = 5;
+info: 08.12.2023 15:20:37.323 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 14
+      WHERE "Id" = 6;
+info: 08.12.2023 15:20:37.324 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 7
+      WHERE "Id" = 7;
+info: 08.12.2023 15:20:37.324 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 13
+      WHERE "Id" = 8;
+info: 08.12.2023 15:20:37.324 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 11
+      WHERE "Id" = 9;
+info: 08.12.2023 15:20:37.325 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 1
+      WHERE "Id" = 10;
+info: 08.12.2023 15:20:37.325 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 7
+      WHERE "Id" = 11;
+info: 08.12.2023 15:20:37.325 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 8
+      WHERE "Id" = 12;
+info: 08.12.2023 15:20:37.326 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 7
+      WHERE "Id" = 13;
+info: 08.12.2023 15:20:37.326 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 6
+      WHERE "Id" = 14;
+info: 08.12.2023 15:20:37.326 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 19
+      WHERE "Id" = 15;
+info: 08.12.2023 15:20:37.327 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 8
+      WHERE "Id" = 16;
+info: 08.12.2023 15:20:37.327 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 3
+      WHERE "Id" = 17;
+info: 08.12.2023 15:20:37.327 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 9
+      WHERE "Id" = 18;
+info: 08.12.2023 15:20:37.327 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 10
+      WHERE "Id" = 19;
+info: 08.12.2023 15:20:37.328 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 8
+      WHERE "Id" = 20;
+info: 08.12.2023 15:20:37.329 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (21, 51, 11);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (22, 94, 3);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (23, 72, 10);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (24, 35, 17);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (25, 98, 10);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (26, 36, 7);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (27, 89, 10);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (28, 72, 1);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (29, 25, 4);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (30, 90, 8);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (31, 19, 1);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (32, 71, 6);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (33, 97, 6);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (34, 67, 15);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (35, 81, 4);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (36, 94, 19);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (37, 15, 19);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (38, 54, 5);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (39, 59, 1);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (40, 65, 11);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (41, 90, 2);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (42, 93, 12);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (43, 10, 4);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (44, 22, 18);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (45, 84, 3);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (46, 31, 4);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (47, 74, 18);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (48, 79, 11);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (49, 11, 2);
+      INSERT INTO public."houseNumbers" ("Id", "House", "StreetId")
+      VALUES (50, 41, 5);
+info: 08.12.2023 15:20:37.331 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."jobTitles" SET "JobTitlesType" = 'Лаборант'
+      WHERE "Id" = 1;
+info: 08.12.2023 15:20:37.331 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."jobTitles" SET "JobTitlesType" = 'Асссистент'
+      WHERE "Id" = 2;
+info: 08.12.2023 15:20:37.331 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."jobTitles" SET "JobTitlesType" = 'Преподаватель'
+      WHERE "Id" = 3;
+info: 08.12.2023 15:20:37.332 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."jobTitles" SET "JobTitlesType" = 'Старший преподаватель'
+      WHERE "Id" = 4;
+info: 08.12.2023 15:20:37.332 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."jobTitles" SET "JobTitlesType" = 'Доцент'
+      WHERE "Id" = 5;
+info: 08.12.2023 15:20:37.332 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameteinfo: 08.12.2023 15:43:34.477 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (59ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+info: 08.12.2023 15:43:34.528 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+info: 08.12.2023 15:43:34.540 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: 08.12.2023 15:43:34.556 RelationalEventId.MigrationApplying[20402] (Microsoft.EntityFrameworkCore.Migrations) 
+      Applying migration '20231208104317_DegreesGenerated'.
+info: 08.12.2023 15:43:35.080 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (455ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (1, 'Кандидат наук', 4, DATE '2015-12-28');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (2, 'Кандидат наук', 3, DATE '2020-10-29');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (3, 'Кандидат наук', 3, DATE '2010-09-06');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (4, 'Кандидат наук', 5, DATE '2010-08-05');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (5, 'Доктор наук', 1, DATE '2012-02-20');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (6, 'Доктор наук', 2, DATE '2018-06-06');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (7, 'Кандидат наук', 1, DATE '2021-04-10');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (8, 'Кандидат наук', 4, DATE '2018-10-02');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (9, 'Доктор наук', 5, DATE '2019-11-14');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (10, 'Доктор наук', 2, DATE '2018-11-30');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (11, 'Кандидат наук', 1, DATE '2022-06-04');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (12, 'Доктор наук', 3, DATE '2022-01-15');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (13, 'Доктор наук', 1, DATE '2023-02-07');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (14, 'Доктор наук', 2, DATE '2018-06-17');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (15, 'Кандидат наук', 4, DATE '2020-12-13');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (16, 'Кандидат наук', 1, DATE '2007-10-05');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (17, 'Кандидат наук', 5, DATE '2012-04-13');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (18, 'Кандидат наук', 4, DATE '2007-08-28');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (19, 'Кандидат наук', 4, DATE '2010-06-23');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (20, 'Доктор наук', 1, DATE '2023-04-01');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (21, 'Кандидат наук', 5, DATE '2019-06-16');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (22, 'Доктор наук', 5, DATE '2007-08-13');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (23, 'Кандидат наук', 5, DATE '2019-11-19');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (24, 'Кандидат наук', 1, DATE '2011-05-25');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (25, 'Доктор наук', 1, DATE '2014-04-07');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (26, 'Кандидат наук', 4, DATE '2008-08-06');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (27, 'Доктор наук', 1, DATE '2017-03-17');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (28, 'Кандидат наук', 1, DATE '2014-04-26');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (29, 'Доктор наук', 2, DATE '2009-03-10');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (30, 'Кандидат наук', 3, DATE '2010-01-13');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (31, 'Кандидат наук', 3, DATE '2013-09-30');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (32, 'Доктор наук', 4, DATE '2019-04-14');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (33, 'Кандидат наук', 5, DATE '2020-07-27');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (34, 'Доктор наук', 2, DATE '2021-08-14');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (35, 'Доктор наук', 4, DATE '2008-04-18');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (36, 'Доктор наук', 5, DATE '2011-04-15');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (37, 'Кандидат наук', 2, DATE '2006-03-30');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (38, 'Доктор наук', 5, DATE '2018-04-26');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (39, 'Кандидат наук', 4, DATE '2017-12-26');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (40, 'Доктор наук', 5, DATE '2022-02-08');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (41, 'Доктор наук', 3, DATE '2015-01-29');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (42, 'Кандидат наук', 2, DATE '2022-12-28');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (43, 'Доктор наук', 2, DATE '2023-01-15');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (44, 'Кандидат наук', 2, DATE '2014-02-02');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (45, 'Доктор наук', 1, DATE '2018-09-17');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (46, 'Кандидат наук', 3, DATE '2021-08-02');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (47, 'Кандидат наук', 5, DATE '2011-07-10');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (48, 'Доктор наук', 5, DATE '2017-11-23');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (49, 'Доктор наук', 5, DATE '2022-10-02');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (50, 'Доктор наук', 4, DATE '2009-12-05');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (51, 'Кандидат наук', 4, DATE '2012-06-12');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (52, 'Доктор наук', 1, DATE '2012-09-04');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (53, 'Доктор наук', 4, DATE '2021-08-06');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (54, 'Доктор наук', 5, DATE '2016-07-11');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (55, 'Кандидат наук', 1, DATE '2019-08-08');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (56, 'Кандидат наук', 5, DATE '2008-03-18');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (57, 'Кандидат наук', 5, DATE '2010-07-16');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (58, 'Доктор наук', 5, DATE '2022-12-09');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (59, 'Кандидат наук', 4, DATE '2022-02-27');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (60, 'Кандидат наук', 3, DATE '2011-04-09');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (61, 'Кандидат наук', 1, DATE '2008-11-05');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (62, 'Доктор наук', 1, DATE '2023-05-06');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (63, 'Доктор наук', 3, DATE '2020-03-13');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (64, 'Кандидат наук', 3, DATE '2022-08-06');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (65, 'Доктор наук', 3, DATE '2023-03-08');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (66, 'Доктор наук', 2, DATE '2011-06-11');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (67, 'Доктор наук', 4, DATE '2017-06-03');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (68, 'Доктор наук', 4, DATE '2012-05-24');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (69, 'Доктор наук', 5, DATE '2020-08-12');
+      INSERT INTO public.degrees ("Id", "DegreeType", "DisciplineId", "YearOfAward")
+      VALUES (70, 'Кандидат наук', 2, DATE '2020-04-12');
+info: 08.12.2023 15:43:35.180 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (100ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public.disciplines SET "DisciplineType" = 'Гуманитарные науки'
+      WHERE "Id" = 1;
+info: 08.12.2023 15:43:35.181 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public.disciplines SET "DisciplineType" = 'Общественные науки'
+      WHERE "Id" = 2;
+info: 08.12.2023 15:43:35.181 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public.disciplines SET "DisciplineType" = 'Естественные науки'
+      WHERE "Id" = 3;
+info: 08.12.2023 15:43:35.182 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public.disciplines SET "DisciplineType" = 'Формальные науки'
+      WHERE "Id" = 4;
+info: 08.12.2023 15:43:35.182 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public.disciplines SET "DisciplineType" = 'Прикладные науки'
+      WHERE "Id" = 5;
+info: 08.12.2023 15:43:35.186 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 9
+      WHERE "Id" = 1;
+info: 08.12.2023 15:43:35.186 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 11
+      WHERE "Id" = 2;
+info: 08.12.2023 15:43:35.186 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 13
+      WHERE "Id" = 5;
+info: 08.12.2023 15:43:35.187 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 19
+      WHERE "Id" = 6;
+info: 08.12.2023 15:43:35.187 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 5
+      WHERE "Id" = 7;
+info: 08.12.2023 15:43:35.187 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 17
+      WHERE "Id" = 8;
+info: 08.12.2023 15:43:35.188 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 1
+      WHERE "Id" = 9;
+info: 08.12.2023 15:43:35.188 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 16
+      WHERE "Id" = 10;
+info: 08.12.2023 15:43:35.188 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 12
+      WHERE "Id" = 11;
+info: 08.12.2023 15:43:35.189 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 4
+      WHERE "Id" = 12;
+info: 08.12.2023 15:43:35.189 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 12
+      WHERE "Id" = 13;
+info: 08.12.2023 15:43:35.189 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 13
+      WHERE "Id" = 14;
+info: 08.12.2023 15:43:35.190 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 1
+      WHERE "Id" = 15;
+info: 08.12.2023 15:43:35.190 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 1
+      WHERE "Id" = 16;
+info: 08.12.2023 15:43:35.190 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 11
+      WHERE "Id" = 17;
+info: 08.12.2023 15:43:35.190 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 6
+      WHERE "Id" = 18;
+info: 08.12.2023 15:43:35.191 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 15
+      WHERE "Id" = 20;
+info: 08.12.2023 15:43:35.191 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 9
+      WHERE "Id" = 21;
+info: 08.12.2023 15:43:35.191 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 2
+      WHERE "Id" = 22;
+info: 08.12.2023 15:43:35.192 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 3
+      WHERE "Id" = 23;
+info: 08.12.2023 15:43:35.192 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 14
+      WHERE "Id" = 24;
+info: 08.12.2023 15:43:35.192 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 7
+      WHERE "Id" = 25;
+info: 08.12.2023 15:43:35.193 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 14
+      WHERE "Id" = 26;
+info: 08.12.2023 15:43:35.193 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 3
+      WHERE "Id" = 27;
+info: 08.12.2023 15:43:35.193 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 17
+      WHERE "Id" = 28;
+info: 08.12.2023 15:43:35.194 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 15
+      WHERE "Id" = 29;
+info: 08.12.2023 15:43:35.194 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 9
+      WHERE "Id" = 30;
+info: 08.12.2023 15:43:35.194 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 17
+      WHERE "Id" = 32;
+info: 08.12.2023 15:43:35.194 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 15
+      WHERE "Id" = 33;
+info: 08.12.2023 15:43:35.195 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 8
+      WHERE "Id" = 34;
+info: 08.12.2023 15:43:35.195 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 12
+      WHERE "Id" = 35;
+info: 08.12.2023 15:43:35.195 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 5
+      WHERE "Id" = 36;
+info: 08.12.2023 15:43:35.196 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 14
+      WHERE "Id" = 37;
+info: 08.12.2023 15:43:35.196 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 11
+      WHERE "Id" = 38;
+info: 08.12.2023 15:43:35.196 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 16
+      WHERE "Id" = 39;
+info: 08.12.2023 15:43:35.197 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      UPDATE public."houseNumbers" SET "StreetId" = 14
+      WHERE "Id" = 40;
+info: 08.12.2023 15:43:35.197 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Data
