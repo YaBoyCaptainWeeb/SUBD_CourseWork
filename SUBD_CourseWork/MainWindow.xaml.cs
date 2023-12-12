@@ -123,8 +123,10 @@ namespace SUBD_CourseWork
             modelBuilder.Entity<Faculty>().HasData( // Факультеты 
                 new Faculty { Id = 1, Name = "Институт Математики и информационных технологий", ShortName ="ИМИТ" , InstitutionId = 1},
                 new Faculty { Id = 2, Name = "Аэрокосмический институт", ShortName = "АЭИ", InstitutionId = 1},
-                new Faculty { Id = 3, Name = "Архитектурно-строительный факультет", ShortName = "АСФ", InstitutionId = 1 }
+                new Faculty { Id = 3, Name = "Архитектурно-строительный факультет", ShortName = "АСФ", InstitutionId = 1 },
+                new Faculty { Id = 4, Name = "Институт менеджмента, экономики и предпринимательства", ShortName = "ИМЭиП", InstitutionId = 1 }
                 );
+            #region Кафедры
             modelBuilder.Entity<Department>().HasData( // Кафедры
                 new Department { Id = 1, Name = "Кафедра летательных аппаратов", ShortName = "КЛА", FacultyId = 2},
                 new Department { Id = 2, Name = "Кафедра материаловедения и технологии материалов", ShortName = "КМТМ", FacultyId = 2},
@@ -148,9 +150,20 @@ namespace SUBD_CourseWork
                 new Department { Id = 18, Name = "Кафедра начертательной геометрии, инженерной и компьютерной графики", ShortName = "КНГНиКГ", FacultyId = 3 },
                 new Department { Id = 19, Name = "Кафедра строительных конструкций", ShortName = "КСК", FacultyId = 3 },
                 new Department { Id = 20, Name = "Кафедра теплогазоснабжения, вентиляции и гидромеханики", ShortName = "КТВиГ", FacultyId = 3 },
-                new Department { Id = 21, Name = "Кафедра технологии строительного производства", ShortName = "КТСП", FacultyId = 3 }
-                );
+                new Department { Id = 21, Name = "Кафедра технологии строительного производства", ShortName = "КТСП", FacultyId = 3 },
 
+                new Department { Id = 22, Name = "Кафедра банковского дела и страхования", ShortName = "КБДиС", FacultyId = 4 },
+                new Department { Id = 23, Name = "Кафедра бухгалтерского учета, анализа и аудита", ShortName = "КБУАиА", FacultyId = 4 },
+                new Department { Id = 24, Name = "Кафедра государственного и муниципального управления", ShortName = "КГиМУ", FacultyId = 4 },
+                new Department { Id = 25, Name = "Кафедра маркетинга и торгового дела", ShortName = "КМиТД", FacultyId = 4 },
+                new Department { Id = 26, Name = "Кафедра менеджмента", ShortName = "КМ", FacultyId = 4 },
+                new Department { Id = 27, Name = "Кафедра рекламы, связей с общественностью и прикладной политологии", ShortName = "КРСОиПП", FacultyId = 4 },
+                new Department { Id = 28, Name = "Кафедра таможенного дела", ShortName = "КТД", FacultyId = 4 },
+                new Department { Id = 29, Name = "Кафедра управления персоналом, сервиса и туризма", ShortName = "КУПСиТ", FacultyId = 4 },
+                new Department { Id = 30, Name = "Кафедра финансов", ShortName = "КФ", FacultyId = 4 },
+                new Department { Id = 31, Name = "Кафедра экономической теории, региональной и отраслевой экономики", ShortName = "КФ", FacultyId = 4 }
+                ); // Возможно тут еще кафедр накидать, хз
+            #endregion
             int housesCount = 50, streetsCount = 20;
             int teachersCount = 70;
 
@@ -158,6 +171,9 @@ namespace SUBD_CourseWork
             modelBuilder.Entity<HouseNumber>().HasData(_fakers.GetHouseNumberGenerator(streetsCount).Generate(housesCount)); // Генерация номеров домов
             modelBuilder.Entity<AcademicRank>().HasData(_fakers.GetAcademicRankGenerator().Generate(teachersCount)); // Генерация ученых званий
             modelBuilder.Entity<Degree>().HasData(_fakers.GetDegreesGenerator().Generate(teachersCount)); // Генерация ученых степеней
+            modelBuilder.Entity<Teacher>().HasData(_fakers.GetTeachersGenerator(housesCount, teachersCount).Generate(teachersCount)); // Генерация учителей
+            modelBuilder.Entity<EmailAdress>().HasData(_fakers.GetEmailAdressGenerator(teachersCount).Generate(teachersCount)); // Генерация электронных почт
+            modelBuilder.Entity<PhoneNumber>().HasData(_fakers.GetPhoneNumberGenerator(teachersCount).Generate(teachersCount)); // Генерация номеров телефона
 
             // Конфигурации
             modelBuilder.HasDefaultSchema("public");

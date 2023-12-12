@@ -11,7 +11,7 @@ namespace SUBD_CourseWork.Entities
         public int Id { get; set; }
         public string Number { get; set; }
         public int TeacherId { get; set; }
-        public Teacher Teacher { get; set; } = new();
+        public Teacher Teacher { get; set; }
 
     }
 }

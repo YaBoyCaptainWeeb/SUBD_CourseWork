@@ -22,6 +22,7 @@ namespace SUBD_CourseWork
         {
             "Кандидат наук", "Доктор наук"
         };
+        DateOnly yearOfAward;
 
         Faker<Street> _streetsFaker = null;
         Faker<HouseNumber> _houseNumbersFaker = null;
@@ -29,6 +30,7 @@ namespace SUBD_CourseWork
         Faker<PhoneNumber> _phoneNumberFaker = null;
         Faker<AcademicRank> _academicRankFaker = null;
         Faker<Degree> _degreeFaker = null;
+        Faker<Teacher> _teacherFaker = null;
         // ДОДЕЛАТЬ ФЕЙКЕР
         Random rnd = new Random();
 
@@ -55,7 +57,7 @@ namespace SUBD_CourseWork
             _emailAdressFaker = new Faker<EmailAdress>("ru")
                 .UseSeed(1969)
                 .RuleFor(x => x.Id, x => id++).RuleFor(x => x.Email, f => f.Internet.Email())
-                .RuleFor(x => x.TeacherId, f => rnd.Next(1, teachersCount));
+                .RuleFor(x => x.TeacherId, f => rnd.Next(1, teachersCount + 1));
             return _emailAdressFaker;
         }
 
@@ -65,7 +67,7 @@ namespace SUBD_CourseWork
             _phoneNumberFaker = new Faker<PhoneNumber>("ru")
                 .UseSeed(1969)
                 .RuleFor(x => x.Id, x => id++).RuleFor(x => x.Number, f => f.Phone.PhoneNumber())
-                .RuleFor(x => x.TeacherId, f => rnd.Next(1,teachersCount));
+                .RuleFor(x => x.TeacherId, f => rnd.Next(1,teachersCount + 1));
             return _phoneNumberFaker;
         }
 
@@ -75,20 +77,87 @@ namespace SUBD_CourseWork
             _academicRankFaker = new Faker<AcademicRank>("ru")
                 .UseSeed(1969)
                 .RuleFor(x => x.Id, x => id++).RuleFor(x => x.AcademicRankType, x => x.PickRandom<academicRanks>().ToString())
-                .RuleFor(x => x.YearOfAward, x => x.Date.PastDateOnly(18,DateOnly.FromDateTime(DateTime.Now)));
+                .RuleFor(x => x.YearOfAward, x =>
+                {
+                    yearOfAward = x.Date.PastDateOnly(rnd.Next(15, 30), DateOnly.FromDateTime(DateTime.Now));
+                    return yearOfAward;
+                });
             return _academicRankFaker;
         }
 
-        public Faker<Degree> GetDegreesGenerator()
+        public Faker<Degree> GetDegreesGenerator() // Генерация ученых степеней
         {
             int id = 1;
             _degreeFaker = new Faker<Degree>("ru")
                 .UseSeed(1969)
                 .RuleFor(x => x.Id, x => id++).RuleFor(x => x.DegreeType, x => x.PickRandom(degreeTypes))
-                .RuleFor(x => x.YearOfAward, x => x.Date.PastDateOnly(18,DateOnly.FromDateTime(DateTime.Now)))
+                .RuleFor(x => x.YearOfAward, f => yearOfAward.AddYears(rnd.Next(-6,-1)))
                 .RuleFor(x => x.DisciplineId, x => rnd.Next(1,6));
             return _degreeFaker;
         }
 
+        public Faker<Teacher> GetTeachersGenerator(int houseNumbersCount, int degreesCount)
+        {
+            List<int> uniqueRandoms = GenerateUniqueRandomNumber(degreesCount);
+            List<int> uniqueRandoms1 = GenerateUniqueRandomNumber(degreesCount);
+            DateOnly beginningDateForTeacher = new DateOnly();
+            int id = 1, i = 0,i1 = 0;
+            _teacherFaker = new Faker<Teacher>("ru")
+                .UseSeed(1969)
+                .RuleFor(x => x.Id, x => id++).RuleFor(x => x.Surname, f => f.Name.LastName())
+                .RuleFor(x => x.Name, f => f.Name.FirstName()).RuleFor(x => x.LastName, f => f.Name.LastName())
+                .RuleFor(x => x.BirthDate, f =>
+                {
+                    //beginningDateForTeacher = f.Date.PastDateOnly(rnd.Next(25,40), DateOnly.FromDateTime(DateTime.Now).AddYears(-20));
+                    beginningDateForTeacher = yearOfAward.AddYears(rnd.Next(-30,-21)).AddMonths(rnd.Next(-2, 6)).AddDays(rnd.Next(-15, 25));
+                    return beginningDateForTeacher;
+                    
+                })
+                .RuleFor(x => x.DateOfBeginning, f =>
+                {
+                    beginningDateForTeacher = yearOfAward.AddYears(rnd.Next(0,2)).AddMonths(rnd.Next(0,3)).AddDays(rnd.Next(0,16));
+                   return beginningDateForTeacher;
+                })
+                .RuleFor(x => x.DateOfEnding, f => f.Date.PastDateOnly(rnd.Next(1, 4), DateOnly.FromDateTime(DateTime.Now)).OrNull(f, 0.90f))
+                .RuleFor(x => x.Wage, f => rnd.Next(15, 65) * 1000)
+                .RuleFor(x => x.ElectedDate, f =>
+                {
+                    DateOnly electedDate = beginningDateForTeacher;
+                    return electedDate.AddMonths(rnd.Next(-3, -1));
+                })
+                .RuleFor(x => x.HouseNumberId, f => rnd.Next(1, houseNumbersCount + 1))
+                .RuleFor(x => x.DepartmentId, f => rnd.Next(1, 32))
+                .RuleFor(x => x.JobTitleId, f => rnd.Next(1, 8))
+                .RuleFor(x => x.TypeOfCooperationId, f => rnd.Next(1, 3))
+                .RuleFor(x => x.DegreeId, f =>
+                {
+                    int c = uniqueRandoms[i];
+                    i++;
+                    return c;
+                })
+                .RuleFor(x => x.AcademicRankId, f =>
+                {
+                    int c = uniqueRandoms1[i1];
+                    i1++;
+                    return c;
+                });
+            return _teacherFaker;
+        }
+
+        List<int> GenerateUniqueRandomNumber(int max)
+        {
+            List<int> result = new List<int>();
+            Random rnd = new Random();
+            while (result.Count != max)
+            {
+                int num = rnd.Next(1, max + 1);
+                if (!result.Contains(num))
+                {
+                    result.Add(num);
+                }
+            }
+            result.Add(0);
+            return result;
+        }
     }
 }
