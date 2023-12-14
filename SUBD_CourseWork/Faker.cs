@@ -31,6 +31,8 @@ namespace SUBD_CourseWork
         Faker<AcademicRank> _academicRankFaker = null;
         Faker<Degree> _degreeFaker = null;
         Faker<Teacher> _teacherFaker = null;
+        Faker<IndividualPlan> _individualPlanFaker = null;
+        Faker<Year> _yearsFaker = null;
         // ДОДЕЛАТЬ ФЕЙКЕР
         Random rnd = new Random();
 
@@ -96,7 +98,7 @@ namespace SUBD_CourseWork
             return _degreeFaker;
         }
 
-        public Faker<Teacher> GetTeachersGenerator(int houseNumbersCount, int degreesCount)
+        public Faker<Teacher> GetTeachersGenerator(int houseNumbersCount, int degreesCount) // возможно нужно доработать работу с датами: генерация ученых степеней
         {
             List<int> uniqueRandoms = GenerateUniqueRandomNumber(degreesCount);
             List<int> uniqueRandoms1 = GenerateUniqueRandomNumber(degreesCount);
@@ -108,7 +110,6 @@ namespace SUBD_CourseWork
                 .RuleFor(x => x.Name, f => f.Name.FirstName()).RuleFor(x => x.LastName, f => f.Name.LastName())
                 .RuleFor(x => x.BirthDate, f =>
                 {
-                    //beginningDateForTeacher = f.Date.PastDateOnly(rnd.Next(25,40), DateOnly.FromDateTime(DateTime.Now).AddYears(-20));
                     beginningDateForTeacher = yearOfAward.AddYears(rnd.Next(-30,-21)).AddMonths(rnd.Next(-2, 6)).AddDays(rnd.Next(-15, 25));
                     return beginningDateForTeacher;
                     
@@ -142,6 +143,66 @@ namespace SUBD_CourseWork
                     return c;
                 });
             return _teacherFaker;
+        }
+
+        public Faker<IndividualPlan> GetIndividualPlanFaker(int teachersCount,int yearsCount)
+        {
+            int id = 1,i = 0;
+            int buff = 0;
+            List<int> uniqueRandom2 = GenerateUniqueRandomNumber(teachersCount);
+            _individualPlanFaker = new Faker<IndividualPlan>("ru")
+                .UseSeed(1969)
+                .RuleFor(x => x.Id,f => id++)
+                .RuleFor(x => x.TypeOfWorkId, f => rnd.Next(1, 8))
+                .RuleFor(x => x.plannedForFallSemestre, f =>
+                {
+                    buff = rnd.Next(40, 171);
+                    return buff;
+                })
+                .RuleFor(x => x.factForFallSemestre, f =>
+                {
+                    int c = rnd.Next(buff - 10, buff + 10);
+                    return c;
+                })
+                .RuleFor(x => x.plannedForSpringSemestre, f =>
+                {
+                    buff = rnd.Next(40, 171);
+                    return buff;
+                })
+                .RuleFor(x => x.factForSpringSemestre, f =>
+                {
+                    int c = rnd.Next(buff - 10, buff + 10);
+                    return c;
+                })
+                .RuleFor(x => x.teacherId, f =>
+                {
+                    int c = uniqueRandom2[i];
+                    i++;
+                    return c;
+                })
+                .RuleFor(x => x.YearId, f => rnd.Next(1,yearsCount+1));
+            return _individualPlanFaker;
+        }
+
+        public Faker<Year> GetYearGenerator(int yearsCount)
+        {
+            int id = 1, yearIndex = 1;
+            DateOnly startOfYear = new DateOnly(2023,9,1);
+            _yearsFaker = new Faker<Year>("ru")
+                .UseSeed(1969)
+                .RuleFor(x => x.Id, f => id++)
+                .RuleFor(x => x.startOfYear, f =>
+                {
+                    startOfYear = f.Date.PastDateOnly(++yearIndex, startOfYear);
+                    startOfYear = new DateOnly(startOfYear.Year, 9, 1);
+                    return startOfYear;
+                })
+                .RuleFor(x => x.endOfYear, f =>
+                {
+                    DateOnly c = new DateOnly(startOfYear.AddYears(1).Year, 5, 30);
+                    return c;
+                });
+            return _yearsFaker;
         }
 
         List<int> GenerateUniqueRandomNumber(int max)

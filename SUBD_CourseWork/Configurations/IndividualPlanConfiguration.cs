@@ -20,6 +20,7 @@ namespace SUBD_CourseWork.Configurations
             builder.Property(x => x.factForFallSemestre).IsRequired();
             builder.Property(x => x.plannedForSpringSemestre).IsRequired();
             builder.Property(x => x.factForSpringSemestre).IsRequired();
+            builder.HasIndex(x => x.YearId).IsUnique(false);
         }
     }
 }

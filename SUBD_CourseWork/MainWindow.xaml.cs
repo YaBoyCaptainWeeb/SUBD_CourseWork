@@ -18,6 +18,7 @@ using System.Windows.Shapes;
 using Bogus;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
+using Microsoft.EntityFrameworkCore.Query;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Microsoft.Extensions.Logging;
 using Npgsql;
@@ -60,6 +61,7 @@ namespace SUBD_CourseWork
         public DbSet<HouseNumber> houseNumbers { get; set; } = null!;
         public DbSet<Street> streets { get; set; } = null!;
 
+
         public ApplicationContext()
         {
             //Database.EnsureDeleted();
@@ -73,6 +75,8 @@ namespace SUBD_CourseWork
             AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
             optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=CourseWorkDB;Username=postgres;Password=123;");
             optionsBuilder.LogTo(logStream.WriteLine, LogLevel.Information);
+            optionsBuilder.EnableDetailedErrors();
+            optionsBuilder.EnableSensitiveDataLogging();
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -166,6 +170,7 @@ namespace SUBD_CourseWork
             #endregion
             int housesCount = 50, streetsCount = 20;
             int teachersCount = 70;
+            int yearsCount = 5;
 
             modelBuilder.Entity<Street>().HasData(_fakers.GetStreetsGenerator().Generate(streetsCount)); // Генерация улиц
             modelBuilder.Entity<HouseNumber>().HasData(_fakers.GetHouseNumberGenerator(streetsCount).Generate(housesCount)); // Генерация номеров домов
@@ -174,6 +179,8 @@ namespace SUBD_CourseWork
             modelBuilder.Entity<Teacher>().HasData(_fakers.GetTeachersGenerator(housesCount, teachersCount).Generate(teachersCount)); // Генерация учителей
             modelBuilder.Entity<EmailAdress>().HasData(_fakers.GetEmailAdressGenerator(teachersCount).Generate(teachersCount)); // Генерация электронных почт
             modelBuilder.Entity<PhoneNumber>().HasData(_fakers.GetPhoneNumberGenerator(teachersCount).Generate(teachersCount)); // Генерация номеров телефона
+            modelBuilder.Entity<Year>().HasData(_fakers.GetYearGenerator(yearsCount).Generate(yearsCount)); // Генерация учебных годов
+            modelBuilder.Entity<IndividualPlan>().HasData(_fakers.GetIndividualPlanFaker(teachersCount, yearsCount).Generate(teachersCount)); // Генерация учебных планов
 
             // Конфигурации
             modelBuilder.HasDefaultSchema("public");

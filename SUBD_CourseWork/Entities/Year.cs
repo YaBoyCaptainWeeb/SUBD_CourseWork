@@ -12,6 +12,6 @@ namespace SUBD_CourseWork.Entities
         public DateOnly startOfYear { get; set; }
         public DateOnly endOfYear { get; set; }
 
-        public IndividualPlan individualPlans { get; set; }
+        public List<IndividualPlan> individualPlans { get; set; }
     }
 }

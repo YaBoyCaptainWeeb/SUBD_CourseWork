@@ -38,6 +38,6 @@ namespace SUBD_CourseWork.Entities
         public int AcademicRankId { get; set; }
         public AcademicRank AcademicRank { get; set; }
 
-        public IndividualPlan IndividualPlan { get; set; }
+        public List<IndividualPlan> IndividualPlan { get; set; }
     }
 }
