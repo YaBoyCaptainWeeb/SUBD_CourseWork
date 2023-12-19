@@ -13,7 +13,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
+using System.Windows.Navigation; 
 using System.Windows.Shapes;
 using Bogus;
 using Microsoft.EntityFrameworkCore;
@@ -27,23 +27,21 @@ using NpgsqlTypes;
 using SUBD_CourseWork;
 using SUBD_CourseWork.Configurations;
 using SUBD_CourseWork.Entities;
+using ICSharpCode.AvalonEdit.CodeCompletion;
+using ICSharpCode.AvalonEdit.Folding;
+using ICSharpCode.AvalonEdit.Highlighting;
+using Npgsql.Internal.TypeHandlers.LTreeHandlers;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 
 
 
 namespace SUBD_CourseWork
 {
-    class UtcValueConverter : ValueConverter<DateTime, DateTime>
-    {
-        public UtcValueConverter()
-            : base(v => v, v => DateTime.SpecifyKind(v, DateTimeKind.Local))
-        {
-        }
-    }
     public class ApplicationContext : DbContext
     {
         private Fakers _fakers = new Fakers(); // Генератор данных
         // Сущности
-        readonly StreamWriter logStream = new StreamWriter("logs.txt", true);
         public DbSet<Teacher> teachers { get; set; } = null!;
         public DbSet<Faculty> faculties { get; set; } = null!;
         public DbSet<Department> departments { get; set; } = null!;
@@ -71,12 +69,9 @@ namespace SUBD_CourseWork
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            // Соединение с БД и Логирование
+            // Соединение с БД
             AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
             optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=CourseWorkDB;Username=postgres;Password=123;");
-            optionsBuilder.LogTo(logStream.WriteLine, LogLevel.Information);
-            optionsBuilder.EnableDetailedErrors();
-            optionsBuilder.EnableSensitiveDataLogging();
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -111,16 +106,6 @@ namespace SUBD_CourseWork
                 new TypeOfWork { Id = 7, Name = "Прочие виды работы"}
                 );
 
-            //var format = new DateTimeFormatInfo()
-            //{
-            //    ShortDatePattern = "dd/MM/yyyy"
-            //};
-            //DateTime time = Convert.ToDateTime("24/10/2003", format);
-
-            //modelBuilder.Entity<AcademicRank>().HasData( // Академические звания
-            //    new AcademicRank { Id = 1, AcademicRankType = "Доцент", YearOfAward = time}
-                
-            //    );
             modelBuilder.Entity<Institution>().HasData( // Институты
                 new Institution { Id = 1, Name = "Оренбургский государственный университет", ShortName = "ОГУ"}
                 );
@@ -205,16 +190,220 @@ namespace SUBD_CourseWork
 
         }
     }
+
+    public class ViewModel 
+    {
+        public ObservableCollection<string> DepartmentSelectorVM { get; set; } = new ObservableCollection<string>();
+        public ObservableCollection<string> FacultySelectorVM { get; set; } = new ObservableCollection<string>();
+        public string SQLcode;
+        public ViewModel()
+        {
+            ApplicationContext db = new ApplicationContext();
+            var buff = db.faculties.Select(x => x.Name).OrderBy(x => x).ToList();
+            foreach(var card in buff)
+            {
+                FacultySelectorVM!.Add(card);
+            }
+        }
+    }
     public partial class MainWindow : Window
     {
-    ApplicationContext db = new ApplicationContext();
+        public ApplicationContext db = new ApplicationContext();
+        public ViewModel vm = new ViewModel();
+
+        public string departmentName { get; set; } = "Не выбрано";
+        public string facultyName { get; set; } = "Не выбрано";
+        public DateOnly fromBetween { get; set; }
+        public DateOnly toBetween { get; set; }
+
         public MainWindow()
         {
             InitializeComponent();
-            var d = db.individualPlans.Include(x => x.TypeOfWork).ToList();
-            var b = db.houseNumbers.Include(x => x.street).ToList();
-            TeachersGrid.ItemsSource = d;
-            //var logStream = new StreamReader("C:\\Users\\User\\source\\repos\\SUBD_CourseWork\\SUBD_CourseWork\\bin\\Debug\\net6.0-windows\\logs.txt", UTF8Encoding.UTF8).ToString();
+            LoadContent();
+
+            FacultySelector.DataContext = vm;
+            DepartmentSelector.DataContext = vm;
+            SQLcode2.DataContext = vm;
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            //var resourceNames = System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceNames();
+            using (var stream = System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("SUBD_CourseWork.SQL.xshd"))
+            {
+                using (var reader = new System.Xml.XmlTextReader(stream))
+                {
+                    var HighlightDef = ICSharpCode.AvalonEdit.Highlighting.Xshd.HighlightingLoader.Load(reader,
+                        ICSharpCode.AvalonEdit.Highlighting.HighlightingManager.Instance);
+                    SQLcode.SyntaxHighlighting = HighlightDef;
+                    SQLcode1.SyntaxHighlighting = HighlightDef;
+                    SQLcode2.SyntaxHighlighting = HighlightDef;
+                }
+            }
+
+        }
+
+        private void ScrollViewer_PreviewMouseWheel(object sender, MouseWheelEventArgs e)
+        {
+            ScrollViewer scv = (ScrollViewer)sender;
+            scv.ScrollToVerticalOffset(scv.VerticalOffset - e.Delta);
+            e.Handled = true;
+        }
+
+        private void ComboBox_Selected_DepartmentSelector(object sender, SelectionChangedEventArgs e) // ебаное говно блять
+        {
+            vm.DepartmentSelectorVM.Clear();
+            var bindedFaculty = db.faculties.Where(x => x.Name == FacultySelector.SelectedItem as string).Select(x => x).FirstOrDefault();
+            var departments = db.departments.Where(x => x.FacultyId == bindedFaculty!.Id).Select(x => x.Name).ToList();
+            foreach ( var department in departments )
+            {
+                vm.DepartmentSelectorVM.Add(department);
+            }
+            DepartmentSelector.IsEnabled = true;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (FacultySelector.SelectedItem != null && DepartmentSelector.SelectedItem != null && DateSelector.SelectedDate != null && DateSelector1.SelectedDate != null)
+            {
+                var date = DateSelector.SelectedDate.Value;
+                var date1 = DateSelector1.SelectedDate.Value;
+                departmentName = DepartmentSelector.SelectedItem.ToString();
+                facultyName = FacultySelector.SelectedItem.ToString();
+                fromBetween = new DateOnly(date.Year,date.Month,date.Day);
+                toBetween = new DateOnly(date1.Year, date1.Month, date1.Day);
+
+
+                SQLcode2.Text = $"SELECT\r\n\tdprts.\"Name\" AS \"Кафедра\",\r" +
+                    "\n\tfclties.\"Name\" AS \"Факультет\",\r" +
+                    "\n\ttch.\"Surname\" AS \"Фамилия\",\r" +
+                    "\n\ttch.\"Name\" AS \"Имя\",\r" +
+                    "\n\ttch.\"LastName\" AS \"Отчество\",\r" +
+                    "\n\tdgrs.\"DegreeType\" AS \"Ученая степень\",\r" +
+                    "\n\tdgrs.\"YearOfAward\" AS \"Дата награждения степенью\",\r" +
+                    "\n\tdscpl.\"DisciplineType\" AS \"Наука\",\r" +
+                    "\n\r\nFROM teachers AS tch\r" +
+                    "\n\r\nLEFT JOIN\r" +
+                    "\n\t\"departments\" dprts ON tch.\"DepartmentId\" = dprts.\"Id\"\r" +
+                    "\nLEFT JOIN \r" +
+                    "\n\t\"faculties\" fclties ON dprts.\"FacultyId\" = fclties.\"Id\"\r" +
+                    "\nLEFT JOIN\r" +
+                    "\n\t\"degrees\" dgrs ON tch.\"DegreeId\" = dgrs.\"Id\"\r" +
+                    "\nLEFT JOIN \r" +
+                    "\n\t\"disciplines\" dscpl ON dgrs.\"DisciplineId\" = dscpl.\"Id\"\r\n\t\r" +
+                    $"\nWHERE dprts.\"Name\" = '{departmentName}'\r" +
+                    $"\nAND fclties.\"Name\" = '{facultyName}'\r" +
+                    $"\nAND dgrs.\"YearOfAward\" BETWEEN '{fromBetween}' AND '{toBetween}'\r\nORDER BY tch.\"Surname\"";
+
+                var thirdQuerry = db.teachers.Select(x => new
+                {
+                    DepartmentShortName = x.Department.Name,
+                    FacultyShortName = x.Department!.Faculty!.Name,
+                    Surname = x.Surname,
+                    Name = x.Name,
+                    LastName = x.LastName,
+                    DegreeType = x.Degree.DegreeType,
+                    DegreeTypeYearOfAward = x.Degree.YearOfAward,
+                    DisciplineType = x.Degree.Discipline.DisciplineType,
+                }).Where(x => x.DepartmentShortName == departmentName && x.FacultyShortName == facultyName && x.DegreeTypeYearOfAward >= fromBetween && x.DegreeTypeYearOfAward <= toBetween)
+                .ToList();
+                TeachersGrid2.ItemsSource = thirdQuerry;
+                ThirdGrid.Visibility = Visibility.Visible;
+                TeachersGrid2Label.Visibility = Visibility.Visible;
+            }
+
+        }
+        public void LoadContent()
+        {
+            SQLcode.Text = "SELECT\r" +
+    "\n\t\"Учителя\".\"Surname\" AS \"Фамилия\",\r" +
+    "\n\t\"Учителя\".\"Name\" AS \"Имя\",\r\n\t\"Учителя\".\"LastName\" AS \"Отчество\",\r" +
+    "\n\tjb.\"JobTitlesType\" AS \"Должность\",\r" +
+    "\n\tIP.\"plannedForFallSemestre\" + IP.\"plannedForSpringSemestre\" AS \"Итоговая сумма запланированных часов\",\r" +
+    "\n\tIP.\"factForFallSemestre\" + IP.\"factForSpringSemestre\" AS \"Итоговая сумма фактических часов\"\r" +
+    "\n\t\r\nFROM \"teachers\" AS \"Учителя\"\r\n\r\nLEFT JOIN\r\n\t\"jobTitles\" jb ON \"Учителя\".\"JobTitleId\" = jb.\"Id\"\r\nLEFT JOIN\r" +
+    "\n\t\"individualPlans\" IP ON IP.\"teacherId\" = \"Учителя\".\"Id\"\r\nORDER BY \"Учителя\".\"Surname\"";
+            var firstQuerry = db.individualPlans.Select(x => new
+            {
+                Surname = x.teacher.Surname,
+                Name = x.teacher.Name,
+                LastName = x.teacher.LastName,
+                JobTitlesType = x.teacher.JobTitle.JobTitlesType,
+                IP1 = x.plannedForFallSemestre + x.plannedForSpringSemestre,
+                IP2 = x.factForFallSemestre + x.factForSpringSemestre
+            }).OrderBy(x => x.Surname).ToList();
+            TeachersGrid.ItemsSource = firstQuerry;
+
+            SQLcode1.Text = "SELECT\r" +
+                "\n\tdprts.\"ShortName\" AS \"Кафедра\",\r" +
+                "\n\tfclties.\"ShortName\" AS \"Факультет\",\r" +
+                "\n\ttch.\"Surname\" AS \"Фамилия\",\r" +
+                "\n\ttch.\"Name\" AS \"Имя\",\r\n\ttch.\"LastName\" AS \"Отчество\",\r" +
+                "\n\tdgrs.\"DegreeType\" AS \"Ученая степень\",\r" +
+                "\n\tdgrs.\"YearOfAward\" AS \"Дата награждения степенью\",\r" +
+                "\n\tdscpl.\"DisciplineType\" AS \"Наука\",\r" +
+                "\n\tacr.\"AcademicRankType\" AS \"Ученое звание\",\r" +
+                "\n\tacr.\"YearOfAward\" AS \"Дата награждения званием\",\r" +
+                "\n\tjb.\"JobTitlesType\" AS \"Должность\",\r" +
+                "\n\tyrs.\"startOfYear\" AS \"Начало семестра\",\r" +
+                "\n\tyrs.\"endOfYear\" AS \"Конец семестра\",\r" +
+                "\n\t(IP.\"factForFallSemestre\" + IP.\"factForSpringSemestre\") -(IP.\"plannedForFallSemestre\" + IP.\"plannedForSpringSemestre\") AS \"Кол-во перевыполненных часов\"\r" +
+                "\nFROM teachers AS tch\r" +
+                "\n\r\nLEFT JOIN\r" +
+                "\n\t\"departments\" dprts ON tch.\"DepartmentId\" = dprts.\"Id\"\r" +
+                "\nLEFT JOIN \r" +
+                "\n\t\"faculties\" fclties ON dprts.\"FacultyId\" = fclties.\"Id\"\r" +
+                "\nLEFT JOIN\r\n\t\"jobTitles\" jb ON tch.\"JobTitleId\" = jb.\"Id\"\r\nLEFT JOIN\r" +
+                "\n\t\"degrees\" dgrs ON tch.\"DegreeId\" = dgrs.\"Id\"\r\nLEFT JOIN \r" +
+                "\n\t\"disciplines\" dscpl ON dgrs.\"DisciplineId\" = dscpl.\"Id\"\r\nLEFT JOIN\r" +
+                "\n\t\"academicRanks\" acr ON tch.\"AcademicRankId\" = acr.\"Id\"\r\nLEFT JOIN\r" +
+                "\n\t\"individualPlans\" IP ON IP.\"teacherId\" = tch.\"Id\"\r\nLEFT JOIN\r" +
+                "\n\t\"Years\" yrs ON IP.\"YearId\" = yrs.\"Id\"\r" +
+                "\n\r\nWHERE IP.\"plannedForFallSemestre\" + IP.\"plannedForSpringSemestre\" < IP.\"factForFallSemestre\" + IP.\"factForSpringSemestre\"\r" +
+                "\nORDER BY tch.\"Surname\"";
+
+            var secondQuerry = db.individualPlans.Select(x => new
+            {
+                DepartmentShortName = x.teacher.Department.ShortName,
+                FacultyShortName = x.teacher.Department.Faculty.ShortName,
+                Surname = x.teacher.Surname,
+                Name = x.teacher.Name,
+                LastName = x.teacher.LastName,
+                DegreeType = x.teacher.Degree.DegreeType,
+                DegreeTypeYearOfAward = x.teacher.Degree.YearOfAward,
+                DisciplineType = x.teacher.Degree.Discipline.DisciplineType,
+                AcademicRankType = x.teacher.AcademicRank.AcademicRankType,
+                AcademicRankTypeYearOfAward = x.teacher.AcademicRank.YearOfAward,
+                JobTitle = x.teacher.JobTitle.JobTitlesType,
+                startOfYear = x.Year.startOfYear,
+                endOfYear = x.Year.endOfYear,
+                IP = x.plannedForFallSemestre + x.plannedForSpringSemestre,
+                IP1 = x.factForFallSemestre + x.factForSpringSemestre,
+                res = (x.factForFallSemestre + x.factForSpringSemestre) - (x.plannedForFallSemestre + x.plannedForSpringSemestre)
+            }).Where(x => x.IP < x.IP1).ToList();
+            TeachersGrid1.ItemsSource = secondQuerry;
+
+            SQLcode2.Text = $"SELECT\r\n\tdprts.\"Name\" AS \"Кафедра\",\r" +
+                "\n\tfclties.\"Name\" AS \"Факультет\",\r" +
+                "\n\ttch.\"Surname\" AS \"Фамилия\",\r" +
+                "\n\ttch.\"Name\" AS \"Имя\",\r" +
+                "\n\ttch.\"LastName\" AS \"Отчество\",\r" +
+                "\n\tdgrs.\"DegreeType\" AS \"Ученая степень\",\r" +
+                "\n\tdgrs.\"YearOfAward\" AS \"Дата награждения степенью\",\r" +
+                "\n\tdscpl.\"DisciplineType\" AS \"Наука\",\r" +
+                "\n\r\nFROM teachers AS tch\r" +
+                "\n\r\nLEFT JOIN\r" +
+                "\n\t\"departments\" dprts ON tch.\"DepartmentId\" = dprts.\"Id\"\r" +
+                "\nLEFT JOIN \r" +
+                "\n\t\"faculties\" fclties ON dprts.\"FacultyId\" = fclties.\"Id\"\r" +
+                "\nLEFT JOIN\r" +
+                "\n\t\"degrees\" dgrs ON tch.\"DegreeId\" = dgrs.\"Id\"\r" +
+                "\nLEFT JOIN \r" +
+                "\n\t\"disciplines\" dscpl ON dgrs.\"DisciplineId\" = dscpl.\"Id\"\r\n\t\r" +
+                $"\nWHERE dprts.\"Name\" = '{departmentName}'\r" +
+                $"\nAND fclties.\"Name\" = '{facultyName}'\r" +
+                $"\nAND dgrs.\"YearOfAward\" BETWEEN '{fromBetween}' AND '{toBetween}'\r\nORDER BY tch.\"Surname\"";
+        }
+
     }
 }

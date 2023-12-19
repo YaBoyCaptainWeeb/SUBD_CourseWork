@@ -49,31 +49,31 @@ namespace SUBD_CourseWork.Migrations
                         {
                             Id = 1,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2015, 2, 15)
+                            YearOfAward = new DateOnly(2016, 11, 20)
                         },
                         new
                         {
                             Id = 2,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2020, 11, 4)
+                            YearOfAward = new DateOnly(2018, 12, 11)
                         },
                         new
                         {
                             Id = 3,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2002, 8, 7)
+                            YearOfAward = new DateOnly(2011, 6, 8)
                         },
                         new
                         {
                             Id = 4,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2012, 2, 3)
+                            YearOfAward = new DateOnly(2003, 12, 9)
                         },
                         new
                         {
                             Id = 5,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2009, 7, 14)
+                            YearOfAward = new DateOnly(2010, 11, 4)
                         },
                         new
                         {
@@ -85,37 +85,37 @@ namespace SUBD_CourseWork.Migrations
                         {
                             Id = 7,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2020, 4, 3)
+                            YearOfAward = new DateOnly(2019, 8, 31)
                         },
                         new
                         {
                             Id = 8,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2017, 11, 26)
+                            YearOfAward = new DateOnly(2017, 8, 13)
                         },
                         new
                         {
                             Id = 9,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2017, 11, 7)
+                            YearOfAward = new DateOnly(2018, 12, 25)
                         },
                         new
                         {
                             Id = 10,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2018, 5, 16)
+                            YearOfAward = new DateOnly(2017, 7, 15)
                         },
                         new
                         {
                             Id = 11,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2021, 7, 8)
+                            YearOfAward = new DateOnly(2022, 2, 8)
                         },
                         new
                         {
                             Id = 12,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2022, 1, 21)
+                            YearOfAward = new DateOnly(2022, 4, 8)
                         },
                         new
                         {
@@ -127,25 +127,25 @@ namespace SUBD_CourseWork.Migrations
                         {
                             Id = 14,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2018, 10, 12)
+                            YearOfAward = new DateOnly(2016, 5, 6)
                         },
                         new
                         {
                             Id = 15,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2019, 10, 22)
+                            YearOfAward = new DateOnly(2020, 2, 20)
                         },
                         new
                         {
                             Id = 16,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2004, 3, 7)
+                            YearOfAward = new DateOnly(2005, 12, 23)
                         },
                         new
                         {
                             Id = 17,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2013, 8, 4)
+                            YearOfAward = new DateOnly(2005, 3, 6)
                         },
                         new
                         {
@@ -157,13 +157,13 @@ namespace SUBD_CourseWork.Migrations
                         {
                             Id = 19,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2011, 3, 29)
+                            YearOfAward = new DateOnly(2011, 12, 26)
                         },
                         new
                         {
                             Id = 20,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2022, 11, 4)
+                            YearOfAward = new DateOnly(2023, 4, 7)
                         },
                         new
                         {
@@ -175,19 +175,19 @@ namespace SUBD_CourseWork.Migrations
                         {
                             Id = 22,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2006, 9, 22)
+                            YearOfAward = new DateOnly(1997, 8, 29)
                         },
                         new
                         {
                             Id = 23,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2019, 9, 4)
+                            YearOfAward = new DateOnly(2017, 11, 15)
                         },
                         new
                         {
                             Id = 24,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2005, 11, 2)
+                            YearOfAward = new DateOnly(2010, 1, 7)
                         },
                         new
                         {
@@ -199,109 +199,109 @@ namespace SUBD_CourseWork.Migrations
                         {
                             Id = 26,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2000, 2, 3)
+                            YearOfAward = new DateOnly(2010, 4, 26)
                         },
                         new
                         {
                             Id = 27,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2013, 2, 10)
+                            YearOfAward = new DateOnly(2014, 12, 25)
                         },
                         new
                         {
                             Id = 28,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2011, 8, 31)
+                            YearOfAward = new DateOnly(2012, 9, 24)
                         },
                         new
                         {
                             Id = 29,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2005, 12, 5)
+                            YearOfAward = new DateOnly(2003, 6, 21)
                         },
                         new
                         {
                             Id = 30,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2011, 8, 6)
+                            YearOfAward = new DateOnly(2010, 1, 19)
                         },
                         new
                         {
                             Id = 31,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2014, 4, 30)
+                            YearOfAward = new DateOnly(2009, 3, 27)
                         },
                         new
                         {
                             Id = 32,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2019, 1, 16)
+                            YearOfAward = new DateOnly(2016, 12, 22)
                         },
                         new
                         {
                             Id = 33,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2020, 12, 16)
+                            YearOfAward = new DateOnly(2021, 2, 23)
                         },
                         new
                         {
                             Id = 34,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2021, 3, 31)
+                            YearOfAward = new DateOnly(2021, 10, 6)
                         },
                         new
                         {
                             Id = 35,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2010, 1, 19)
+                            YearOfAward = new DateOnly(2003, 2, 6)
                         },
                         new
                         {
                             Id = 36,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2005, 9, 5)
+                            YearOfAward = new DateOnly(2006, 5, 20)
                         },
                         new
                         {
                             Id = 37,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2000, 5, 11)
+                            YearOfAward = new DateOnly(2004, 4, 16)
                         },
                         new
                         {
                             Id = 38,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2018, 5, 2)
+                            YearOfAward = new DateOnly(2016, 6, 17)
                         },
                         new
                         {
                             Id = 39,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2014, 5, 13)
+                            YearOfAward = new DateOnly(2018, 5, 1)
                         },
                         new
                         {
                             Id = 40,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2021, 1, 2)
+                            YearOfAward = new DateOnly(2021, 3, 17)
                         },
                         new
                         {
                             Id = 41,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2013, 8, 13)
+                            YearOfAward = new DateOnly(2016, 7, 27)
                         },
                         new
                         {
                             Id = 42,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2022, 11, 6)
+                            YearOfAward = new DateOnly(2022, 10, 18)
                         },
                         new
                         {
                             Id = 43,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2023, 3, 17)
+                            YearOfAward = new DateOnly(2022, 8, 10)
                         },
                         new
                         {
@@ -313,91 +313,91 @@ namespace SUBD_CourseWork.Migrations
                         {
                             Id = 45,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2019, 4, 23)
+                            YearOfAward = new DateOnly(2017, 11, 9)
                         },
                         new
                         {
                             Id = 46,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2021, 9, 25)
+                            YearOfAward = new DateOnly(2021, 1, 30)
                         },
                         new
                         {
                             Id = 47,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2011, 7, 16)
+                            YearOfAward = new DateOnly(2010, 11, 6)
                         },
                         new
                         {
                             Id = 48,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2018, 8, 1)
+                            YearOfAward = new DateOnly(2014, 11, 23)
                         },
                         new
                         {
                             Id = 49,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2022, 8, 21)
+                            YearOfAward = new DateOnly(2022, 7, 28)
                         },
                         new
                         {
                             Id = 50,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2006, 10, 31)
+                            YearOfAward = new DateOnly(2011, 7, 2)
                         },
                         new
                         {
                             Id = 51,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2005, 6, 11)
+                            YearOfAward = new DateOnly(2012, 6, 18)
                         },
                         new
                         {
                             Id = 52,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2005, 10, 24)
+                            YearOfAward = new DateOnly(2010, 10, 25)
                         },
                         new
                         {
                             Id = 53,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2020, 9, 14)
+                            YearOfAward = new DateOnly(2022, 1, 1)
                         },
                         new
                         {
                             Id = 54,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2015, 9, 20)
+                            YearOfAward = new DateOnly(2012, 6, 4)
                         },
                         new
                         {
                             Id = 55,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2019, 5, 19)
+                            YearOfAward = new DateOnly(2018, 3, 5)
                         },
                         new
                         {
                             Id = 56,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2002, 2, 10)
+                            YearOfAward = new DateOnly(1998, 8, 14)
                         },
                         new
                         {
                             Id = 57,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2003, 11, 9)
+                            YearOfAward = new DateOnly(2003, 2, 10)
                         },
                         new
                         {
                             Id = 58,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2022, 5, 26)
+                            YearOfAward = new DateOnly(2023, 1, 4)
                         },
                         new
                         {
                             Id = 59,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2021, 12, 22)
+                            YearOfAward = new DateOnly(2021, 6, 25)
                         },
                         new
                         {
@@ -409,61 +409,61 @@ namespace SUBD_CourseWork.Migrations
                         {
                             Id = 61,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2003, 11, 1)
+                            YearOfAward = new DateOnly(2002, 2, 27)
                         },
                         new
                         {
                             Id = 62,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2023, 5, 24)
+                            YearOfAward = new DateOnly(2023, 4, 29)
                         },
                         new
                         {
                             Id = 63,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2018, 2, 20)
+                            YearOfAward = new DateOnly(2017, 12, 6)
                         },
                         new
                         {
                             Id = 64,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2022, 9, 8)
+                            YearOfAward = new DateOnly(2022, 7, 16)
                         },
                         new
                         {
                             Id = 65,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2022, 12, 27)
+                            YearOfAward = new DateOnly(2023, 2, 11)
                         },
                         new
                         {
                             Id = 66,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2005, 3, 19)
+                            YearOfAward = new DateOnly(2006, 8, 8)
                         },
                         new
                         {
                             Id = 67,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2013, 10, 26)
+                            YearOfAward = new DateOnly(2015, 12, 29)
                         },
                         new
                         {
                             Id = 68,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2005, 12, 31)
+                            YearOfAward = new DateOnly(2005, 5, 11)
                         },
                         new
                         {
                             Id = 69,
                             AcademicRankType = "Профессор",
-                            YearOfAward = new DateOnly(2020, 1, 29)
+                            YearOfAward = new DateOnly(2019, 9, 16)
                         },
                         new
                         {
                             Id = 70,
                             AcademicRankType = "Доцент",
-                            YearOfAward = new DateOnly(2018, 4, 7)
+                            YearOfAward = new DateOnly(2018, 1, 23)
                         });
                 });
 
@@ -498,491 +498,491 @@ namespace SUBD_CourseWork.Migrations
                         {
                             Id = 1,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 2,
-                            YearOfAward = new DateOnly(2012, 4, 7)
+                            DisciplineId = 1,
+                            YearOfAward = new DateOnly(2016, 7, 15)
                         },
                         new
                         {
                             Id = 2,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2012, 4, 7)
+                            DisciplineId = 2,
+                            YearOfAward = new DateOnly(2012, 10, 28)
                         },
                         new
                         {
                             Id = 3,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 2,
-                            YearOfAward = new DateOnly(2012, 4, 7)
+                            DisciplineId = 5,
+                            YearOfAward = new DateOnly(2015, 4, 17)
                         },
                         new
                         {
                             Id = 4,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2013, 4, 7)
+                            DisciplineId = 4,
+                            YearOfAward = new DateOnly(2014, 1, 25)
                         },
                         new
                         {
                             Id = 5,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 2,
-                            YearOfAward = new DateOnly(2012, 4, 7)
+                            DisciplineId = 3,
+                            YearOfAward = new DateOnly(2012, 2, 24)
                         },
                         new
                         {
                             Id = 6,
                             DegreeType = "Кандидат наук",
                             DisciplineId = 5,
-                            YearOfAward = new DateOnly(2016, 4, 7)
+                            YearOfAward = new DateOnly(2016, 8, 2)
                         },
                         new
                         {
                             Id = 7,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2015, 4, 7)
+                            DisciplineId = 2,
+                            YearOfAward = new DateOnly(2014, 5, 23)
                         },
                         new
                         {
                             Id = 8,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2012, 4, 7)
+                            DisciplineId = 4,
+                            YearOfAward = new DateOnly(2015, 6, 8)
                         },
                         new
                         {
                             Id = 9,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 2,
-                            YearOfAward = new DateOnly(2016, 4, 7)
+                            DisciplineId = 4,
+                            YearOfAward = new DateOnly(2013, 2, 7)
                         },
                         new
                         {
                             Id = 10,
                             DegreeType = "Кандидат наук",
                             DisciplineId = 1,
-                            YearOfAward = new DateOnly(2012, 4, 7)
+                            YearOfAward = new DateOnly(2012, 6, 24)
                         },
                         new
                         {
                             Id = 11,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2013, 4, 7)
+                            DisciplineId = 4,
+                            YearOfAward = new DateOnly(2015, 1, 3)
                         },
                         new
                         {
                             Id = 12,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2012, 4, 7)
+                            DisciplineId = 4,
+                            YearOfAward = new DateOnly(2014, 11, 15)
                         },
                         new
                         {
                             Id = 13,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2015, 4, 7)
+                            DisciplineId = 4,
+                            YearOfAward = new DateOnly(2015, 9, 25)
                         },
                         new
                         {
                             Id = 14,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2014, 4, 7)
+                            DisciplineId = 1,
+                            YearOfAward = new DateOnly(2013, 3, 12)
                         },
                         new
                         {
                             Id = 15,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 3,
-                            YearOfAward = new DateOnly(2013, 4, 7)
+                            DisciplineId = 2,
+                            YearOfAward = new DateOnly(2014, 12, 24)
                         },
                         new
                         {
                             Id = 16,
                             DegreeType = "Доктор наук",
                             DisciplineId = 1,
-                            YearOfAward = new DateOnly(2014, 4, 7)
+                            YearOfAward = new DateOnly(2015, 1, 26)
                         },
                         new
                         {
                             Id = 17,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2015, 4, 7)
+                            DisciplineId = 2,
+                            YearOfAward = new DateOnly(2013, 4, 22)
                         },
                         new
                         {
                             Id = 18,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2013, 4, 7)
+                            DisciplineId = 2,
+                            YearOfAward = new DateOnly(2015, 4, 25)
                         },
                         new
                         {
                             Id = 19,
                             DegreeType = "Доктор наук",
                             DisciplineId = 2,
-                            YearOfAward = new DateOnly(2014, 4, 7)
+                            YearOfAward = new DateOnly(2016, 1, 16)
                         },
                         new
                         {
                             Id = 20,
                             DegreeType = "Доктор наук",
                             DisciplineId = 4,
-                            YearOfAward = new DateOnly(2014, 4, 7)
+                            YearOfAward = new DateOnly(2012, 5, 2)
                         },
                         new
                         {
                             Id = 21,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2015, 4, 7)
+                            DisciplineId = 1,
+                            YearOfAward = new DateOnly(2015, 10, 19)
                         },
                         new
                         {
                             Id = 22,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 2,
-                            YearOfAward = new DateOnly(2013, 4, 7)
+                            DisciplineId = 1,
+                            YearOfAward = new DateOnly(2016, 11, 16)
                         },
                         new
                         {
                             Id = 23,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 2,
-                            YearOfAward = new DateOnly(2012, 4, 7)
+                            DisciplineId = 3,
+                            YearOfAward = new DateOnly(2012, 9, 19)
                         },
                         new
                         {
                             Id = 24,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2013, 4, 7)
+                            DisciplineId = 3,
+                            YearOfAward = new DateOnly(2015, 1, 31)
                         },
                         new
                         {
                             Id = 25,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 3,
-                            YearOfAward = new DateOnly(2014, 4, 7)
+                            DisciplineId = 4,
+                            YearOfAward = new DateOnly(2015, 3, 26)
                         },
                         new
                         {
                             Id = 26,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2016, 4, 7)
+                            DisciplineId = 3,
+                            YearOfAward = new DateOnly(2012, 5, 3)
                         },
                         new
                         {
                             Id = 27,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2013, 4, 7)
+                            DisciplineId = 5,
+                            YearOfAward = new DateOnly(2013, 11, 15)
                         },
                         new
                         {
                             Id = 28,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 2,
-                            YearOfAward = new DateOnly(2015, 4, 7)
+                            DisciplineId = 3,
+                            YearOfAward = new DateOnly(2012, 7, 28)
                         },
                         new
                         {
                             Id = 29,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2012, 4, 7)
+                            DisciplineId = 3,
+                            YearOfAward = new DateOnly(2015, 5, 13)
                         },
                         new
                         {
                             Id = 30,
                             DegreeType = "Доктор наук",
                             DisciplineId = 5,
-                            YearOfAward = new DateOnly(2013, 4, 7)
+                            YearOfAward = new DateOnly(2014, 10, 31)
                         },
                         new
                         {
                             Id = 31,
                             DegreeType = "Кандидат наук",
                             DisciplineId = 4,
-                            YearOfAward = new DateOnly(2014, 4, 7)
+                            YearOfAward = new DateOnly(2015, 2, 17)
                         },
                         new
                         {
                             Id = 32,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 3,
-                            YearOfAward = new DateOnly(2014, 4, 7)
+                            DisciplineId = 5,
+                            YearOfAward = new DateOnly(2013, 10, 15)
                         },
                         new
                         {
                             Id = 33,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2015, 4, 7)
+                            DisciplineId = 3,
+                            YearOfAward = new DateOnly(2014, 5, 1)
                         },
                         new
                         {
                             Id = 34,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2014, 4, 7)
+                            DisciplineId = 4,
+                            YearOfAward = new DateOnly(2012, 12, 3)
                         },
                         new
                         {
                             Id = 35,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2013, 4, 7)
+                            DisciplineId = 5,
+                            YearOfAward = new DateOnly(2016, 10, 23)
                         },
                         new
                         {
                             Id = 36,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 2,
-                            YearOfAward = new DateOnly(2013, 4, 7)
+                            DisciplineId = 5,
+                            YearOfAward = new DateOnly(2016, 11, 22)
                         },
                         new
                         {
                             Id = 37,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 3,
-                            YearOfAward = new DateOnly(2014, 4, 7)
+                            DisciplineId = 5,
+                            YearOfAward = new DateOnly(2013, 12, 15)
                         },
                         new
                         {
                             Id = 38,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2013, 4, 7)
+                            DisciplineId = 1,
+                            YearOfAward = new DateOnly(2012, 6, 19)
                         },
                         new
                         {
                             Id = 39,
                             DegreeType = "Доктор наук",
                             DisciplineId = 3,
-                            YearOfAward = new DateOnly(2015, 4, 7)
+                            YearOfAward = new DateOnly(2014, 7, 30)
                         },
                         new
                         {
                             Id = 40,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2013, 4, 7)
+                            DisciplineId = 3,
+                            YearOfAward = new DateOnly(2014, 1, 5)
                         },
                         new
                         {
                             Id = 41,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2014, 4, 7)
+                            DisciplineId = 4,
+                            YearOfAward = new DateOnly(2017, 2, 17)
                         },
                         new
                         {
                             Id = 42,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2016, 4, 7)
+                            DisciplineId = 3,
+                            YearOfAward = new DateOnly(2016, 8, 9)
                         },
                         new
                         {
                             Id = 43,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 2,
-                            YearOfAward = new DateOnly(2016, 4, 7)
+                            DisciplineId = 1,
+                            YearOfAward = new DateOnly(2013, 3, 10)
                         },
                         new
                         {
                             Id = 44,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2014, 4, 7)
+                            DisciplineId = 3,
+                            YearOfAward = new DateOnly(2016, 10, 29)
                         },
                         new
                         {
                             Id = 45,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2015, 4, 7)
+                            DisciplineId = 1,
+                            YearOfAward = new DateOnly(2014, 6, 15)
                         },
                         new
                         {
                             Id = 46,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 3,
-                            YearOfAward = new DateOnly(2016, 4, 7)
+                            DisciplineId = 2,
+                            YearOfAward = new DateOnly(2016, 4, 10)
                         },
                         new
                         {
                             Id = 47,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2013, 4, 7)
+                            DisciplineId = 4,
+                            YearOfAward = new DateOnly(2015, 9, 3)
                         },
                         new
                         {
                             Id = 48,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2012, 4, 7)
+                            DisciplineId = 2,
+                            YearOfAward = new DateOnly(2017, 1, 24)
                         },
                         new
                         {
                             Id = 49,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 2,
-                            YearOfAward = new DateOnly(2012, 4, 7)
+                            DisciplineId = 1,
+                            YearOfAward = new DateOnly(2014, 11, 26)
                         },
                         new
                         {
                             Id = 50,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2016, 4, 7)
+                            DisciplineId = 3,
+                            YearOfAward = new DateOnly(2015, 3, 16)
                         },
                         new
                         {
                             Id = 51,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2016, 4, 7)
+                            DisciplineId = 5,
+                            YearOfAward = new DateOnly(2015, 7, 16)
                         },
                         new
                         {
                             Id = 52,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 3,
-                            YearOfAward = new DateOnly(2013, 4, 7)
+                            DisciplineId = 5,
+                            YearOfAward = new DateOnly(2013, 6, 2)
                         },
                         new
                         {
                             Id = 53,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2015, 4, 7)
+                            DisciplineId = 4,
+                            YearOfAward = new DateOnly(2015, 3, 11)
                         },
                         new
                         {
                             Id = 54,
                             DegreeType = "Доктор наук",
                             DisciplineId = 4,
-                            YearOfAward = new DateOnly(2013, 4, 7)
+                            YearOfAward = new DateOnly(2014, 1, 22)
                         },
                         new
                         {
                             Id = 55,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2012, 4, 7)
+                            DisciplineId = 4,
+                            YearOfAward = new DateOnly(2014, 12, 26)
                         },
                         new
                         {
                             Id = 56,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 2,
-                            YearOfAward = new DateOnly(2013, 4, 7)
+                            DisciplineId = 3,
+                            YearOfAward = new DateOnly(2013, 1, 24)
                         },
                         new
                         {
                             Id = 57,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 4,
-                            YearOfAward = new DateOnly(2013, 4, 7)
+                            DisciplineId = 1,
+                            YearOfAward = new DateOnly(2014, 9, 22)
                         },
                         new
                         {
                             Id = 58,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 2,
-                            YearOfAward = new DateOnly(2016, 4, 7)
+                            DisciplineId = 4,
+                            YearOfAward = new DateOnly(2016, 6, 27)
                         },
                         new
                         {
                             Id = 59,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2012, 4, 7)
+                            DisciplineId = 1,
+                            YearOfAward = new DateOnly(2015, 5, 17)
                         },
                         new
                         {
                             Id = 60,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2016, 4, 7)
+                            DisciplineId = 4,
+                            YearOfAward = new DateOnly(2016, 10, 16)
                         },
                         new
                         {
                             Id = 61,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2012, 4, 7)
+                            DisciplineId = 2,
+                            YearOfAward = new DateOnly(2012, 5, 29)
                         },
                         new
                         {
                             Id = 62,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 3,
-                            YearOfAward = new DateOnly(2013, 4, 7)
+                            DisciplineId = 2,
+                            YearOfAward = new DateOnly(2015, 10, 21)
                         },
                         new
                         {
                             Id = 63,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2012, 4, 7)
+                            DisciplineId = 1,
+                            YearOfAward = new DateOnly(2015, 10, 20)
                         },
                         new
                         {
                             Id = 64,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 2,
-                            YearOfAward = new DateOnly(2012, 4, 7)
+                            DisciplineId = 1,
+                            YearOfAward = new DateOnly(2013, 12, 18)
                         },
                         new
                         {
                             Id = 65,
                             DegreeType = "Кандидат наук",
                             DisciplineId = 3,
-                            YearOfAward = new DateOnly(2014, 4, 7)
+                            YearOfAward = new DateOnly(2012, 9, 12)
                         },
                         new
                         {
                             Id = 66,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 2,
-                            YearOfAward = new DateOnly(2016, 4, 7)
+                            DisciplineId = 5,
+                            YearOfAward = new DateOnly(2014, 12, 16)
                         },
                         new
                         {
                             Id = 67,
                             DegreeType = "Доктор наук",
                             DisciplineId = 1,
-                            YearOfAward = new DateOnly(2012, 4, 7)
+                            YearOfAward = new DateOnly(2015, 9, 12)
                         },
                         new
                         {
                             Id = 68,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 5,
-                            YearOfAward = new DateOnly(2016, 4, 7)
+                            DisciplineId = 2,
+                            YearOfAward = new DateOnly(2013, 8, 5)
                         },
                         new
                         {
                             Id = 69,
                             DegreeType = "Доктор наук",
-                            DisciplineId = 3,
-                            YearOfAward = new DateOnly(2012, 4, 7)
+                            DisciplineId = 2,
+                            YearOfAward = new DateOnly(2013, 2, 21)
                         },
                         new
                         {
                             Id = 70,
                             DegreeType = "Кандидат наук",
-                            DisciplineId = 1,
-                            YearOfAward = new DateOnly(2013, 4, 7)
+                            DisciplineId = 3,
+                            YearOfAward = new DateOnly(2014, 2, 17)
                         });
                 });
 
@@ -1306,421 +1306,421 @@ namespace SUBD_CourseWork.Migrations
                         {
                             Id = 1,
                             Email = "Alina12@mail.ru",
-                            TeacherId = 66
+                            TeacherId = 21
                         },
                         new
                         {
                             Id = 2,
                             Email = "Veronika85@ya.ru",
-                            TeacherId = 31
+                            TeacherId = 40
                         },
                         new
                         {
                             Id = 3,
                             Email = "Irina.Pestova91@ya.ru",
-                            TeacherId = 65
+                            TeacherId = 16
                         },
                         new
                         {
                             Id = 4,
                             Email = "Lyudmila.Vishnyakova83@yahoo.com",
-                            TeacherId = 70
+                            TeacherId = 8
                         },
                         new
                         {
                             Id = 5,
                             Email = "Andrei5@yandex.ru",
-                            TeacherId = 19
+                            TeacherId = 40
                         },
                         new
                         {
                             Id = 6,
                             Email = "Tatyana.Gurev3@ya.ru",
-                            TeacherId = 64
+                            TeacherId = 9
                         },
                         new
                         {
                             Id = 7,
                             Email = "Vitalii14@yahoo.com",
-                            TeacherId = 49
+                            TeacherId = 2
                         },
                         new
                         {
                             Id = 8,
                             Email = "Elena15@gmail.com",
-                            TeacherId = 21
+                            TeacherId = 45
                         },
                         new
                         {
                             Id = 9,
                             Email = "Grigorii81@ya.ru",
-                            TeacherId = 6
+                            TeacherId = 20
                         },
                         new
                         {
                             Id = 10,
                             Email = "Lyudmila23@gmail.com",
-                            TeacherId = 62
+                            TeacherId = 61
                         },
                         new
                         {
                             Id = 11,
                             Email = "Margarita_Lapin72@yandex.ru",
-                            TeacherId = 27
+                            TeacherId = 7
                         },
                         new
                         {
                             Id = 12,
                             Email = "Eduard.Gushina@gmail.com",
-                            TeacherId = 47
+                            TeacherId = 67
                         },
                         new
                         {
                             Id = 13,
                             Email = "Varvara50@hotmail.com",
-                            TeacherId = 50
+                            TeacherId = 13
                         },
                         new
                         {
                             Id = 14,
                             Email = "Tamara36@gmail.com",
-                            TeacherId = 13
+                            TeacherId = 37
                         },
                         new
                         {
                             Id = 15,
                             Email = "Nikolai.Rozhkova@gmail.com",
-                            TeacherId = 18
+                            TeacherId = 35
                         },
                         new
                         {
                             Id = 16,
                             Email = "Arkadii_Krylov@yahoo.com",
-                            TeacherId = 66
+                            TeacherId = 1
                         },
                         new
                         {
                             Id = 17,
                             Email = "Alina96@ya.ru",
-                            TeacherId = 2
+                            TeacherId = 28
                         },
                         new
                         {
                             Id = 18,
                             Email = "Oksana_Likhachev@hotmail.com",
-                            TeacherId = 34
+                            TeacherId = 36
                         },
                         new
                         {
                             Id = 19,
                             Email = "Oleg_Molchanova@yahoo.com",
-                            TeacherId = 46
+                            TeacherId = 62
                         },
                         new
                         {
                             Id = 20,
                             Email = "Nikolai.Doronin@yahoo.com",
-                            TeacherId = 68
+                            TeacherId = 2
                         },
                         new
                         {
                             Id = 21,
                             Email = "Ivan.Sharova@mail.ru",
-                            TeacherId = 49
+                            TeacherId = 54
                         },
                         new
                         {
                             Id = 22,
                             Email = "Irina_Turova@yandex.ru",
-                            TeacherId = 13
+                            TeacherId = 18
                         },
                         new
                         {
                             Id = 23,
                             Email = "Leonid97@gmail.com",
-                            TeacherId = 41
+                            TeacherId = 33
                         },
                         new
                         {
                             Id = 24,
                             Email = "Luka42@hotmail.com",
-                            TeacherId = 14
+                            TeacherId = 26
                         },
                         new
                         {
                             Id = 25,
                             Email = "Vasilii.Ignatov65@yahoo.com",
-                            TeacherId = 35
+                            TeacherId = 25
                         },
                         new
                         {
                             Id = 26,
                             Email = "Arkadii.Nazarova27@ya.ru",
-                            TeacherId = 14
+                            TeacherId = 12
                         },
                         new
                         {
                             Id = 27,
                             Email = "Tatyana12@yahoo.com",
-                            TeacherId = 55
+                            TeacherId = 52
                         },
                         new
                         {
                             Id = 28,
                             Email = "Darya_Zhdanov32@yandex.ru",
-                            TeacherId = 24
+                            TeacherId = 53
                         },
                         new
                         {
                             Id = 29,
                             Email = "Yuliya49@gmail.com",
-                            TeacherId = 34
+                            TeacherId = 15
                         },
                         new
                         {
                             Id = 30,
                             Email = "Anzhelika86@ya.ru",
-                            TeacherId = 22
+                            TeacherId = 68
                         },
                         new
                         {
                             Id = 31,
                             Email = "Antonida_Novikov18@yandex.ru",
-                            TeacherId = 57
+                            TeacherId = 51
                         },
                         new
                         {
                             Id = 32,
                             Email = "Konstantin.Medveev@hotmail.com",
-                            TeacherId = 47
+                            TeacherId = 17
                         },
                         new
                         {
                             Id = 33,
                             Email = "Oksana.Novikov@gmail.com",
-                            TeacherId = 35
+                            TeacherId = 44
                         },
                         new
                         {
                             Id = 34,
                             Email = "Rimma.Zhukova@gmail.com",
-                            TeacherId = 28
+                            TeacherId = 18
                         },
                         new
                         {
                             Id = 35,
                             Email = "Gennadii_Koroleva98@yandex.ru",
-                            TeacherId = 37
+                            TeacherId = 38
                         },
                         new
                         {
                             Id = 36,
                             Email = "Taisiya_Rybakova@yandex.ru",
-                            TeacherId = 53
+                            TeacherId = 15
                         },
                         new
                         {
                             Id = 37,
                             Email = "Andrei.Pestova9@gmail.com",
-                            TeacherId = 43
+                            TeacherId = 19
                         },
                         new
                         {
                             Id = 38,
                             Email = "Georgii_Subbotina@mail.ru",
-                            TeacherId = 61
+                            TeacherId = 11
                         },
                         new
                         {
                             Id = 39,
                             Email = "Vera.Gulyaeva34@yandex.ru",
-                            TeacherId = 42
+                            TeacherId = 67
                         },
                         new
                         {
                             Id = 40,
                             Email = "Evgeniya.Konstantinova48@yandex.ru",
-                            TeacherId = 39
+                            TeacherId = 32
                         },
                         new
                         {
                             Id = 41,
                             Email = "Marina.Rodionova47@hotmail.com",
-                            TeacherId = 37
+                            TeacherId = 51
                         },
                         new
                         {
                             Id = 42,
                             Email = "Varvara_Mikheeva93@mail.ru",
-                            TeacherId = 30
+                            TeacherId = 54
                         },
                         new
                         {
                             Id = 43,
                             Email = "Nikita_Polyakov6@ya.ru",
-                            TeacherId = 6
+                            TeacherId = 47
                         },
                         new
                         {
                             Id = 44,
                             Email = "Anatolii43@mail.ru",
-                            TeacherId = 24
+                            TeacherId = 70
                         },
                         new
                         {
                             Id = 45,
                             Email = "Oksana74@yandex.ru",
-                            TeacherId = 60
+                            TeacherId = 61
                         },
                         new
                         {
                             Id = 46,
                             Email = "Georgii47@ya.ru",
-                            TeacherId = 19
+                            TeacherId = 43
                         },
                         new
                         {
                             Id = 47,
                             Email = "Anfisa.Abramova@ya.ru",
-                            TeacherId = 11
+                            TeacherId = 15
                         },
                         new
                         {
                             Id = 48,
                             Email = "Vasilii_Samsonov@yandex.ru",
-                            TeacherId = 51
+                            TeacherId = 53
                         },
                         new
                         {
                             Id = 49,
                             Email = "Vasilisa.Gerasimova@mail.ru",
-                            TeacherId = 62
+                            TeacherId = 37
                         },
                         new
                         {
                             Id = 50,
                             Email = "Galina.Kharitonov@yandex.ru",
-                            TeacherId = 58
+                            TeacherId = 50
                         },
                         new
                         {
                             Id = 51,
                             Email = "Galina.Nikonov@gmail.com",
-                            TeacherId = 40
+                            TeacherId = 4
                         },
                         new
                         {
                             Id = 52,
                             Email = "Anastasiya97@ya.ru",
-                            TeacherId = 44
+                            TeacherId = 39
                         },
                         new
                         {
                             Id = 53,
                             Email = "Aleksandra82@yahoo.com",
-                            TeacherId = 7
+                            TeacherId = 16
                         },
                         new
                         {
                             Id = 54,
                             Email = "Fyodor19@ya.ru",
-                            TeacherId = 54
+                            TeacherId = 25
                         },
                         new
                         {
                             Id = 55,
                             Email = "Olga53@yandex.ru",
-                            TeacherId = 69
+                            TeacherId = 38
                         },
                         new
                         {
                             Id = 56,
                             Email = "Anna.Vasilev@mail.ru",
-                            TeacherId = 17
+                            TeacherId = 21
                         },
                         new
                         {
                             Id = 57,
                             Email = "Roman38@hotmail.com",
-                            TeacherId = 64
+                            TeacherId = 49
                         },
                         new
                         {
                             Id = 58,
                             Email = "Andrei.Kazakov@ya.ru",
-                            TeacherId = 36
+                            TeacherId = 1
                         },
                         new
                         {
                             Id = 59,
                             Email = "Boris.Sidorov0@yahoo.com",
-                            TeacherId = 59
+                            TeacherId = 19
                         },
                         new
                         {
                             Id = 60,
                             Email = "Boris66@ya.ru",
-                            TeacherId = 49
+                            TeacherId = 47
                         },
                         new
                         {
                             Id = 61,
                             Email = "Kira_Kononova@yandex.ru",
-                            TeacherId = 29
+                            TeacherId = 19
                         },
                         new
                         {
                             Id = 62,
                             Email = "Darya_Vishnyakov73@yandex.ru",
-                            TeacherId = 62
+                            TeacherId = 2
                         },
                         new
                         {
                             Id = 63,
                             Email = "Ivan_Fedoseev@yahoo.com",
-                            TeacherId = 46
+                            TeacherId = 17
                         },
                         new
                         {
                             Id = 64,
                             Email = "Elizaveta_Silina8@hotmail.com",
-                            TeacherId = 47
+                            TeacherId = 11
                         },
                         new
                         {
                             Id = 65,
                             Email = "Anzhela51@ya.ru",
-                            TeacherId = 12
+                            TeacherId = 27
                         },
                         new
                         {
                             Id = 66,
                             Email = "Tatyana79@gmail.com",
-                            TeacherId = 40
+                            TeacherId = 28
                         },
                         new
                         {
                             Id = 67,
                             Email = "Vladimir_Zhdanov@yandex.ru",
-                            TeacherId = 27
+                            TeacherId = 63
                         },
                         new
                         {
                             Id = 68,
                             Email = "Egor76@gmail.com",
-                            TeacherId = 58
+                            TeacherId = 20
                         },
                         new
                         {
                             Id = 69,
                             Email = "Veronika.Nekrasov43@mail.ru",
-                            TeacherId = 22
+                            TeacherId = 55
                         },
                         new
                         {
                             Id = 70,
                             Email = "Vasilii_Nikitina28@gmail.com",
-                            TeacherId = 46
+                            TeacherId = 27
                         });
                 });
 
@@ -1808,13 +1808,13 @@ namespace SUBD_CourseWork.Migrations
                         {
                             Id = 1,
                             House = 50,
-                            StreetId = 9
+                            StreetId = 8
                         },
                         new
                         {
                             Id = 2,
                             House = 21,
-                            StreetId = 13
+                            StreetId = 19
                         },
                         new
                         {
@@ -1826,25 +1826,25 @@ namespace SUBD_CourseWork.Migrations
                         {
                             Id = 4,
                             House = 82,
-                            StreetId = 17
+                            StreetId = 16
                         },
                         new
                         {
                             Id = 5,
                             House = 79,
-                            StreetId = 13
+                            StreetId = 3
                         },
                         new
                         {
                             Id = 6,
                             House = 97,
-                            StreetId = 12
+                            StreetId = 4
                         },
                         new
                         {
                             Id = 7,
                             House = 98,
-                            StreetId = 2
+                            StreetId = 19
                         },
                         new
                         {
@@ -1856,109 +1856,109 @@ namespace SUBD_CourseWork.Migrations
                         {
                             Id = 9,
                             House = 31,
-                            StreetId = 10
+                            StreetId = 11
                         },
                         new
                         {
                             Id = 10,
                             House = 25,
-                            StreetId = 10
+                            StreetId = 5
                         },
                         new
                         {
                             Id = 11,
                             House = 76,
-                            StreetId = 17
+                            StreetId = 14
                         },
                         new
                         {
                             Id = 12,
                             House = 72,
-                            StreetId = 9
+                            StreetId = 2
                         },
                         new
                         {
                             Id = 13,
                             House = 41,
-                            StreetId = 13
+                            StreetId = 14
                         },
                         new
                         {
                             Id = 14,
                             House = 64,
-                            StreetId = 12
+                            StreetId = 18
                         },
                         new
                         {
                             Id = 15,
                             House = 11,
-                            StreetId = 11
+                            StreetId = 12
                         },
                         new
                         {
                             Id = 16,
                             House = 48,
-                            StreetId = 14
+                            StreetId = 10
                         },
                         new
                         {
                             Id = 17,
                             House = 86,
-                            StreetId = 14
+                            StreetId = 15
                         },
                         new
                         {
                             Id = 18,
                             House = 16,
-                            StreetId = 7
+                            StreetId = 9
                         },
                         new
                         {
                             Id = 19,
                             House = 6,
-                            StreetId = 4
+                            StreetId = 1
                         },
                         new
                         {
                             Id = 20,
                             House = 68,
-                            StreetId = 20
+                            StreetId = 8
                         },
                         new
                         {
                             Id = 21,
                             House = 51,
-                            StreetId = 6
+                            StreetId = 10
                         },
                         new
                         {
                             Id = 22,
                             House = 94,
-                            StreetId = 18
+                            StreetId = 3
                         },
                         new
                         {
                             Id = 23,
                             House = 72,
-                            StreetId = 1
+                            StreetId = 14
                         },
                         new
                         {
                             Id = 24,
                             House = 35,
-                            StreetId = 9
+                            StreetId = 5
                         },
                         new
                         {
                             Id = 25,
                             House = 98,
-                            StreetId = 20
+                            StreetId = 3
                         },
                         new
                         {
                             Id = 26,
                             House = 36,
-                            StreetId = 13
+                            StreetId = 14
                         },
                         new
                         {
@@ -1970,109 +1970,109 @@ namespace SUBD_CourseWork.Migrations
                         {
                             Id = 28,
                             House = 72,
-                            StreetId = 14
+                            StreetId = 3
                         },
                         new
                         {
                             Id = 29,
                             House = 25,
-                            StreetId = 15
+                            StreetId = 9
                         },
                         new
                         {
                             Id = 30,
                             House = 90,
-                            StreetId = 9
+                            StreetId = 15
                         },
                         new
                         {
                             Id = 31,
                             House = 19,
-                            StreetId = 18
+                            StreetId = 15
                         },
                         new
                         {
                             Id = 32,
                             House = 71,
-                            StreetId = 16
+                            StreetId = 3
                         },
                         new
                         {
                             Id = 33,
                             House = 97,
-                            StreetId = 20
+                            StreetId = 14
                         },
                         new
                         {
                             Id = 34,
                             House = 67,
-                            StreetId = 18
+                            StreetId = 4
                         },
                         new
                         {
                             Id = 35,
                             House = 81,
-                            StreetId = 16
+                            StreetId = 4
                         },
                         new
                         {
                             Id = 36,
                             House = 94,
-                            StreetId = 17
+                            StreetId = 20
                         },
                         new
                         {
                             Id = 37,
                             House = 15,
-                            StreetId = 17
+                            StreetId = 1
                         },
                         new
                         {
                             Id = 38,
                             House = 54,
-                            StreetId = 15
+                            StreetId = 12
                         },
                         new
                         {
                             Id = 39,
                             House = 59,
-                            StreetId = 7
+                            StreetId = 10
                         },
                         new
                         {
                             Id = 40,
                             House = 65,
-                            StreetId = 9
+                            StreetId = 18
                         },
                         new
                         {
                             Id = 41,
                             House = 90,
-                            StreetId = 17
+                            StreetId = 10
                         },
                         new
                         {
                             Id = 42,
                             House = 93,
-                            StreetId = 12
+                            StreetId = 1
                         },
                         new
                         {
                             Id = 43,
                             House = 10,
-                            StreetId = 9
+                            StreetId = 6
                         },
                         new
                         {
                             Id = 44,
                             House = 22,
-                            StreetId = 16
+                            StreetId = 12
                         },
                         new
                         {
                             Id = 45,
                             House = 84,
-                            StreetId = 19
+                            StreetId = 18
                         },
                         new
                         {
@@ -2084,25 +2084,25 @@ namespace SUBD_CourseWork.Migrations
                         {
                             Id = 47,
                             House = 74,
-                            StreetId = 10
+                            StreetId = 7
                         },
                         new
                         {
                             Id = 48,
                             House = 79,
-                            StreetId = 2
+                            StreetId = 15
                         },
                         new
                         {
                             Id = 49,
                             House = 11,
-                            StreetId = 13
+                            StreetId = 11
                         },
                         new
                         {
                             Id = 50,
                             House = 41,
-                            StreetId = 1
+                            StreetId = 14
                         });
                 });
 
@@ -2152,771 +2152,771 @@ namespace SUBD_CourseWork.Migrations
                         {
                             Id = 1,
                             TypeOfWorkId = 7,
-                            YearId = 5,
-                            factForFallSemestre = 69,
-                            factForSpringSemestre = 62,
-                            plannedForFallSemestre = 67,
-                            plannedForSpringSemestre = 53,
-                            teacherId = 28
+                            YearId = 2,
+                            factForFallSemestre = 151,
+                            factForSpringSemestre = 114,
+                            plannedForFallSemestre = 153,
+                            plannedForSpringSemestre = 118,
+                            teacherId = 46
                         },
                         new
                         {
                             Id = 2,
-                            TypeOfWorkId = 7,
-                            YearId = 5,
-                            factForFallSemestre = 167,
-                            factForSpringSemestre = 146,
-                            plannedForFallSemestre = 168,
-                            plannedForSpringSemestre = 147,
-                            teacherId = 35
+                            TypeOfWorkId = 1,
+                            YearId = 4,
+                            factForFallSemestre = 116,
+                            factForSpringSemestre = 60,
+                            plannedForFallSemestre = 122,
+                            plannedForSpringSemestre = 70,
+                            teacherId = 33
                         },
                         new
                         {
                             Id = 3,
-                            TypeOfWorkId = 2,
-                            YearId = 2,
-                            factForFallSemestre = 88,
-                            factForSpringSemestre = 133,
-                            plannedForFallSemestre = 92,
-                            plannedForSpringSemestre = 132,
-                            teacherId = 22
+                            TypeOfWorkId = 5,
+                            YearId = 4,
+                            factForFallSemestre = 132,
+                            factForSpringSemestre = 165,
+                            plannedForFallSemestre = 123,
+                            plannedForSpringSemestre = 161,
+                            teacherId = 34
                         },
                         new
                         {
                             Id = 4,
-                            TypeOfWorkId = 3,
-                            YearId = 5,
-                            factForFallSemestre = 144,
-                            factForSpringSemestre = 98,
-                            plannedForFallSemestre = 141,
-                            plannedForSpringSemestre = 99,
-                            teacherId = 15
-                        },
-                        new
-                        {
-                            Id = 5,
-                            TypeOfWorkId = 6,
-                            YearId = 5,
-                            factForFallSemestre = 107,
-                            factForSpringSemestre = 94,
-                            plannedForFallSemestre = 100,
-                            plannedForSpringSemestre = 86,
+                            TypeOfWorkId = 4,
+                            YearId = 3,
+                            factForFallSemestre = 49,
+                            factForSpringSemestre = 104,
+                            plannedForFallSemestre = 53,
+                            plannedForSpringSemestre = 98,
                             teacherId = 43
                         },
                         new
                         {
+                            Id = 5,
+                            TypeOfWorkId = 5,
+                            YearId = 3,
+                            factForFallSemestre = 126,
+                            factForSpringSemestre = 131,
+                            plannedForFallSemestre = 136,
+                            plannedForSpringSemestre = 126,
+                            teacherId = 10
+                        },
+                        new
+                        {
                             Id = 6,
-                            TypeOfWorkId = 6,
-                            YearId = 1,
-                            factForFallSemestre = 156,
-                            factForSpringSemestre = 110,
-                            plannedForFallSemestre = 150,
-                            plannedForSpringSemestre = 104,
-                            teacherId = 65
+                            TypeOfWorkId = 5,
+                            YearId = 5,
+                            factForFallSemestre = 129,
+                            factForSpringSemestre = 147,
+                            plannedForFallSemestre = 134,
+                            plannedForSpringSemestre = 152,
+                            teacherId = 1
                         },
                         new
                         {
                             Id = 7,
-                            TypeOfWorkId = 6,
-                            YearId = 1,
-                            factForFallSemestre = 172,
-                            factForSpringSemestre = 164,
-                            plannedForFallSemestre = 164,
-                            plannedForSpringSemestre = 163,
-                            teacherId = 19
+                            TypeOfWorkId = 4,
+                            YearId = 2,
+                            factForFallSemestre = 75,
+                            factForSpringSemestre = 107,
+                            plannedForFallSemestre = 85,
+                            plannedForSpringSemestre = 114,
+                            teacherId = 22
                         },
                         new
                         {
                             Id = 8,
-                            TypeOfWorkId = 6,
-                            YearId = 4,
-                            factForFallSemestre = 155,
-                            factForSpringSemestre = 99,
-                            plannedForFallSemestre = 150,
-                            plannedForSpringSemestre = 98,
-                            teacherId = 4
+                            TypeOfWorkId = 5,
+                            YearId = 5,
+                            factForFallSemestre = 98,
+                            factForSpringSemestre = 123,
+                            plannedForFallSemestre = 92,
+                            plannedForSpringSemestre = 124,
+                            teacherId = 27
                         },
                         new
                         {
                             Id = 9,
-                            TypeOfWorkId = 5,
-                            YearId = 4,
-                            factForFallSemestre = 73,
-                            factForSpringSemestre = 49,
-                            plannedForFallSemestre = 68,
-                            plannedForSpringSemestre = 55,
-                            teacherId = 2
+                            TypeOfWorkId = 2,
+                            YearId = 2,
+                            factForFallSemestre = 44,
+                            factForSpringSemestre = 42,
+                            plannedForFallSemestre = 40,
+                            plannedForSpringSemestre = 52,
+                            teacherId = 36
                         },
                         new
                         {
                             Id = 10,
-                            TypeOfWorkId = 4,
-                            YearId = 1,
-                            factForFallSemestre = 88,
-                            factForSpringSemestre = 55,
-                            plannedForFallSemestre = 92,
-                            plannedForSpringSemestre = 59,
-                            teacherId = 25
+                            TypeOfWorkId = 2,
+                            YearId = 4,
+                            factForFallSemestre = 75,
+                            factForSpringSemestre = 170,
+                            plannedForFallSemestre = 78,
+                            plannedForSpringSemestre = 168,
+                            teacherId = 26
                         },
                         new
                         {
                             Id = 11,
-                            TypeOfWorkId = 7,
-                            YearId = 2,
-                            factForFallSemestre = 158,
-                            factForSpringSemestre = 103,
-                            plannedForFallSemestre = 155,
-                            plannedForSpringSemestre = 108,
-                            teacherId = 21
+                            TypeOfWorkId = 6,
+                            YearId = 5,
+                            factForFallSemestre = 90,
+                            factForSpringSemestre = 68,
+                            plannedForFallSemestre = 97,
+                            plannedForSpringSemestre = 75,
+                            teacherId = 58
                         },
                         new
                         {
                             Id = 12,
                             TypeOfWorkId = 7,
-                            YearId = 3,
-                            factForFallSemestre = 41,
-                            factForSpringSemestre = 168,
-                            plannedForFallSemestre = 50,
-                            plannedForSpringSemestre = 169,
-                            teacherId = 59
+                            YearId = 4,
+                            factForFallSemestre = 86,
+                            factForSpringSemestre = 52,
+                            plannedForFallSemestre = 78,
+                            plannedForSpringSemestre = 56,
+                            teacherId = 16
                         },
                         new
                         {
                             Id = 13,
                             TypeOfWorkId = 5,
                             YearId = 5,
-                            factForFallSemestre = 134,
-                            factForSpringSemestre = 113,
-                            plannedForFallSemestre = 142,
-                            plannedForSpringSemestre = 123,
-                            teacherId = 32
+                            factForFallSemestre = 75,
+                            factForSpringSemestre = 140,
+                            plannedForFallSemestre = 67,
+                            plannedForSpringSemestre = 144,
+                            teacherId = 25
                         },
                         new
                         {
                             Id = 14,
-                            TypeOfWorkId = 1,
-                            YearId = 5,
-                            factForFallSemestre = 58,
-                            factForSpringSemestre = 135,
-                            plannedForFallSemestre = 55,
-                            plannedForSpringSemestre = 131,
-                            teacherId = 1
+                            TypeOfWorkId = 7,
+                            YearId = 1,
+                            factForFallSemestre = 80,
+                            factForSpringSemestre = 68,
+                            plannedForFallSemestre = 86,
+                            plannedForSpringSemestre = 68,
+                            teacherId = 28
                         },
                         new
                         {
                             Id = 15,
-                            TypeOfWorkId = 3,
-                            YearId = 4,
-                            factForFallSemestre = 170,
-                            factForSpringSemestre = 80,
-                            plannedForFallSemestre = 168,
-                            plannedForSpringSemestre = 75,
-                            teacherId = 62
+                            TypeOfWorkId = 6,
+                            YearId = 1,
+                            factForFallSemestre = 129,
+                            factForSpringSemestre = 120,
+                            plannedForFallSemestre = 122,
+                            plannedForSpringSemestre = 121,
+                            teacherId = 42
                         },
                         new
                         {
                             Id = 16,
                             TypeOfWorkId = 3,
                             YearId = 2,
-                            factForFallSemestre = 76,
-                            factForSpringSemestre = 80,
-                            plannedForFallSemestre = 72,
-                            plannedForSpringSemestre = 79,
-                            teacherId = 51
+                            factForFallSemestre = 154,
+                            factForSpringSemestre = 84,
+                            plannedForFallSemestre = 161,
+                            plannedForSpringSemestre = 78,
+                            teacherId = 11
                         },
                         new
                         {
                             Id = 17,
-                            TypeOfWorkId = 5,
-                            YearId = 4,
-                            factForFallSemestre = 89,
-                            factForSpringSemestre = 96,
-                            plannedForFallSemestre = 97,
-                            plannedForSpringSemestre = 89,
-                            teacherId = 57
+                            TypeOfWorkId = 7,
+                            YearId = 2,
+                            factForFallSemestre = 147,
+                            factForSpringSemestre = 125,
+                            plannedForFallSemestre = 153,
+                            plannedForSpringSemestre = 120,
+                            teacherId = 69
                         },
                         new
                         {
                             Id = 18,
-                            TypeOfWorkId = 5,
-                            YearId = 4,
-                            factForFallSemestre = 139,
-                            factForSpringSemestre = 32,
-                            plannedForFallSemestre = 149,
-                            plannedForSpringSemestre = 41,
-                            teacherId = 53
+                            TypeOfWorkId = 6,
+                            YearId = 1,
+                            factForFallSemestre = 104,
+                            factForSpringSemestre = 122,
+                            plannedForFallSemestre = 98,
+                            plannedForSpringSemestre = 130,
+                            teacherId = 55
                         },
                         new
                         {
                             Id = 19,
                             TypeOfWorkId = 5,
-                            YearId = 4,
-                            factForFallSemestre = 101,
-                            factForSpringSemestre = 120,
-                            plannedForFallSemestre = 105,
-                            plannedForSpringSemestre = 130,
-                            teacherId = 11
+                            YearId = 3,
+                            factForFallSemestre = 90,
+                            factForSpringSemestre = 148,
+                            plannedForFallSemestre = 94,
+                            plannedForSpringSemestre = 148,
+                            teacherId = 47
                         },
                         new
                         {
                             Id = 20,
-                            TypeOfWorkId = 6,
-                            YearId = 3,
-                            factForFallSemestre = 58,
-                            factForSpringSemestre = 134,
-                            plannedForFallSemestre = 50,
-                            plannedForSpringSemestre = 140,
-                            teacherId = 56
+                            TypeOfWorkId = 2,
+                            YearId = 4,
+                            factForFallSemestre = 67,
+                            factForSpringSemestre = 66,
+                            plannedForFallSemestre = 63,
+                            plannedForSpringSemestre = 67,
+                            teacherId = 9
                         },
                         new
                         {
                             Id = 21,
-                            TypeOfWorkId = 5,
-                            YearId = 2,
-                            factForFallSemestre = 73,
-                            factForSpringSemestre = 154,
-                            plannedForFallSemestre = 77,
-                            plannedForSpringSemestre = 162,
-                            teacherId = 46
+                            TypeOfWorkId = 1,
+                            YearId = 1,
+                            factForFallSemestre = 175,
+                            factForSpringSemestre = 69,
+                            plannedForFallSemestre = 170,
+                            plannedForSpringSemestre = 70,
+                            teacherId = 57
                         },
                         new
                         {
                             Id = 22,
-                            TypeOfWorkId = 2,
+                            TypeOfWorkId = 3,
                             YearId = 5,
-                            factForFallSemestre = 163,
-                            factForSpringSemestre = 110,
-                            plannedForFallSemestre = 170,
-                            plannedForSpringSemestre = 112,
-                            teacherId = 40
+                            factForFallSemestre = 152,
+                            factForSpringSemestre = 109,
+                            plannedForFallSemestre = 151,
+                            plannedForSpringSemestre = 116,
+                            teacherId = 70
                         },
                         new
                         {
                             Id = 23,
-                            TypeOfWorkId = 3,
+                            TypeOfWorkId = 4,
                             YearId = 5,
-                            factForFallSemestre = 126,
-                            factForSpringSemestre = 68,
-                            plannedForFallSemestre = 133,
-                            plannedForSpringSemestre = 65,
-                            teacherId = 29
+                            factForFallSemestre = 38,
+                            factForSpringSemestre = 115,
+                            plannedForFallSemestre = 42,
+                            plannedForSpringSemestre = 114,
+                            teacherId = 45
                         },
                         new
                         {
                             Id = 24,
-                            TypeOfWorkId = 3,
-                            YearId = 5,
-                            factForFallSemestre = 109,
-                            factForSpringSemestre = 131,
-                            plannedForFallSemestre = 111,
-                            plannedForSpringSemestre = 122,
-                            teacherId = 26
+                            TypeOfWorkId = 5,
+                            YearId = 2,
+                            factForFallSemestre = 114,
+                            factForSpringSemestre = 55,
+                            plannedForFallSemestre = 114,
+                            plannedForSpringSemestre = 50,
+                            teacherId = 54
                         },
                         new
                         {
                             Id = 25,
-                            TypeOfWorkId = 2,
-                            YearId = 1,
-                            factForFallSemestre = 40,
-                            factForSpringSemestre = 38,
-                            plannedForFallSemestre = 47,
-                            plannedForSpringSemestre = 43,
-                            teacherId = 13
+                            TypeOfWorkId = 6,
+                            YearId = 2,
+                            factForFallSemestre = 109,
+                            factForSpringSemestre = 129,
+                            plannedForFallSemestre = 106,
+                            plannedForSpringSemestre = 122,
+                            teacherId = 12
                         },
                         new
                         {
                             Id = 26,
-                            TypeOfWorkId = 2,
+                            TypeOfWorkId = 6,
                             YearId = 4,
-                            factForFallSemestre = 135,
-                            factForSpringSemestre = 46,
-                            plannedForFallSemestre = 129,
-                            plannedForSpringSemestre = 42,
-                            teacherId = 16
+                            factForFallSemestre = 153,
+                            factForSpringSemestre = 130,
+                            plannedForFallSemestre = 145,
+                            plannedForSpringSemestre = 133,
+                            teacherId = 31
                         },
                         new
                         {
                             Id = 27,
-                            TypeOfWorkId = 1,
-                            YearId = 1,
-                            factForFallSemestre = 60,
-                            factForSpringSemestre = 165,
-                            plannedForFallSemestre = 64,
-                            plannedForSpringSemestre = 157,
-                            teacherId = 33
+                            TypeOfWorkId = 2,
+                            YearId = 2,
+                            factForFallSemestre = 99,
+                            factForSpringSemestre = 162,
+                            plannedForFallSemestre = 92,
+                            plannedForSpringSemestre = 159,
+                            teacherId = 17
                         },
                         new
                         {
                             Id = 28,
-                            TypeOfWorkId = 3,
+                            TypeOfWorkId = 5,
                             YearId = 4,
-                            factForFallSemestre = 78,
-                            factForSpringSemestre = 44,
-                            plannedForFallSemestre = 77,
-                            plannedForSpringSemestre = 40,
-                            teacherId = 69
+                            factForFallSemestre = 88,
+                            factForSpringSemestre = 53,
+                            plannedForFallSemestre = 83,
+                            plannedForSpringSemestre = 53,
+                            teacherId = 29
                         },
                         new
                         {
                             Id = 29,
                             TypeOfWorkId = 3,
-                            YearId = 4,
-                            factForFallSemestre = 162,
-                            factForSpringSemestre = 153,
-                            plannedForFallSemestre = 159,
-                            plannedForSpringSemestre = 160,
-                            teacherId = 30
+                            YearId = 2,
+                            factForFallSemestre = 109,
+                            factForSpringSemestre = 82,
+                            plannedForFallSemestre = 114,
+                            plannedForSpringSemestre = 92,
+                            teacherId = 4
                         },
                         new
                         {
                             Id = 30,
-                            TypeOfWorkId = 3,
-                            YearId = 2,
-                            factForFallSemestre = 56,
-                            factForSpringSemestre = 119,
-                            plannedForFallSemestre = 48,
-                            plannedForSpringSemestre = 124,
-                            teacherId = 37
+                            TypeOfWorkId = 2,
+                            YearId = 3,
+                            factForFallSemestre = 100,
+                            factForSpringSemestre = 135,
+                            plannedForFallSemestre = 100,
+                            plannedForSpringSemestre = 126,
+                            teacherId = 44
                         },
                         new
                         {
                             Id = 31,
-                            TypeOfWorkId = 7,
-                            YearId = 4,
-                            factForFallSemestre = 75,
-                            factForSpringSemestre = 91,
-                            plannedForFallSemestre = 69,
-                            plannedForSpringSemestre = 95,
-                            teacherId = 61
+                            TypeOfWorkId = 3,
+                            YearId = 5,
+                            factForFallSemestre = 136,
+                            factForSpringSemestre = 77,
+                            plannedForFallSemestre = 129,
+                            plannedForSpringSemestre = 72,
+                            teacherId = 8
                         },
                         new
                         {
                             Id = 32,
-                            TypeOfWorkId = 6,
-                            YearId = 1,
-                            factForFallSemestre = 86,
-                            factForSpringSemestre = 166,
-                            plannedForFallSemestre = 78,
-                            plannedForSpringSemestre = 163,
-                            teacherId = 44
+                            TypeOfWorkId = 3,
+                            YearId = 3,
+                            factForFallSemestre = 56,
+                            factForSpringSemestre = 95,
+                            plannedForFallSemestre = 63,
+                            plannedForSpringSemestre = 98,
+                            teacherId = 37
                         },
                         new
                         {
                             Id = 33,
                             TypeOfWorkId = 7,
-                            YearId = 5,
-                            factForFallSemestre = 60,
-                            factForSpringSemestre = 48,
-                            plannedForFallSemestre = 62,
-                            plannedForSpringSemestre = 48,
-                            teacherId = 67
+                            YearId = 1,
+                            factForFallSemestre = 99,
+                            factForSpringSemestre = 62,
+                            plannedForFallSemestre = 108,
+                            plannedForSpringSemestre = 61,
+                            teacherId = 30
                         },
                         new
                         {
                             Id = 34,
-                            TypeOfWorkId = 1,
-                            YearId = 5,
-                            factForFallSemestre = 35,
-                            factForSpringSemestre = 146,
-                            plannedForFallSemestre = 40,
-                            plannedForSpringSemestre = 149,
-                            teacherId = 45
+                            TypeOfWorkId = 3,
+                            YearId = 4,
+                            factForFallSemestre = 93,
+                            factForSpringSemestre = 155,
+                            plannedForFallSemestre = 89,
+                            plannedForSpringSemestre = 165,
+                            teacherId = 38
                         },
                         new
                         {
                             Id = 35,
-                            TypeOfWorkId = 6,
-                            YearId = 2,
-                            factForFallSemestre = 107,
-                            factForSpringSemestre = 64,
-                            plannedForFallSemestre = 107,
-                            plannedForSpringSemestre = 64,
+                            TypeOfWorkId = 1,
+                            YearId = 1,
+                            factForFallSemestre = 124,
+                            factForSpringSemestre = 70,
+                            plannedForFallSemestre = 118,
+                            plannedForSpringSemestre = 71,
                             teacherId = 63
                         },
                         new
                         {
                             Id = 36,
-                            TypeOfWorkId = 7,
-                            YearId = 3,
-                            factForFallSemestre = 79,
-                            factForSpringSemestre = 124,
-                            plannedForFallSemestre = 86,
-                            plannedForSpringSemestre = 126,
-                            teacherId = 3
+                            TypeOfWorkId = 6,
+                            YearId = 4,
+                            factForFallSemestre = 121,
+                            factForSpringSemestre = 130,
+                            plannedForFallSemestre = 119,
+                            plannedForSpringSemestre = 132,
+                            teacherId = 51
                         },
                         new
                         {
                             Id = 37,
-                            TypeOfWorkId = 5,
+                            TypeOfWorkId = 7,
                             YearId = 5,
-                            factForFallSemestre = 53,
-                            factForSpringSemestre = 156,
-                            plannedForFallSemestre = 48,
-                            plannedForSpringSemestre = 155,
-                            teacherId = 20
+                            factForFallSemestre = 121,
+                            factForSpringSemestre = 113,
+                            plannedForFallSemestre = 118,
+                            plannedForSpringSemestre = 111,
+                            teacherId = 3
                         },
                         new
                         {
                             Id = 38,
-                            TypeOfWorkId = 1,
+                            TypeOfWorkId = 7,
                             YearId = 4,
-                            factForFallSemestre = 60,
-                            factForSpringSemestre = 161,
-                            plannedForFallSemestre = 51,
-                            plannedForSpringSemestre = 168,
-                            teacherId = 14
+                            factForFallSemestre = 157,
+                            factForSpringSemestre = 100,
+                            plannedForFallSemestre = 148,
+                            plannedForSpringSemestre = 107,
+                            teacherId = 35
                         },
                         new
                         {
                             Id = 39,
-                            TypeOfWorkId = 5,
-                            YearId = 3,
-                            factForFallSemestre = 111,
-                            factForSpringSemestre = 90,
-                            plannedForFallSemestre = 113,
-                            plannedForSpringSemestre = 87,
-                            teacherId = 7
+                            TypeOfWorkId = 3,
+                            YearId = 1,
+                            factForFallSemestre = 105,
+                            factForSpringSemestre = 68,
+                            plannedForFallSemestre = 100,
+                            plannedForSpringSemestre = 77,
+                            teacherId = 53
                         },
                         new
                         {
                             Id = 40,
-                            TypeOfWorkId = 7,
+                            TypeOfWorkId = 3,
                             YearId = 1,
-                            factForFallSemestre = 116,
-                            factForSpringSemestre = 60,
-                            plannedForFallSemestre = 119,
-                            plannedForSpringSemestre = 58,
-                            teacherId = 10
+                            factForFallSemestre = 64,
+                            factForSpringSemestre = 108,
+                            plannedForFallSemestre = 60,
+                            plannedForSpringSemestre = 116,
+                            teacherId = 32
                         },
                         new
                         {
                             Id = 41,
                             TypeOfWorkId = 3,
                             YearId = 2,
-                            factForFallSemestre = 49,
-                            factForSpringSemestre = 43,
-                            plannedForFallSemestre = 53,
-                            plannedForSpringSemestre = 50,
-                            teacherId = 48
+                            factForFallSemestre = 160,
+                            factForSpringSemestre = 158,
+                            plannedForFallSemestre = 153,
+                            plannedForSpringSemestre = 159,
+                            teacherId = 40
                         },
                         new
                         {
                             Id = 42,
-                            TypeOfWorkId = 7,
-                            YearId = 3,
+                            TypeOfWorkId = 5,
+                            YearId = 2,
                             factForFallSemestre = 151,
-                            factForSpringSemestre = 48,
-                            plannedForFallSemestre = 142,
-                            plannedForSpringSemestre = 43,
-                            teacherId = 36
+                            factForSpringSemestre = 136,
+                            plannedForFallSemestre = 156,
+                            plannedForSpringSemestre = 135,
+                            teacherId = 13
                         },
                         new
                         {
                             Id = 43,
-                            TypeOfWorkId = 4,
-                            YearId = 2,
+                            TypeOfWorkId = 3,
+                            YearId = 3,
                             factForFallSemestre = 167,
-                            factForSpringSemestre = 138,
+                            factForSpringSemestre = 103,
                             plannedForFallSemestre = 166,
-                            plannedForSpringSemestre = 132,
-                            teacherId = 49
+                            plannedForSpringSemestre = 94,
+                            teacherId = 48
                         },
                         new
                         {
                             Id = 44,
-                            TypeOfWorkId = 3,
+                            TypeOfWorkId = 6,
                             YearId = 5,
-                            factForFallSemestre = 85,
-                            factForSpringSemestre = 72,
-                            plannedForFallSemestre = 93,
-                            plannedForSpringSemestre = 63,
-                            teacherId = 47
+                            factForFallSemestre = 95,
+                            factForSpringSemestre = 92,
+                            plannedForFallSemestre = 101,
+                            plannedForSpringSemestre = 99,
+                            teacherId = 56
                         },
                         new
                         {
                             Id = 45,
-                            TypeOfWorkId = 1,
+                            TypeOfWorkId = 7,
                             YearId = 2,
-                            factForFallSemestre = 58,
-                            factForSpringSemestre = 75,
-                            plannedForFallSemestre = 63,
-                            plannedForSpringSemestre = 68,
-                            teacherId = 39
+                            factForFallSemestre = 97,
+                            factForSpringSemestre = 76,
+                            plannedForFallSemestre = 102,
+                            plannedForSpringSemestre = 83,
+                            teacherId = 6
                         },
                         new
                         {
                             Id = 46,
-                            TypeOfWorkId = 5,
-                            YearId = 4,
-                            factForFallSemestre = 89,
-                            factForSpringSemestre = 156,
-                            plannedForFallSemestre = 95,
-                            plannedForSpringSemestre = 154,
-                            teacherId = 58
+                            TypeOfWorkId = 7,
+                            YearId = 3,
+                            factForFallSemestre = 67,
+                            factForSpringSemestre = 106,
+                            plannedForFallSemestre = 71,
+                            plannedForSpringSemestre = 101,
+                            teacherId = 61
                         },
                         new
                         {
                             Id = 47,
-                            TypeOfWorkId = 6,
+                            TypeOfWorkId = 4,
                             YearId = 2,
-                            factForFallSemestre = 117,
-                            factForSpringSemestre = 101,
-                            plannedForFallSemestre = 113,
-                            plannedForSpringSemestre = 104,
-                            teacherId = 17
+                            factForFallSemestre = 91,
+                            factForSpringSemestre = 77,
+                            plannedForFallSemestre = 98,
+                            plannedForSpringSemestre = 87,
+                            teacherId = 21
                         },
                         new
                         {
                             Id = 48,
-                            TypeOfWorkId = 1,
-                            YearId = 3,
-                            factForFallSemestre = 67,
-                            factForSpringSemestre = 93,
-                            plannedForFallSemestre = 62,
-                            plannedForSpringSemestre = 93,
-                            teacherId = 64
+                            TypeOfWorkId = 2,
+                            YearId = 4,
+                            factForFallSemestre = 54,
+                            factForSpringSemestre = 166,
+                            plannedForFallSemestre = 47,
+                            plannedForSpringSemestre = 161,
+                            teacherId = 19
                         },
                         new
                         {
                             Id = 49,
-                            TypeOfWorkId = 4,
-                            YearId = 5,
-                            factForFallSemestre = 100,
-                            factForSpringSemestre = 70,
-                            plannedForFallSemestre = 95,
-                            plannedForSpringSemestre = 79,
-                            teacherId = 31
+                            TypeOfWorkId = 7,
+                            YearId = 1,
+                            factForFallSemestre = 112,
+                            factForSpringSemestre = 139,
+                            plannedForFallSemestre = 110,
+                            plannedForSpringSemestre = 140,
+                            teacherId = 52
                         },
                         new
                         {
                             Id = 50,
                             TypeOfWorkId = 1,
-                            YearId = 3,
-                            factForFallSemestre = 84,
-                            factForSpringSemestre = 164,
-                            plannedForFallSemestre = 92,
-                            plannedForSpringSemestre = 158,
-                            teacherId = 24
+                            YearId = 1,
+                            factForFallSemestre = 116,
+                            factForSpringSemestre = 86,
+                            plannedForFallSemestre = 113,
+                            plannedForSpringSemestre = 85,
+                            teacherId = 65
                         },
                         new
                         {
                             Id = 51,
-                            TypeOfWorkId = 1,
-                            YearId = 3,
-                            factForFallSemestre = 47,
-                            factForSpringSemestre = 177,
-                            plannedForFallSemestre = 54,
-                            plannedForSpringSemestre = 170,
-                            teacherId = 8
+                            TypeOfWorkId = 6,
+                            YearId = 1,
+                            factForFallSemestre = 156,
+                            factForSpringSemestre = 44,
+                            plannedForFallSemestre = 159,
+                            plannedForSpringSemestre = 47,
+                            teacherId = 64
                         },
                         new
                         {
                             Id = 52,
                             TypeOfWorkId = 4,
                             YearId = 5,
-                            factForFallSemestre = 67,
-                            factForSpringSemestre = 95,
-                            plannedForFallSemestre = 61,
-                            plannedForSpringSemestre = 99,
-                            teacherId = 52
-                        },
-                        new
-                        {
-                            Id = 53,
-                            TypeOfWorkId = 7,
-                            YearId = 2,
-                            factForFallSemestre = 72,
-                            factForSpringSemestre = 50,
-                            plannedForFallSemestre = 79,
+                            factForFallSemestre = 149,
+                            factForSpringSemestre = 47,
+                            plannedForFallSemestre = 152,
                             plannedForSpringSemestre = 55,
-                            teacherId = 27
-                        },
-                        new
-                        {
-                            Id = 54,
-                            TypeOfWorkId = 3,
-                            YearId = 2,
-                            factForFallSemestre = 144,
-                            factForSpringSemestre = 157,
-                            plannedForFallSemestre = 138,
-                            plannedForSpringSemestre = 159,
-                            teacherId = 70
-                        },
-                        new
-                        {
-                            Id = 55,
-                            TypeOfWorkId = 2,
-                            YearId = 4,
-                            factForFallSemestre = 71,
-                            factForSpringSemestre = 42,
-                            plannedForFallSemestre = 66,
-                            plannedForSpringSemestre = 51,
-                            teacherId = 9
-                        },
-                        new
-                        {
-                            Id = 56,
-                            TypeOfWorkId = 7,
-                            YearId = 3,
-                            factForFallSemestre = 98,
-                            factForSpringSemestre = 96,
-                            plannedForFallSemestre = 94,
-                            plannedForSpringSemestre = 105,
-                            teacherId = 54
-                        },
-                        new
-                        {
-                            Id = 57,
-                            TypeOfWorkId = 6,
-                            YearId = 4,
-                            factForFallSemestre = 129,
-                            factForSpringSemestre = 142,
-                            plannedForFallSemestre = 136,
-                            plannedForSpringSemestre = 142,
-                            teacherId = 5
-                        },
-                        new
-                        {
-                            Id = 58,
-                            TypeOfWorkId = 5,
-                            YearId = 4,
-                            factForFallSemestre = 33,
-                            factForSpringSemestre = 107,
-                            plannedForFallSemestre = 43,
-                            plannedForSpringSemestre = 114,
-                            teacherId = 68
-                        },
-                        new
-                        {
-                            Id = 59,
-                            TypeOfWorkId = 4,
-                            YearId = 2,
-                            factForFallSemestre = 53,
-                            factForSpringSemestre = 78,
-                            plannedForFallSemestre = 53,
-                            plannedForSpringSemestre = 88,
-                            teacherId = 18
-                        },
-                        new
-                        {
-                            Id = 60,
-                            TypeOfWorkId = 7,
-                            YearId = 3,
-                            factForFallSemestre = 64,
-                            factForSpringSemestre = 116,
-                            plannedForFallSemestre = 72,
-                            plannedForSpringSemestre = 110,
                             teacherId = 66
                         },
                         new
                         {
-                            Id = 61,
+                            Id = 53,
+                            TypeOfWorkId = 3,
+                            YearId = 5,
+                            factForFallSemestre = 51,
+                            factForSpringSemestre = 94,
+                            plannedForFallSemestre = 51,
+                            plannedForSpringSemestre = 99,
+                            teacherId = 18
+                        },
+                        new
+                        {
+                            Id = 54,
+                            TypeOfWorkId = 5,
+                            YearId = 5,
+                            factForFallSemestre = 143,
+                            factForSpringSemestre = 71,
+                            plannedForFallSemestre = 140,
+                            plannedForSpringSemestre = 74,
+                            teacherId = 23
+                        },
+                        new
+                        {
+                            Id = 55,
+                            TypeOfWorkId = 4,
+                            YearId = 3,
+                            factForFallSemestre = 63,
+                            factForSpringSemestre = 163,
+                            plannedForFallSemestre = 71,
+                            plannedForSpringSemestre = 160,
+                            teacherId = 15
+                        },
+                        new
+                        {
+                            Id = 56,
                             TypeOfWorkId = 2,
                             YearId = 1,
-                            factForFallSemestre = 133,
-                            factForSpringSemestre = 50,
-                            plannedForFallSemestre = 125,
-                            plannedForSpringSemestre = 58,
-                            teacherId = 42
+                            factForFallSemestre = 112,
+                            factForSpringSemestre = 71,
+                            plannedForFallSemestre = 118,
+                            plannedForSpringSemestre = 80,
+                            teacherId = 49
+                        },
+                        new
+                        {
+                            Id = 57,
+                            TypeOfWorkId = 2,
+                            YearId = 2,
+                            factForFallSemestre = 97,
+                            factForSpringSemestre = 127,
+                            plannedForFallSemestre = 92,
+                            plannedForSpringSemestre = 128,
+                            teacherId = 50
+                        },
+                        new
+                        {
+                            Id = 58,
+                            TypeOfWorkId = 4,
+                            YearId = 2,
+                            factForFallSemestre = 109,
+                            factForSpringSemestre = 165,
+                            plannedForFallSemestre = 104,
+                            plannedForSpringSemestre = 164,
+                            teacherId = 62
+                        },
+                        new
+                        {
+                            Id = 59,
+                            TypeOfWorkId = 7,
+                            YearId = 1,
+                            factForFallSemestre = 108,
+                            factForSpringSemestre = 47,
+                            plannedForFallSemestre = 112,
+                            plannedForSpringSemestre = 47,
+                            teacherId = 59
+                        },
+                        new
+                        {
+                            Id = 60,
+                            TypeOfWorkId = 2,
+                            YearId = 5,
+                            factForFallSemestre = 132,
+                            factForSpringSemestre = 157,
+                            plannedForFallSemestre = 126,
+                            plannedForSpringSemestre = 158,
+                            teacherId = 41
+                        },
+                        new
+                        {
+                            Id = 61,
+                            TypeOfWorkId = 5,
+                            YearId = 5,
+                            factForFallSemestre = 156,
+                            factForSpringSemestre = 132,
+                            plannedForFallSemestre = 148,
+                            plannedForSpringSemestre = 134,
+                            teacherId = 5
                         },
                         new
                         {
                             Id = 62,
-                            TypeOfWorkId = 5,
-                            YearId = 5,
-                            factForFallSemestre = 51,
-                            factForSpringSemestre = 105,
-                            plannedForFallSemestre = 48,
-                            plannedForSpringSemestre = 102,
-                            teacherId = 23
+                            TypeOfWorkId = 4,
+                            YearId = 4,
+                            factForFallSemestre = 108,
+                            factForSpringSemestre = 152,
+                            plannedForFallSemestre = 106,
+                            plannedForSpringSemestre = 153,
+                            teacherId = 20
                         },
                         new
                         {
                             Id = 63,
                             TypeOfWorkId = 5,
-                            YearId = 5,
-                            factForFallSemestre = 59,
-                            factForSpringSemestre = 148,
-                            plannedForFallSemestre = 65,
-                            plannedForSpringSemestre = 151,
-                            teacherId = 6
+                            YearId = 4,
+                            factForFallSemestre = 68,
+                            factForSpringSemestre = 70,
+                            plannedForFallSemestre = 69,
+                            plannedForSpringSemestre = 61,
+                            teacherId = 7
                         },
                         new
                         {
                             Id = 64,
-                            TypeOfWorkId = 3,
-                            YearId = 3,
-                            factForFallSemestre = 89,
-                            factForSpringSemestre = 80,
-                            plannedForFallSemestre = 91,
-                            plannedForSpringSemestre = 81,
-                            teacherId = 55
+                            TypeOfWorkId = 2,
+                            YearId = 5,
+                            factForFallSemestre = 101,
+                            factForSpringSemestre = 69,
+                            plannedForFallSemestre = 108,
+                            plannedForSpringSemestre = 60,
+                            teacherId = 60
                         },
                         new
                         {
                             Id = 65,
-                            TypeOfWorkId = 5,
-                            YearId = 4,
-                            factForFallSemestre = 154,
-                            factForSpringSemestre = 48,
-                            plannedForFallSemestre = 156,
-                            plannedForSpringSemestre = 52,
-                            teacherId = 34
+                            TypeOfWorkId = 3,
+                            YearId = 2,
+                            factForFallSemestre = 104,
+                            factForSpringSemestre = 54,
+                            plannedForFallSemestre = 101,
+                            plannedForSpringSemestre = 60,
+                            teacherId = 68
                         },
                         new
                         {
                             Id = 66,
                             TypeOfWorkId = 3,
                             YearId = 5,
-                            factForFallSemestre = 62,
-                            factForSpringSemestre = 137,
-                            plannedForFallSemestre = 68,
-                            plannedForSpringSemestre = 140,
-                            teacherId = 12
+                            factForFallSemestre = 162,
+                            factForSpringSemestre = 94,
+                            plannedForFallSemestre = 153,
+                            plannedForSpringSemestre = 100,
+                            teacherId = 2
                         },
                         new
                         {
                             Id = 67,
-                            TypeOfWorkId = 5,
-                            YearId = 1,
-                            factForFallSemestre = 88,
-                            factForSpringSemestre = 94,
-                            plannedForFallSemestre = 88,
-                            plannedForSpringSemestre = 87,
-                            teacherId = 38
+                            TypeOfWorkId = 2,
+                            YearId = 5,
+                            factForFallSemestre = 135,
+                            factForSpringSemestre = 76,
+                            plannedForFallSemestre = 126,
+                            plannedForSpringSemestre = 75,
+                            teacherId = 14
                         },
                         new
                         {
                             Id = 68,
-                            TypeOfWorkId = 6,
-                            YearId = 2,
-                            factForFallSemestre = 127,
-                            factForSpringSemestre = 160,
-                            plannedForFallSemestre = 124,
-                            plannedForSpringSemestre = 159,
-                            teacherId = 50
+                            TypeOfWorkId = 5,
+                            YearId = 1,
+                            factForFallSemestre = 118,
+                            factForSpringSemestre = 104,
+                            plannedForFallSemestre = 112,
+                            plannedForSpringSemestre = 109,
+                            teacherId = 24
                         },
                         new
                         {
                             Id = 69,
                             TypeOfWorkId = 7,
-                            YearId = 1,
-                            factForFallSemestre = 106,
-                            factForSpringSemestre = 71,
-                            plannedForFallSemestre = 105,
-                            plannedForSpringSemestre = 80,
-                            teacherId = 41
+                            YearId = 3,
+                            factForFallSemestre = 60,
+                            factForSpringSemestre = 111,
+                            plannedForFallSemestre = 60,
+                            plannedForSpringSemestre = 110,
+                            teacherId = 67
                         },
                         new
                         {
                             Id = 70,
-                            TypeOfWorkId = 6,
-                            YearId = 5,
-                            factForFallSemestre = 105,
-                            factForSpringSemestre = 72,
-                            plannedForFallSemestre = 99,
-                            plannedForSpringSemestre = 63,
-                            teacherId = 60
+                            TypeOfWorkId = 3,
+                            YearId = 4,
+                            factForFallSemestre = 110,
+                            factForSpringSemestre = 81,
+                            plannedForFallSemestre = 111,
+                            plannedForSpringSemestre = 78,
+                            teacherId = 39
                         });
                 });
 
@@ -3034,421 +3034,421 @@ namespace SUBD_CourseWork.Migrations
                         {
                             Id = 1,
                             Number = "(950)812-12-53",
-                            TeacherId = 22
+                            TeacherId = 55
                         },
                         new
                         {
                             Id = 2,
                             Number = "(962)827-57-97",
-                            TeacherId = 35
+                            TeacherId = 14
                         },
                         new
                         {
                             Id = 3,
                             Number = "(997)869-86-48",
-                            TeacherId = 30
+                            TeacherId = 55
                         },
                         new
                         {
                             Id = 4,
                             Number = "(910)310-02-59",
-                            TeacherId = 24
+                            TeacherId = 4
                         },
                         new
                         {
                             Id = 5,
                             Number = "(976)007-23-54",
-                            TeacherId = 38
+                            TeacherId = 61
                         },
                         new
                         {
                             Id = 6,
                             Number = "(916)644-71-12",
-                            TeacherId = 16
+                            TeacherId = 38
                         },
                         new
                         {
                             Id = 7,
                             Number = "(948)728-68-61",
-                            TeacherId = 68
+                            TeacherId = 1
                         },
                         new
                         {
                             Id = 8,
                             Number = "(922)066-26-88",
-                            TeacherId = 1
+                            TeacherId = 68
                         },
                         new
                         {
                             Id = 9,
                             Number = "(951)969-44-97",
-                            TeacherId = 54
+                            TeacherId = 28
                         },
                         new
                         {
                             Id = 10,
                             Number = "(980)356-99-82",
-                            TeacherId = 7
+                            TeacherId = 68
                         },
                         new
                         {
                             Id = 11,
                             Number = "(936)388-95-07",
-                            TeacherId = 53
+                            TeacherId = 61
                         },
                         new
                         {
                             Id = 12,
                             Number = "(913)259-29-02",
-                            TeacherId = 45
+                            TeacherId = 21
                         },
                         new
                         {
                             Id = 13,
                             Number = "(919)987-19-59",
-                            TeacherId = 1
+                            TeacherId = 38
                         },
                         new
                         {
                             Id = 14,
                             Number = "(938)673-88-17",
-                            TeacherId = 49
+                            TeacherId = 7
                         },
                         new
                         {
                             Id = 15,
                             Number = "(994)141-58-85",
-                            TeacherId = 46
+                            TeacherId = 34
                         },
                         new
                         {
                             Id = 16,
                             Number = "(908)599-36-50",
-                            TeacherId = 55
+                            TeacherId = 64
                         },
                         new
                         {
                             Id = 17,
                             Number = "(990)099-36-51",
-                            TeacherId = 25
+                            TeacherId = 40
                         },
                         new
                         {
                             Id = 18,
                             Number = "(947)224-78-46",
-                            TeacherId = 14
+                            TeacherId = 22
                         },
                         new
                         {
                             Id = 19,
                             Number = "(931)957-42-77",
-                            TeacherId = 33
+                            TeacherId = 43
                         },
                         new
                         {
                             Id = 20,
                             Number = "(922)110-84-15",
-                            TeacherId = 43
+                            TeacherId = 2
                         },
                         new
                         {
                             Id = 21,
                             Number = "(983)659-25-24",
-                            TeacherId = 30
+                            TeacherId = 3
                         },
                         new
                         {
                             Id = 22,
                             Number = "(951)873-81-51",
-                            TeacherId = 46
+                            TeacherId = 58
                         },
                         new
                         {
                             Id = 23,
                             Number = "(909)718-16-12",
-                            TeacherId = 35
+                            TeacherId = 37
                         },
                         new
                         {
                             Id = 24,
                             Number = "(936)973-04-45",
-                            TeacherId = 30
+                            TeacherId = 40
                         },
                         new
                         {
                             Id = 25,
                             Number = "(989)243-03-38",
-                            TeacherId = 38
+                            TeacherId = 48
                         },
                         new
                         {
                             Id = 26,
                             Number = "(968)908-95-46",
-                            TeacherId = 5
+                            TeacherId = 49
                         },
                         new
                         {
                             Id = 27,
                             Number = "(964)099-92-03",
-                            TeacherId = 21
+                            TeacherId = 11
                         },
                         new
                         {
                             Id = 28,
                             Number = "(936)966-07-37",
-                            TeacherId = 44
+                            TeacherId = 45
                         },
                         new
                         {
                             Id = 29,
                             Number = "(972)308-46-89",
-                            TeacherId = 49
+                            TeacherId = 6
                         },
                         new
                         {
                             Id = 30,
                             Number = "(949)779-48-34",
-                            TeacherId = 19
+                            TeacherId = 62
                         },
                         new
                         {
                             Id = 31,
                             Number = "(972)957-99-34",
-                            TeacherId = 16
+                            TeacherId = 31
                         },
                         new
                         {
                             Id = 32,
                             Number = "(922)680-30-00",
-                            TeacherId = 54
+                            TeacherId = 43
                         },
                         new
                         {
                             Id = 33,
                             Number = "(924)197-39-27",
-                            TeacherId = 52
+                            TeacherId = 3
                         },
                         new
                         {
                             Id = 34,
                             Number = "(913)830-42-82",
-                            TeacherId = 46
+                            TeacherId = 62
                         },
                         new
                         {
                             Id = 35,
                             Number = "(943)312-23-96",
-                            TeacherId = 12
+                            TeacherId = 20
                         },
                         new
                         {
                             Id = 36,
                             Number = "(938)391-31-07",
-                            TeacherId = 30
+                            TeacherId = 39
                         },
                         new
                         {
                             Id = 37,
                             Number = "(906)536-83-38",
-                            TeacherId = 64
+                            TeacherId = 29
                         },
                         new
                         {
                             Id = 38,
                             Number = "(912)810-90-96",
-                            TeacherId = 68
+                            TeacherId = 47
                         },
                         new
                         {
                             Id = 39,
                             Number = "(909)628-30-91",
-                            TeacherId = 18
+                            TeacherId = 54
                         },
                         new
                         {
                             Id = 40,
                             Number = "(931)088-77-05",
-                            TeacherId = 16
+                            TeacherId = 70
                         },
                         new
                         {
                             Id = 41,
                             Number = "(980)003-09-18",
-                            TeacherId = 49
+                            TeacherId = 10
                         },
                         new
                         {
                             Id = 42,
                             Number = "(921)313-00-34",
-                            TeacherId = 16
+                            TeacherId = 4
                         },
                         new
                         {
                             Id = 43,
                             Number = "(974)112-91-03",
-                            TeacherId = 43
+                            TeacherId = 4
                         },
                         new
                         {
                             Id = 44,
                             Number = "(910)426-09-58",
-                            TeacherId = 38
+                            TeacherId = 30
                         },
                         new
                         {
                             Id = 45,
                             Number = "(938)183-18-85",
-                            TeacherId = 54
+                            TeacherId = 59
                         },
                         new
                         {
                             Id = 46,
                             Number = "(973)526-48-87",
-                            TeacherId = 29
+                            TeacherId = 27
                         },
                         new
                         {
                             Id = 47,
                             Number = "(989)850-27-15",
-                            TeacherId = 66
+                            TeacherId = 35
                         },
                         new
                         {
                             Id = 48,
                             Number = "(915)579-83-27",
-                            TeacherId = 66
+                            TeacherId = 39
                         },
                         new
                         {
                             Id = 49,
                             Number = "(913)455-75-15",
-                            TeacherId = 41
+                            TeacherId = 21
                         },
                         new
                         {
                             Id = 50,
                             Number = "(920)738-30-58",
-                            TeacherId = 24
+                            TeacherId = 54
                         },
                         new
                         {
                             Id = 51,
                             Number = "(946)325-28-82",
-                            TeacherId = 33
+                            TeacherId = 7
                         },
                         new
                         {
                             Id = 52,
                             Number = "(905)063-54-39",
-                            TeacherId = 44
+                            TeacherId = 14
                         },
                         new
                         {
                             Id = 53,
                             Number = "(965)620-17-18",
-                            TeacherId = 28
+                            TeacherId = 58
                         },
                         new
                         {
                             Id = 54,
                             Number = "(987)466-49-29",
-                            TeacherId = 50
+                            TeacherId = 31
                         },
                         new
                         {
                             Id = 55,
                             Number = "(996)961-79-00",
-                            TeacherId = 61
+                            TeacherId = 68
                         },
                         new
                         {
                             Id = 56,
                             Number = "(986)554-90-02",
-                            TeacherId = 31
+                            TeacherId = 42
                         },
                         new
                         {
                             Id = 57,
                             Number = "(946)060-20-40",
-                            TeacherId = 43
+                            TeacherId = 14
                         },
                         new
                         {
                             Id = 58,
                             Number = "(962)363-06-91",
-                            TeacherId = 22
+                            TeacherId = 21
                         },
                         new
                         {
                             Id = 59,
                             Number = "(916)147-12-91",
-                            TeacherId = 41
+                            TeacherId = 32
                         },
                         new
                         {
                             Id = 60,
                             Number = "(948)958-26-26",
-                            TeacherId = 59
+                            TeacherId = 56
                         },
                         new
                         {
                             Id = 61,
                             Number = "(965)017-53-91",
-                            TeacherId = 63
+                            TeacherId = 10
                         },
                         new
                         {
                             Id = 62,
                             Number = "(920)993-85-59",
-                            TeacherId = 23
+                            TeacherId = 53
                         },
                         new
                         {
                             Id = 63,
                             Number = "(900)324-73-87",
-                            TeacherId = 32
+                            TeacherId = 55
                         },
                         new
                         {
                             Id = 64,
                             Number = "(933)326-66-07",
-                            TeacherId = 34
+                            TeacherId = 41
                         },
                         new
                         {
                             Id = 65,
                             Number = "(972)864-39-91",
-                            TeacherId = 39
+                            TeacherId = 49
                         },
                         new
                         {
                             Id = 66,
                             Number = "(971)277-51-86",
-                            TeacherId = 60
+                            TeacherId = 43
                         },
                         new
                         {
                             Id = 67,
                             Number = "(925)101-87-63",
-                            TeacherId = 56
+                            TeacherId = 46
                         },
                         new
                         {
                             Id = 68,
                             Number = "(925)771-72-67",
-                            TeacherId = 58
+                            TeacherId = 20
                         },
                         new
                         {
                             Id = 69,
                             Number = "(973)673-11-55",
-                            TeacherId = 20
+                            TeacherId = 28
                         },
                         new
                         {
                             Id = 70,
                             Number = "(947)378-21-75",
-                            TeacherId = 16
+                            TeacherId = 59
                         });
                 });
 
@@ -3650,1201 +3650,1201 @@ namespace SUBD_CourseWork.Migrations
                         new
                         {
                             Id = 1,
-                            AcademicRankId = 69,
-                            BirthDate = new DateOnly(1996, 7, 30),
-                            DateOfBeginning = new DateOnly(2019, 4, 20),
-                            DegreeId = 26,
-                            DepartmentId = 28,
-                            ElectedDate = new DateOnly(2019, 1, 20),
-                            HouseNumberId = 39,
-                            JobTitleId = 1,
+                            AcademicRankId = 52,
+                            BirthDate = new DateOnly(1989, 3, 10),
+                            DateOfBeginning = new DateOnly(2019, 2, 28),
+                            DegreeId = 6,
+                            DepartmentId = 2,
+                            ElectedDate = new DateOnly(2018, 12, 28),
+                            HouseNumberId = 31,
+                            JobTitleId = 7,
                             LastName = "Сидоров",
                             Name = "Роман",
                             Surname = "Некрасов",
                             TypeOfCooperationId = 1,
-                            Wage = 41000.0
+                            Wage = 40000.0
                         },
                         new
                         {
                             Id = 2,
-                            AcademicRankId = 63,
-                            BirthDate = new DateOnly(1994, 4, 4),
-                            DateOfBeginning = new DateOnly(2018, 6, 12),
-                            DegreeId = 59,
-                            DepartmentId = 28,
-                            ElectedDate = new DateOnly(2018, 4, 12),
-                            HouseNumberId = 15,
-                            JobTitleId = 1,
+                            AcademicRankId = 20,
+                            BirthDate = new DateOnly(1990, 12, 15),
+                            DateOfBeginning = new DateOnly(2019, 2, 6),
+                            DegreeId = 65,
+                            DepartmentId = 1,
+                            ElectedDate = new DateOnly(2018, 12, 6),
+                            HouseNumberId = 1,
+                            JobTitleId = 7,
                             LastName = "Щукин",
                             Name = "Маргарита",
                             Surname = "Ширяева",
-                            TypeOfCooperationId = 2,
-                            Wage = 34000.0
+                            TypeOfCooperationId = 1,
+                            Wage = 60000.0
                         },
                         new
                         {
                             Id = 3,
-                            AcademicRankId = 66,
-                            BirthDate = new DateOnly(1990, 6, 28),
-                            DateOfBeginning = new DateOnly(2018, 5, 22),
-                            DegreeId = 1,
-                            DepartmentId = 25,
-                            ElectedDate = new DateOnly(2018, 3, 22),
-                            HouseNumberId = 6,
+                            AcademicRankId = 70,
+                            BirthDate = new DateOnly(1989, 3, 6),
+                            DateOfBeginning = new DateOnly(2018, 2, 6),
+                            DegreeId = 18,
+                            DepartmentId = 10,
+                            ElectedDate = new DateOnly(2017, 11, 6),
+                            HouseNumberId = 5,
                             JobTitleId = 1,
                             LastName = "Самсонов",
                             Name = "Мария",
                             Surname = "Симонова",
                             TypeOfCooperationId = 2,
-                            Wage = 42000.0
+                            Wage = 43000.0
                         },
                         new
                         {
                             Id = 4,
-                            AcademicRankId = 50,
-                            BirthDate = new DateOnly(1988, 6, 28),
-                            DateOfBeginning = new DateOnly(2018, 5, 12),
-                            DegreeId = 54,
-                            DepartmentId = 26,
-                            ElectedDate = new DateOnly(2018, 2, 12),
-                            HouseNumberId = 15,
-                            JobTitleId = 6,
+                            AcademicRankId = 5,
+                            BirthDate = new DateOnly(1995, 1, 17),
+                            DateOfBeginning = new DateOnly(2018, 3, 27),
+                            DegreeId = 55,
+                            DepartmentId = 19,
+                            ElectedDate = new DateOnly(2018, 1, 27),
+                            HouseNumberId = 19,
+                            JobTitleId = 3,
                             LastName = "Авдеев",
                             Name = "Маргарита",
                             Surname = "Тетерина",
                             TypeOfCooperationId = 2,
-                            Wage = 39000.0
+                            Wage = 55000.0
                         },
                         new
                         {
                             Id = 5,
-                            AcademicRankId = 8,
-                            BirthDate = new DateOnly(1993, 7, 12),
-                            DateOfBeginning = new DateOnly(2019, 4, 13),
-                            DateOfEnding = new DateOnly(2023, 1, 11),
-                            DegreeId = 23,
-                            DepartmentId = 18,
-                            ElectedDate = new DateOnly(2019, 1, 13),
-                            HouseNumberId = 3,
-                            JobTitleId = 6,
+                            AcademicRankId = 24,
+                            BirthDate = new DateOnly(1996, 7, 4),
+                            DateOfBeginning = new DateOnly(2018, 3, 27),
+                            DateOfEnding = new DateOnly(2023, 6, 28),
+                            DegreeId = 29,
+                            DepartmentId = 13,
+                            ElectedDate = new DateOnly(2017, 12, 27),
+                            HouseNumberId = 6,
+                            JobTitleId = 5,
                             LastName = "Крылов",
                             Name = "Андрей",
                             Surname = "Коновалов",
-                            TypeOfCooperationId = 2,
-                            Wage = 47000.0
-                        },
-                        new
-                        {
-                            Id = 6,
-                            AcademicRankId = 33,
-                            BirthDate = new DateOnly(1993, 5, 12),
-                            DateOfBeginning = new DateOnly(2019, 6, 14),
-                            DegreeId = 53,
-                            DepartmentId = 10,
-                            ElectedDate = new DateOnly(2019, 4, 14),
-                            HouseNumberId = 27,
-                            JobTitleId = 2,
-                            LastName = "Симонов",
-                            Name = "Алла",
-                            Surname = "Гурьев",
-                            TypeOfCooperationId = 2,
-                            Wage = 34000.0
-                        },
-                        new
-                        {
-                            Id = 7,
-                            AcademicRankId = 26,
-                            BirthDate = new DateOnly(1992, 5, 27),
-                            DateOfBeginning = new DateOnly(2019, 4, 16),
-                            DegreeId = 32,
-                            DepartmentId = 5,
-                            ElectedDate = new DateOnly(2019, 2, 16),
-                            HouseNumberId = 19,
-                            JobTitleId = 1,
-                            LastName = "Костина",
-                            Name = "Арсений",
-                            Surname = "Савельева",
-                            TypeOfCooperationId = 2,
-                            Wage = 35000.0
-                        },
-                        new
-                        {
-                            Id = 8,
-                            AcademicRankId = 10,
-                            BirthDate = new DateOnly(1994, 3, 9),
-                            DateOfBeginning = new DateOnly(2018, 5, 17),
-                            DegreeId = 33,
-                            DepartmentId = 7,
-                            ElectedDate = new DateOnly(2018, 2, 17),
-                            HouseNumberId = 40,
-                            JobTitleId = 2,
-                            LastName = "Родионов",
-                            Name = "Валентин",
-                            Surname = "Борисова",
-                            TypeOfCooperationId = 2,
-                            Wage = 25000.0
-                        },
-                        new
-                        {
-                            Id = 9,
-                            AcademicRankId = 7,
-                            BirthDate = new DateOnly(1994, 8, 29),
-                            DateOfBeginning = new DateOnly(2019, 6, 15),
-                            DegreeId = 48,
-                            DepartmentId = 24,
-                            ElectedDate = new DateOnly(2019, 4, 15),
-                            HouseNumberId = 49,
-                            JobTitleId = 3,
-                            LastName = "Гусева",
-                            Name = "Римма",
-                            Surname = "Евсеев",
-                            TypeOfCooperationId = 2,
-                            Wage = 27000.0
-                        },
-                        new
-                        {
-                            Id = 10,
-                            AcademicRankId = 62,
-                            BirthDate = new DateOnly(1991, 9, 15),
-                            DateOfBeginning = new DateOnly(2018, 6, 7),
-                            DegreeId = 2,
-                            DepartmentId = 28,
-                            ElectedDate = new DateOnly(2018, 3, 7),
-                            HouseNumberId = 47,
-                            JobTitleId = 4,
-                            LastName = "Лапин",
-                            Name = "Маргарита",
-                            Surname = "Соколов",
-                            TypeOfCooperationId = 1,
-                            Wage = 62000.0
-                        },
-                        new
-                        {
-                            Id = 11,
-                            AcademicRankId = 39,
-                            BirthDate = new DateOnly(1991, 10, 1),
-                            DateOfBeginning = new DateOnly(2018, 6, 11),
-                            DegreeId = 4,
-                            DepartmentId = 2,
-                            ElectedDate = new DateOnly(2018, 3, 11),
-                            HouseNumberId = 6,
-                            JobTitleId = 2,
-                            LastName = "Гущина",
-                            Name = "Эдуард",
-                            Surname = "Горшкова",
-                            TypeOfCooperationId = 1,
-                            Wage = 30000.0
-                        },
-                        new
-                        {
-                            Id = 12,
-                            AcademicRankId = 17,
-                            BirthDate = new DateOnly(1992, 1, 27),
-                            DateOfBeginning = new DateOnly(2018, 6, 10),
-                            DegreeId = 50,
-                            DepartmentId = 1,
-                            ElectedDate = new DateOnly(2018, 3, 10),
-                            HouseNumberId = 21,
-                            JobTitleId = 1,
-                            LastName = "Антонов",
-                            Name = "Сергей",
-                            Surname = "Шубина",
-                            TypeOfCooperationId = 1,
-                            Wage = 18000.0
-                        },
-                        new
-                        {
-                            Id = 13,
-                            AcademicRankId = 47,
-                            BirthDate = new DateOnly(1992, 3, 26),
-                            DateOfBeginning = new DateOnly(2019, 6, 13),
-                            DegreeId = 31,
-                            DepartmentId = 19,
-                            ElectedDate = new DateOnly(2019, 4, 13),
-                            HouseNumberId = 43,
-                            JobTitleId = 4,
-                            LastName = "Казаков",
-                            Name = "Анфиса",
-                            Surname = "Сысоева",
-                            TypeOfCooperationId = 2,
-                            Wage = 31000.0
-                        },
-                        new
-                        {
-                            Id = 14,
-                            AcademicRankId = 23,
-                            BirthDate = new DateOnly(1988, 2, 22),
-                            DateOfBeginning = new DateOnly(2019, 5, 10),
-                            DegreeId = 9,
-                            DepartmentId = 2,
-                            ElectedDate = new DateOnly(2019, 3, 10),
-                            HouseNumberId = 2,
-                            JobTitleId = 2,
-                            LastName = "Гришин",
-                            Name = "Клавдия",
-                            Surname = "Якушева",
-                            TypeOfCooperationId = 2,
-                            Wage = 26000.0
-                        },
-                        new
-                        {
-                            Id = 15,
-                            AcademicRankId = 44,
-                            BirthDate = new DateOnly(1991, 7, 23),
-                            DateOfBeginning = new DateOnly(2018, 6, 8),
-                            DegreeId = 28,
-                            DepartmentId = 13,
-                            ElectedDate = new DateOnly(2018, 4, 8),
-                            HouseNumberId = 38,
-                            JobTitleId = 3,
-                            LastName = "Бобылев",
-                            Name = "Тамара",
-                            Surname = "Крылов",
-                            TypeOfCooperationId = 2,
-                            Wage = 41000.0
-                        },
-                        new
-                        {
-                            Id = 16,
-                            AcademicRankId = 37,
-                            BirthDate = new DateOnly(1993, 6, 5),
-                            DateOfBeginning = new DateOnly(2019, 6, 18),
-                            DateOfEnding = new DateOnly(2022, 5, 8),
-                            DegreeId = 41,
-                            DepartmentId = 19,
-                            ElectedDate = new DateOnly(2019, 4, 18),
-                            HouseNumberId = 48,
-                            JobTitleId = 4,
-                            LastName = "Носова",
-                            Name = "Ульяна",
-                            Surname = "Яковлев",
-                            TypeOfCooperationId = 2,
-                            Wage = 60000.0
-                        },
-                        new
-                        {
-                            Id = 17,
-                            AcademicRankId = 13,
-                            BirthDate = new DateOnly(1989, 5, 30),
-                            DateOfBeginning = new DateOnly(2018, 5, 8),
-                            DegreeId = 67,
-                            DepartmentId = 8,
-                            ElectedDate = new DateOnly(2018, 3, 8),
-                            HouseNumberId = 12,
-                            JobTitleId = 7,
-                            LastName = "Ефремова",
-                            Name = "Василиса",
-                            Surname = "Колобова",
-                            TypeOfCooperationId = 2,
-                            Wage = 35000.0
-                        },
-                        new
-                        {
-                            Id = 18,
-                            AcademicRankId = 70,
-                            BirthDate = new DateOnly(1994, 8, 16),
-                            DateOfBeginning = new DateOnly(2018, 6, 20),
-                            DegreeId = 20,
-                            DepartmentId = 4,
-                            ElectedDate = new DateOnly(2018, 4, 20),
-                            HouseNumberId = 29,
-                            JobTitleId = 7,
-                            LastName = "Доронин",
-                            Name = "Николай",
-                            Surname = "Евсеева",
-                            TypeOfCooperationId = 2,
-                            Wage = 17000.0
-                        },
-                        new
-                        {
-                            Id = 19,
-                            AcademicRankId = 24,
-                            BirthDate = new DateOnly(1991, 6, 5),
-                            DateOfBeginning = new DateOnly(2019, 5, 22),
-                            DegreeId = 64,
-                            DepartmentId = 16,
-                            ElectedDate = new DateOnly(2019, 2, 22),
-                            HouseNumberId = 44,
-                            JobTitleId = 7,
-                            LastName = "Жданова",
-                            Name = "Регина",
-                            Surname = "Романов",
-                            TypeOfCooperationId = 1,
-                            Wage = 17000.0
-                        },
-                        new
-                        {
-                            Id = 20,
-                            AcademicRankId = 43,
-                            BirthDate = new DateOnly(1989, 7, 29),
-                            DateOfBeginning = new DateOnly(2018, 5, 12),
-                            DegreeId = 55,
-                            DepartmentId = 2,
-                            ElectedDate = new DateOnly(2018, 3, 12),
-                            HouseNumberId = 18,
-                            JobTitleId = 1,
-                            LastName = "Носков",
-                            Name = "Юлия",
-                            Surname = "Белякова",
-                            TypeOfCooperationId = 1,
-                            Wage = 19000.0
-                        },
-                        new
-                        {
-                            Id = 21,
-                            AcademicRankId = 56,
-                            BirthDate = new DateOnly(1993, 3, 26),
-                            DateOfBeginning = new DateOnly(2018, 6, 19),
-                            DegreeId = 14,
-                            DepartmentId = 2,
-                            ElectedDate = new DateOnly(2018, 4, 19),
-                            HouseNumberId = 39,
-                            JobTitleId = 3,
-                            LastName = "Самсонова",
-                            Name = "Альберт",
-                            Surname = "Силина",
-                            TypeOfCooperationId = 1,
-                            Wage = 45000.0
-                        },
-                        new
-                        {
-                            Id = 22,
-                            AcademicRankId = 36,
-                            BirthDate = new DateOnly(1996, 4, 25),
-                            DateOfBeginning = new DateOnly(2019, 4, 16),
-                            DegreeId = 27,
-                            DepartmentId = 11,
-                            ElectedDate = new DateOnly(2019, 2, 16),
-                            HouseNumberId = 18,
-                            JobTitleId = 2,
-                            LastName = "Дорофеева",
-                            Name = "Григорий",
-                            Surname = "Куликова",
-                            TypeOfCooperationId = 1,
-                            Wage = 21000.0
-                        },
-                        new
-                        {
-                            Id = 23,
-                            AcademicRankId = 58,
-                            BirthDate = new DateOnly(1993, 7, 25),
-                            DateOfBeginning = new DateOnly(2019, 4, 7),
-                            DateOfEnding = new DateOnly(2022, 3, 13),
-                            DegreeId = 13,
-                            DepartmentId = 9,
-                            ElectedDate = new DateOnly(2019, 2, 7),
-                            HouseNumberId = 4,
-                            JobTitleId = 2,
-                            LastName = "Шестаков",
-                            Name = "Леонид",
-                            Surname = "Лаврентьева",
                             TypeOfCooperationId = 2,
                             Wage = 37000.0
                         },
                         new
                         {
-                            Id = 24,
-                            AcademicRankId = 6,
-                            BirthDate = new DateOnly(1988, 8, 26),
-                            DateOfBeginning = new DateOnly(2019, 4, 15),
-                            DegreeId = 40,
-                            DepartmentId = 2,
-                            ElectedDate = new DateOnly(2019, 1, 15),
-                            HouseNumberId = 32,
-                            JobTitleId = 7,
-                            LastName = "Владимирова",
-                            Name = "Виктор",
-                            Surname = "Фадеева",
-                            TypeOfCooperationId = 1,
-                            Wage = 48000.0
-                        },
-                        new
-                        {
-                            Id = 25,
-                            AcademicRankId = 41,
-                            BirthDate = new DateOnly(1992, 1, 24),
-                            DateOfBeginning = new DateOnly(2019, 6, 19),
-                            DegreeId = 62,
-                            DepartmentId = 21,
-                            ElectedDate = new DateOnly(2019, 3, 19),
-                            HouseNumberId = 43,
-                            JobTitleId = 4,
-                            LastName = "Карпова",
-                            Name = "Альберт",
-                            Surname = "Кузьмин",
-                            TypeOfCooperationId = 1,
-                            Wage = 45000.0
-                        },
-                        new
-                        {
-                            Id = 26,
-                            AcademicRankId = 32,
-                            BirthDate = new DateOnly(1990, 3, 27),
-                            DateOfBeginning = new DateOnly(2019, 5, 8),
-                            DegreeId = 52,
-                            DepartmentId = 17,
-                            ElectedDate = new DateOnly(2019, 3, 8),
-                            HouseNumberId = 2,
-                            JobTitleId = 2,
-                            LastName = "Меркушева",
-                            Name = "Леонид",
-                            Surname = "Сазонова",
-                            TypeOfCooperationId = 2,
-                            Wage = 20000.0
-                        },
-                        new
-                        {
-                            Id = 27,
-                            AcademicRankId = 49,
-                            BirthDate = new DateOnly(1992, 1, 24),
-                            DateOfBeginning = new DateOnly(2019, 6, 11),
-                            DegreeId = 46,
-                            DepartmentId = 11,
-                            ElectedDate = new DateOnly(2019, 4, 11),
-                            HouseNumberId = 46,
-                            JobTitleId = 1,
-                            LastName = "Князев",
-                            Name = "Игнатий",
-                            Surname = "Трофимов",
-                            TypeOfCooperationId = 2,
-                            Wage = 21000.0
-                        },
-                        new
-                        {
-                            Id = 28,
-                            AcademicRankId = 3,
-                            BirthDate = new DateOnly(1993, 2, 20),
-                            DateOfBeginning = new DateOnly(2019, 5, 10),
-                            DegreeId = 60,
-                            DepartmentId = 2,
-                            ElectedDate = new DateOnly(2019, 2, 10),
-                            HouseNumberId = 33,
-                            JobTitleId = 4,
-                            LastName = "Новиков",
-                            Name = "Антонида",
-                            Surname = "Кузьмина",
-                            TypeOfCooperationId = 1,
-                            Wage = 54000.0
-                        },
-                        new
-                        {
-                            Id = 29,
-                            AcademicRankId = 29,
-                            BirthDate = new DateOnly(1995, 5, 11),
-                            DateOfBeginning = new DateOnly(2019, 6, 20),
-                            DegreeId = 44,
-                            DepartmentId = 12,
-                            ElectedDate = new DateOnly(2019, 3, 20),
-                            HouseNumberId = 35,
-                            JobTitleId = 5,
-                            LastName = "Медведев",
-                            Name = "Константин",
-                            Surname = "Бирюков",
-                            TypeOfCooperationId = 1,
-                            Wage = 34000.0
-                        },
-                        new
-                        {
-                            Id = 30,
-                            AcademicRankId = 1,
-                            BirthDate = new DateOnly(1991, 2, 19),
-                            DateOfBeginning = new DateOnly(2018, 6, 11),
-                            DegreeId = 29,
-                            DepartmentId = 24,
-                            ElectedDate = new DateOnly(2018, 3, 11),
-                            HouseNumberId = 10,
-                            JobTitleId = 6,
-                            LastName = "Панов",
-                            Name = "Галина",
-                            Surname = "Самсонова",
-                            TypeOfCooperationId = 2,
-                            Wage = 35000.0
-                        },
-                        new
-                        {
-                            Id = 31,
-                            AcademicRankId = 53,
-                            BirthDate = new DateOnly(1996, 4, 11),
-                            DateOfBeginning = new DateOnly(2019, 5, 17),
-                            DegreeId = 69,
-                            DepartmentId = 7,
-                            ElectedDate = new DateOnly(2019, 3, 17),
-                            HouseNumberId = 16,
-                            JobTitleId = 7,
-                            LastName = "Мельников",
-                            Name = "Арина",
-                            Surname = "Сазонова",
-                            TypeOfCooperationId = 2,
-                            Wage = 60000.0
-                        },
-                        new
-                        {
-                            Id = 32,
-                            AcademicRankId = 5,
-                            BirthDate = new DateOnly(1993, 7, 13),
-                            DateOfBeginning = new DateOnly(2018, 6, 22),
-                            DegreeId = 18,
-                            DepartmentId = 3,
-                            ElectedDate = new DateOnly(2018, 4, 22),
-                            HouseNumberId = 3,
-                            JobTitleId = 1,
-                            LastName = "Кондратьева",
-                            Name = "Лука",
-                            Surname = "Вишняков",
-                            TypeOfCooperationId = 1,
-                            Wage = 47000.0
-                        },
-                        new
-                        {
-                            Id = 33,
-                            AcademicRankId = 25,
-                            BirthDate = new DateOnly(1988, 6, 24),
-                            DateOfBeginning = new DateOnly(2019, 5, 9),
-                            DegreeId = 5,
-                            DepartmentId = 30,
-                            ElectedDate = new DateOnly(2019, 2, 9),
-                            HouseNumberId = 50,
-                            JobTitleId = 7,
-                            LastName = "Горбачева",
-                            Name = "Леонид",
-                            Surname = "Лукина",
-                            TypeOfCooperationId = 2,
-                            Wage = 27000.0
-                        },
-                        new
-                        {
-                            Id = 34,
-                            AcademicRankId = 55,
-                            BirthDate = new DateOnly(1996, 5, 26),
-                            DateOfBeginning = new DateOnly(2018, 6, 8),
-                            DegreeId = 25,
-                            DepartmentId = 28,
-                            ElectedDate = new DateOnly(2018, 4, 8),
-                            HouseNumberId = 11,
-                            JobTitleId = 4,
-                            LastName = "Мельников",
-                            Name = "Валентина",
-                            Surname = "Пестова",
-                            TypeOfCooperationId = 1,
-                            Wage = 16000.0
-                        },
-                        new
-                        {
-                            Id = 35,
-                            AcademicRankId = 61,
-                            BirthDate = new DateOnly(1991, 3, 17),
-                            DateOfBeginning = new DateOnly(2018, 4, 11),
-                            DegreeId = 66,
-                            DepartmentId = 11,
-                            ElectedDate = new DateOnly(2018, 1, 11),
-                            HouseNumberId = 9,
-                            JobTitleId = 4,
-                            LastName = "Шубин",
-                            Name = "Лариса",
-                            Surname = "Субботина",
-                            TypeOfCooperationId = 2,
-                            Wage = 46000.0
-                        },
-                        new
-                        {
-                            Id = 36,
-                            AcademicRankId = 68,
-                            BirthDate = new DateOnly(1989, 4, 28),
-                            DateOfBeginning = new DateOnly(2018, 5, 14),
-                            DegreeId = 57,
-                            DepartmentId = 23,
-                            ElectedDate = new DateOnly(2018, 3, 14),
-                            HouseNumberId = 7,
-                            JobTitleId = 3,
-                            LastName = "Уваров",
-                            Name = "Владислав",
-                            Surname = "Ситникова",
-                            TypeOfCooperationId = 1,
-                            Wage = 36000.0
-                        },
-                        new
-                        {
-                            Id = 37,
-                            AcademicRankId = 16,
-                            BirthDate = new DateOnly(1989, 6, 19),
-                            DateOfBeginning = new DateOnly(2019, 5, 17),
-                            DateOfEnding = new DateOnly(2023, 5, 16),
-                            DegreeId = 42,
-                            DepartmentId = 13,
-                            ElectedDate = new DateOnly(2019, 2, 17),
-                            HouseNumberId = 5,
-                            JobTitleId = 2,
-                            LastName = "Фадеева",
-                            Name = "Дмитрий",
-                            Surname = "Гущина",
-                            TypeOfCooperationId = 2,
-                            Wage = 42000.0
-                        },
-                        new
-                        {
-                            Id = 38,
-                            AcademicRankId = 45,
-                            BirthDate = new DateOnly(1995, 7, 28),
-                            DateOfBeginning = new DateOnly(2019, 4, 14),
-                            DateOfEnding = new DateOnly(2021, 10, 29),
-                            DegreeId = 63,
-                            DepartmentId = 3,
-                            ElectedDate = new DateOnly(2019, 1, 14),
-                            HouseNumberId = 31,
-                            JobTitleId = 2,
-                            LastName = "Комиссаров",
-                            Name = "Денис",
-                            Surname = "Уваров",
-                            TypeOfCooperationId = 1,
-                            Wage = 15000.0
-                        },
-                        new
-                        {
-                            Id = 39,
-                            AcademicRankId = 4,
-                            BirthDate = new DateOnly(1991, 8, 3),
-                            DateOfBeginning = new DateOnly(2018, 4, 16),
-                            DegreeId = 22,
-                            DepartmentId = 15,
-                            ElectedDate = new DateOnly(2018, 1, 16),
-                            HouseNumberId = 49,
-                            JobTitleId = 1,
-                            LastName = "Воронов",
-                            Name = "Тамара",
-                            Surname = "Мамонтова",
-                            TypeOfCooperationId = 2,
-                            Wage = 16000.0
-                        },
-                        new
-                        {
-                            Id = 40,
-                            AcademicRankId = 40,
-                            BirthDate = new DateOnly(1989, 2, 26),
-                            DateOfBeginning = new DateOnly(2019, 4, 16),
-                            DegreeId = 49,
-                            DepartmentId = 31,
-                            ElectedDate = new DateOnly(2019, 1, 16),
-                            HouseNumberId = 16,
-                            JobTitleId = 4,
-                            LastName = "Беляев",
-                            Name = "Александра",
-                            Surname = "Лапин",
-                            TypeOfCooperationId = 2,
-                            Wage = 21000.0
-                        },
-                        new
-                        {
-                            Id = 41,
-                            AcademicRankId = 60,
-                            BirthDate = new DateOnly(1992, 6, 2),
-                            DateOfBeginning = new DateOnly(2019, 5, 14),
-                            DateOfEnding = new DateOnly(2022, 2, 23),
-                            DegreeId = 16,
-                            DepartmentId = 27,
-                            ElectedDate = new DateOnly(2019, 3, 14),
-                            HouseNumberId = 29,
-                            JobTitleId = 2,
-                            LastName = "Гуляева",
-                            Name = "Арсений",
-                            Surname = "Осипова",
-                            TypeOfCooperationId = 1,
-                            Wage = 26000.0
-                        },
-                        new
-                        {
-                            Id = 42,
-                            AcademicRankId = 30,
-                            BirthDate = new DateOnly(1988, 3, 29),
-                            DateOfBeginning = new DateOnly(2019, 5, 9),
-                            DegreeId = 19,
-                            DepartmentId = 23,
-                            ElectedDate = new DateOnly(2019, 2, 9),
-                            HouseNumberId = 20,
-                            JobTitleId = 1,
-                            LastName = "Шарапов",
-                            Name = "Артём",
-                            Surname = "Артемьев",
-                            TypeOfCooperationId = 2,
-                            Wage = 26000.0
-                        },
-                        new
-                        {
-                            Id = 43,
-                            AcademicRankId = 35,
-                            BirthDate = new DateOnly(1992, 5, 18),
-                            DateOfBeginning = new DateOnly(2019, 6, 20),
-                            DegreeId = 51,
-                            DepartmentId = 14,
-                            ElectedDate = new DateOnly(2019, 4, 20),
-                            HouseNumberId = 22,
-                            JobTitleId = 3,
-                            LastName = "Абрамова",
-                            Name = "Анфиса",
-                            Surname = "Максимов",
-                            TypeOfCooperationId = 2,
-                            Wage = 15000.0
-                        },
-                        new
-                        {
-                            Id = 44,
-                            AcademicRankId = 2,
-                            BirthDate = new DateOnly(1988, 7, 27),
-                            DateOfBeginning = new DateOnly(2019, 4, 7),
-                            DegreeId = 7,
-                            DepartmentId = 12,
-                            ElectedDate = new DateOnly(2019, 1, 7),
-                            HouseNumberId = 15,
-                            JobTitleId = 2,
-                            LastName = "Исаева",
-                            Name = "Владислав",
-                            Surname = "Крылов",
-                            TypeOfCooperationId = 1,
-                            Wage = 29000.0
-                        },
-                        new
-                        {
-                            Id = 45,
-                            AcademicRankId = 18,
-                            BirthDate = new DateOnly(1996, 5, 5),
-                            DateOfBeginning = new DateOnly(2018, 4, 12),
-                            DegreeId = 10,
-                            DepartmentId = 6,
-                            ElectedDate = new DateOnly(2018, 1, 12),
-                            HouseNumberId = 34,
-                            JobTitleId = 7,
-                            LastName = "Баранов",
-                            Name = "Антонида",
-                            Surname = "Петухова",
-                            TypeOfCooperationId = 1,
-                            Wage = 46000.0
-                        },
-                        new
-                        {
-                            Id = 46,
-                            AcademicRankId = 28,
-                            BirthDate = new DateOnly(1995, 2, 3),
-                            DateOfBeginning = new DateOnly(2018, 4, 14),
-                            DegreeId = 65,
-                            DepartmentId = 6,
-                            ElectedDate = new DateOnly(2018, 2, 14),
-                            HouseNumberId = 32,
-                            JobTitleId = 3,
-                            LastName = "Костин",
-                            Name = "Клавдия",
-                            Surname = "Воробьев",
-                            TypeOfCooperationId = 2,
-                            Wage = 16000.0
-                        },
-                        new
-                        {
-                            Id = 47,
-                            AcademicRankId = 19,
-                            BirthDate = new DateOnly(1995, 8, 3),
-                            DateOfBeginning = new DateOnly(2018, 5, 10),
-                            DegreeId = 3,
-                            DepartmentId = 19,
-                            ElectedDate = new DateOnly(2018, 2, 10),
-                            HouseNumberId = 9,
-                            JobTitleId = 5,
-                            LastName = "Зыков",
-                            Name = "Ангелина",
-                            Surname = "Никонов",
-                            TypeOfCooperationId = 2,
-                            Wage = 16000.0
-                        },
-                        new
-                        {
-                            Id = 48,
-                            AcademicRankId = 14,
-                            BirthDate = new DateOnly(1995, 3, 10),
-                            DateOfBeginning = new DateOnly(2019, 4, 17),
-                            DegreeId = 11,
-                            DepartmentId = 4,
-                            ElectedDate = new DateOnly(2019, 2, 17),
-                            HouseNumberId = 50,
-                            JobTitleId = 5,
-                            LastName = "Виноградова",
-                            Name = "Людмила",
-                            Surname = "Беляева",
-                            TypeOfCooperationId = 2,
-                            Wage = 48000.0
-                        },
-                        new
-                        {
-                            Id = 49,
-                            AcademicRankId = 54,
-                            BirthDate = new DateOnly(1993, 6, 27),
-                            DateOfBeginning = new DateOnly(2019, 4, 10),
-                            DegreeId = 15,
-                            DepartmentId = 13,
-                            ElectedDate = new DateOnly(2019, 2, 10),
-                            HouseNumberId = 16,
-                            JobTitleId = 4,
-                            LastName = "Куликова",
-                            Name = "Андрей",
-                            Surname = "Константинов",
-                            TypeOfCooperationId = 1,
-                            Wage = 60000.0
-                        },
-                        new
-                        {
-                            Id = 50,
-                            AcademicRankId = 9,
-                            BirthDate = new DateOnly(1991, 3, 23),
-                            DateOfBeginning = new DateOnly(2018, 4, 12),
-                            DegreeId = 39,
-                            DepartmentId = 4,
-                            ElectedDate = new DateOnly(2018, 1, 12),
-                            HouseNumberId = 35,
-                            JobTitleId = 5,
-                            LastName = "Гурьева",
-                            Name = "Ольга",
-                            Surname = "Федоров",
-                            TypeOfCooperationId = 1,
-                            Wage = 57000.0
-                        },
-                        new
-                        {
-                            Id = 51,
-                            AcademicRankId = 59,
-                            BirthDate = new DateOnly(1990, 4, 15),
-                            DateOfBeginning = new DateOnly(2018, 4, 20),
-                            DateOfEnding = new DateOnly(2023, 1, 7),
-                            DegreeId = 8,
-                            DepartmentId = 22,
-                            ElectedDate = new DateOnly(2018, 2, 20),
-                            HouseNumberId = 14,
-                            JobTitleId = 3,
-                            LastName = "Блинов",
-                            Name = "Анатолий",
-                            Surname = "Гордеев",
-                            TypeOfCooperationId = 2,
-                            Wage = 58000.0
-                        },
-                        new
-                        {
-                            Id = 52,
-                            AcademicRankId = 65,
-                            BirthDate = new DateOnly(1990, 4, 27),
-                            DateOfBeginning = new DateOnly(2018, 4, 9),
-                            DegreeId = 45,
-                            DepartmentId = 14,
-                            ElectedDate = new DateOnly(2018, 1, 9),
-                            HouseNumberId = 29,
-                            JobTitleId = 7,
-                            LastName = "Щербаков",
-                            Name = "Василий",
-                            Surname = "Корнилов",
-                            TypeOfCooperationId = 2,
-                            Wage = 26000.0
-                        },
-                        new
-                        {
-                            Id = 53,
-                            AcademicRankId = 20,
-                            BirthDate = new DateOnly(1991, 9, 1),
-                            DateOfBeginning = new DateOnly(2019, 5, 18),
-                            DegreeId = 37,
-                            DepartmentId = 23,
-                            ElectedDate = new DateOnly(2019, 2, 18),
-                            HouseNumberId = 11,
-                            JobTitleId = 4,
-                            LastName = "Молчанов",
-                            Name = "Дмитрий",
-                            Surname = "Виноградов",
-                            TypeOfCooperationId = 2,
-                            Wage = 64000.0
-                        },
-                        new
-                        {
-                            Id = 54,
-                            AcademicRankId = 46,
-                            BirthDate = new DateOnly(1990, 4, 22),
-                            DateOfBeginning = new DateOnly(2018, 5, 7),
-                            DegreeId = 17,
-                            DepartmentId = 31,
-                            ElectedDate = new DateOnly(2018, 2, 7),
-                            HouseNumberId = 24,
-                            JobTitleId = 6,
-                            LastName = "Анисимов",
-                            Name = "Антонина",
-                            Surname = "Сидоров",
-                            TypeOfCooperationId = 1,
-                            Wage = 47000.0
-                        },
-                        new
-                        {
-                            Id = 55,
-                            AcademicRankId = 15,
-                            BirthDate = new DateOnly(1988, 3, 24),
-                            DateOfBeginning = new DateOnly(2018, 5, 8),
-                            DegreeId = 61,
-                            DepartmentId = 28,
-                            ElectedDate = new DateOnly(2018, 2, 8),
-                            HouseNumberId = 19,
-                            JobTitleId = 7,
-                            LastName = "Лихачев",
-                            Name = "Леонид",
-                            Surname = "Горбунов",
-                            TypeOfCooperationId = 2,
-                            Wage = 43000.0
-                        },
-                        new
-                        {
-                            Id = 56,
-                            AcademicRankId = 57,
-                            BirthDate = new DateOnly(1994, 4, 23),
-                            DateOfBeginning = new DateOnly(2019, 5, 13),
+                            Id = 6,
+                            AcademicRankId = 8,
+                            BirthDate = new DateOnly(1994, 5, 1),
+                            DateOfBeginning = new DateOnly(2019, 2, 5),
                             DegreeId = 58,
-                            DepartmentId = 12,
-                            ElectedDate = new DateOnly(2019, 2, 13),
-                            HouseNumberId = 26,
-                            JobTitleId = 3,
-                            LastName = "Блинова",
-                            Name = "Алла",
-                            Surname = "Миронова",
-                            TypeOfCooperationId = 1,
-                            Wage = 29000.0
-                        },
-                        new
-                        {
-                            Id = 57,
-                            AcademicRankId = 67,
-                            BirthDate = new DateOnly(1994, 4, 11),
-                            DateOfBeginning = new DateOnly(2019, 5, 10),
-                            DegreeId = 47,
                             DepartmentId = 3,
-                            ElectedDate = new DateOnly(2019, 2, 10),
-                            HouseNumberId = 46,
-                            JobTitleId = 4,
-                            LastName = "Беляков",
-                            Name = "Мария",
-                            Surname = "Овчинникова",
-                            TypeOfCooperationId = 2,
-                            Wage = 53000.0
-                        },
-                        new
-                        {
-                            Id = 58,
-                            AcademicRankId = 27,
-                            BirthDate = new DateOnly(1989, 5, 6),
-                            DateOfBeginning = new DateOnly(2018, 5, 22),
-                            DegreeId = 6,
-                            DepartmentId = 28,
-                            ElectedDate = new DateOnly(2018, 2, 22),
-                            HouseNumberId = 38,
+                            ElectedDate = new DateOnly(2018, 12, 5),
+                            HouseNumberId = 50,
                             JobTitleId = 7,
-                            LastName = "Сазонов",
-                            Name = "Оксана",
-                            Surname = "Брагин",
-                            TypeOfCooperationId = 2,
-                            Wage = 28000.0
-                        },
-                        new
-                        {
-                            Id = 59,
-                            AcademicRankId = 64,
-                            BirthDate = new DateOnly(1994, 8, 15),
-                            DateOfBeginning = new DateOnly(2019, 6, 9),
-                            DegreeId = 43,
-                            DepartmentId = 9,
-                            ElectedDate = new DateOnly(2019, 3, 9),
-                            HouseNumberId = 26,
-                            JobTitleId = 3,
-                            LastName = "Михеев",
-                            Name = "Максим",
-                            Surname = "Федорова",
-                            TypeOfCooperationId = 1,
-                            Wage = 22000.0
-                        },
-                        new
-                        {
-                            Id = 60,
-                            AcademicRankId = 52,
-                            BirthDate = new DateOnly(1990, 4, 15),
-                            DateOfBeginning = new DateOnly(2019, 4, 16),
-                            DegreeId = 68,
-                            DepartmentId = 28,
-                            ElectedDate = new DateOnly(2019, 1, 16),
-                            HouseNumberId = 20,
-                            JobTitleId = 4,
-                            LastName = "Ширяева",
-                            Name = "Татьяна",
-                            Surname = "Галкина",
-                            TypeOfCooperationId = 1,
-                            Wage = 58000.0
-                        },
-                        new
-                        {
-                            Id = 61,
-                            AcademicRankId = 38,
-                            BirthDate = new DateOnly(1989, 9, 30),
-                            DateOfBeginning = new DateOnly(2018, 6, 15),
-                            DegreeId = 38,
-                            DepartmentId = 29,
-                            ElectedDate = new DateOnly(2018, 4, 15),
-                            HouseNumberId = 32,
-                            JobTitleId = 4,
-                            LastName = "Некрасова",
-                            Name = "Дмитрий",
-                            Surname = "Андреев",
-                            TypeOfCooperationId = 2,
-                            Wage = 25000.0
-                        },
-                        new
-                        {
-                            Id = 62,
-                            AcademicRankId = 42,
-                            BirthDate = new DateOnly(1991, 4, 24),
-                            DateOfBeginning = new DateOnly(2018, 5, 20),
-                            DegreeId = 12,
-                            DepartmentId = 28,
-                            ElectedDate = new DateOnly(2018, 3, 20),
-                            HouseNumberId = 19,
-                            JobTitleId = 6,
-                            LastName = "Ситников",
-                            Name = "Валерий",
-                            Surname = "Галкин",
-                            TypeOfCooperationId = 1,
-                            Wage = 46000.0
-                        },
-                        new
-                        {
-                            Id = 63,
-                            AcademicRankId = 22,
-                            BirthDate = new DateOnly(1996, 9, 27),
-                            DateOfBeginning = new DateOnly(2018, 6, 9),
-                            DegreeId = 56,
-                            DepartmentId = 2,
-                            ElectedDate = new DateOnly(2018, 4, 9),
-                            HouseNumberId = 24,
-                            JobTitleId = 3,
-                            LastName = "Родионов",
-                            Name = "Ольга",
-                            Surname = "Попов",
-                            TypeOfCooperationId = 2,
-                            Wage = 43000.0
-                        },
-                        new
-                        {
-                            Id = 64,
-                            AcademicRankId = 11,
-                            BirthDate = new DateOnly(1993, 2, 18),
-                            DateOfBeginning = new DateOnly(2018, 5, 13),
-                            DegreeId = 36,
-                            DepartmentId = 22,
-                            ElectedDate = new DateOnly(2018, 3, 13),
-                            HouseNumberId = 19,
-                            JobTitleId = 3,
-                            LastName = "Матвеева",
-                            Name = "Семён",
-                            Surname = "Воронцов",
+                            LastName = "Симонов",
+                            Name = "Алла",
+                            Surname = "Гурьев",
                             TypeOfCooperationId = 1,
                             Wage = 24000.0
                         },
                         new
                         {
-                            Id = 65,
-                            AcademicRankId = 51,
-                            BirthDate = new DateOnly(1993, 6, 25),
-                            DateOfBeginning = new DateOnly(2019, 6, 12),
-                            DateOfEnding = new DateOnly(2023, 4, 8),
-                            DegreeId = 24,
-                            DepartmentId = 23,
-                            ElectedDate = new DateOnly(2019, 4, 12),
-                            HouseNumberId = 40,
-                            JobTitleId = 5,
-                            LastName = "Мартынова",
-                            Name = "Вероника",
-                            Surname = "Богданова",
+                            Id = 7,
+                            AcademicRankId = 10,
+                            BirthDate = new DateOnly(1991, 12, 21),
+                            DateOfBeginning = new DateOnly(2019, 3, 30),
+                            DegreeId = 67,
+                            DepartmentId = 21,
+                            ElectedDate = new DateOnly(2018, 12, 30),
+                            HouseNumberId = 35,
+                            JobTitleId = 4,
+                            LastName = "Костина",
+                            Name = "Арсений",
+                            Surname = "Савельева",
                             TypeOfCooperationId = 2,
-                            Wage = 50000.0
+                            Wage = 38000.0
                         },
                         new
                         {
-                            Id = 66,
-                            AcademicRankId = 12,
-                            BirthDate = new DateOnly(1994, 2, 10),
-                            DateOfBeginning = new DateOnly(2018, 6, 14),
-                            DegreeId = 35,
-                            DepartmentId = 3,
-                            ElectedDate = new DateOnly(2018, 3, 14),
-                            HouseNumberId = 36,
-                            JobTitleId = 6,
-                            LastName = "Смирнов",
-                            Name = "Лариса",
-                            Surname = "Федосеев",
+                            Id = 8,
+                            AcademicRankId = 51,
+                            BirthDate = new DateOnly(1988, 2, 19),
+                            DateOfBeginning = new DateOnly(2018, 4, 7),
+                            DegreeId = 12,
+                            DepartmentId = 14,
+                            ElectedDate = new DateOnly(2018, 1, 7),
+                            HouseNumberId = 43,
+                            JobTitleId = 5,
+                            LastName = "Родионов",
+                            Name = "Валентин",
+                            Surname = "Борисова",
+                            TypeOfCooperationId = 1,
+                            Wage = 19000.0
+                        },
+                        new
+                        {
+                            Id = 9,
+                            AcademicRankId = 27,
+                            BirthDate = new DateOnly(1990, 6, 23),
+                            DateOfBeginning = new DateOnly(2019, 2, 23),
+                            DegreeId = 42,
+                            DepartmentId = 10,
+                            ElectedDate = new DateOnly(2018, 11, 23),
+                            HouseNumberId = 45,
+                            JobTitleId = 5,
+                            LastName = "Гусева",
+                            Name = "Римма",
+                            Surname = "Евсеев",
+                            TypeOfCooperationId = 2,
+                            Wage = 55000.0
+                        },
+                        new
+                        {
+                            Id = 10,
+                            AcademicRankId = 16,
+                            BirthDate = new DateOnly(1988, 6, 3),
+                            DateOfBeginning = new DateOnly(2018, 1, 26),
+                            DegreeId = 13,
+                            DepartmentId = 24,
+                            ElectedDate = new DateOnly(2017, 11, 26),
+                            HouseNumberId = 32,
+                            JobTitleId = 2,
+                            LastName = "Лапин",
+                            Name = "Маргарита",
+                            Surname = "Соколов",
+                            TypeOfCooperationId = 1,
+                            Wage = 39000.0
+                        },
+                        new
+                        {
+                            Id = 11,
+                            AcademicRankId = 23,
+                            BirthDate = new DateOnly(1995, 6, 29),
+                            DateOfBeginning = new DateOnly(2018, 1, 23),
+                            DegreeId = 69,
+                            DepartmentId = 1,
+                            ElectedDate = new DateOnly(2017, 10, 23),
+                            HouseNumberId = 27,
+                            JobTitleId = 4,
+                            LastName = "Гущина",
+                            Name = "Эдуард",
+                            Surname = "Горшкова",
+                            TypeOfCooperationId = 2,
+                            Wage = 55000.0
+                        },
+                        new
+                        {
+                            Id = 12,
+                            AcademicRankId = 3,
+                            BirthDate = new DateOnly(1988, 6, 21),
+                            DateOfBeginning = new DateOnly(2019, 3, 3),
+                            DegreeId = 25,
+                            DepartmentId = 9,
+                            ElectedDate = new DateOnly(2019, 1, 3),
+                            HouseNumberId = 16,
+                            JobTitleId = 5,
+                            LastName = "Антонов",
+                            Name = "Сергей",
+                            Surname = "Шубина",
+                            TypeOfCooperationId = 2,
+                            Wage = 19000.0
+                        },
+                        new
+                        {
+                            Id = 13,
+                            AcademicRankId = 54,
+                            BirthDate = new DateOnly(1995, 1, 18),
+                            DateOfBeginning = new DateOnly(2018, 3, 10),
+                            DegreeId = 63,
+                            DepartmentId = 17,
+                            ElectedDate = new DateOnly(2018, 1, 10),
+                            HouseNumberId = 48,
+                            JobTitleId = 7,
+                            LastName = "Казаков",
+                            Name = "Анфиса",
+                            Surname = "Сысоева",
+                            TypeOfCooperationId = 2,
+                            Wage = 18000.0
+                        },
+                        new
+                        {
+                            Id = 14,
+                            AcademicRankId = 55,
+                            BirthDate = new DateOnly(1989, 4, 6),
+                            DateOfBeginning = new DateOnly(2018, 2, 1),
+                            DegreeId = 64,
+                            DepartmentId = 29,
+                            ElectedDate = new DateOnly(2017, 11, 1),
+                            HouseNumberId = 49,
+                            JobTitleId = 4,
+                            LastName = "Гришин",
+                            Name = "Клавдия",
+                            Surname = "Якушева",
+                            TypeOfCooperationId = 1,
+                            Wage = 40000.0
+                        },
+                        new
+                        {
+                            Id = 15,
+                            AcademicRankId = 41,
+                            BirthDate = new DateOnly(1989, 3, 17),
+                            DateOfBeginning = new DateOnly(2019, 3, 10),
+                            DegreeId = 22,
+                            DepartmentId = 24,
+                            ElectedDate = new DateOnly(2018, 12, 10),
+                            HouseNumberId = 49,
+                            JobTitleId = 5,
+                            LastName = "Бобылев",
+                            Name = "Тамара",
+                            Surname = "Крылов",
+                            TypeOfCooperationId = 2,
+                            Wage = 54000.0
+                        },
+                        new
+                        {
+                            Id = 16,
+                            AcademicRankId = 43,
+                            BirthDate = new DateOnly(1994, 3, 7),
+                            DateOfBeginning = new DateOnly(2019, 3, 7),
+                            DateOfEnding = new DateOnly(2022, 5, 8),
+                            DegreeId = 20,
+                            DepartmentId = 26,
+                            ElectedDate = new DateOnly(2018, 12, 7),
+                            HouseNumberId = 14,
+                            JobTitleId = 7,
+                            LastName = "Носова",
+                            Name = "Ульяна",
+                            Surname = "Яковлев",
                             TypeOfCooperationId = 2,
                             Wage = 28000.0
                         },
                         new
                         {
-                            Id = 67,
-                            AcademicRankId = 34,
-                            BirthDate = new DateOnly(1995, 7, 14),
-                            DateOfBeginning = new DateOnly(2019, 6, 10),
-                            DegreeId = 21,
+                            Id = 17,
+                            AcademicRankId = 64,
+                            BirthDate = new DateOnly(1996, 3, 8),
+                            DateOfBeginning = new DateOnly(2019, 2, 1),
+                            DegreeId = 30,
+                            DepartmentId = 29,
+                            ElectedDate = new DateOnly(2018, 12, 1),
+                            HouseNumberId = 3,
+                            JobTitleId = 3,
+                            LastName = "Ефремова",
+                            Name = "Василиса",
+                            Surname = "Колобова",
+                            TypeOfCooperationId = 2,
+                            Wage = 52000.0
+                        },
+                        new
+                        {
+                            Id = 18,
+                            AcademicRankId = 13,
+                            BirthDate = new DateOnly(1992, 6, 16),
+                            DateOfBeginning = new DateOnly(2018, 3, 24),
+                            DegreeId = 36,
                             DepartmentId = 25,
-                            ElectedDate = new DateOnly(2019, 4, 10),
-                            HouseNumberId = 24,
+                            ElectedDate = new DateOnly(2018, 1, 24),
+                            HouseNumberId = 36,
+                            JobTitleId = 6,
+                            LastName = "Доронин",
+                            Name = "Николай",
+                            Surname = "Евсеева",
+                            TypeOfCooperationId = 1,
+                            Wage = 41000.0
+                        },
+                        new
+                        {
+                            Id = 19,
+                            AcademicRankId = 22,
+                            BirthDate = new DateOnly(1991, 3, 2),
+                            DateOfBeginning = new DateOnly(2019, 3, 25),
+                            DegreeId = 41,
+                            DepartmentId = 13,
+                            ElectedDate = new DateOnly(2019, 1, 25),
+                            HouseNumberId = 16,
+                            JobTitleId = 7,
+                            LastName = "Жданова",
+                            Name = "Регина",
+                            Surname = "Романов",
+                            TypeOfCooperationId = 2,
+                            Wage = 31000.0
+                        },
+                        new
+                        {
+                            Id = 20,
+                            AcademicRankId = 65,
+                            BirthDate = new DateOnly(1992, 6, 11),
+                            DateOfBeginning = new DateOnly(2018, 3, 27),
+                            DegreeId = 43,
+                            DepartmentId = 13,
+                            ElectedDate = new DateOnly(2017, 12, 27),
+                            HouseNumberId = 19,
+                            JobTitleId = 5,
+                            LastName = "Носков",
+                            Name = "Юлия",
+                            Surname = "Белякова",
+                            TypeOfCooperationId = 2,
+                            Wage = 28000.0
+                        },
+                        new
+                        {
+                            Id = 21,
+                            AcademicRankId = 61,
+                            BirthDate = new DateOnly(1995, 4, 12),
+                            DateOfBeginning = new DateOnly(2019, 2, 4),
+                            DegreeId = 54,
+                            DepartmentId = 21,
+                            ElectedDate = new DateOnly(2018, 12, 4),
+                            HouseNumberId = 33,
                             JobTitleId = 1,
+                            LastName = "Самсонова",
+                            Name = "Альберт",
+                            Surname = "Силина",
+                            TypeOfCooperationId = 2,
+                            Wage = 18000.0
+                        },
+                        new
+                        {
+                            Id = 22,
+                            AcademicRankId = 21,
+                            BirthDate = new DateOnly(1994, 5, 13),
+                            DateOfBeginning = new DateOnly(2018, 3, 23),
+                            DegreeId = 19,
+                            DepartmentId = 18,
+                            ElectedDate = new DateOnly(2017, 12, 23),
+                            HouseNumberId = 5,
+                            JobTitleId = 2,
+                            LastName = "Дорофеева",
+                            Name = "Григорий",
+                            Surname = "Куликова",
+                            TypeOfCooperationId = 1,
+                            Wage = 24000.0
+                        },
+                        new
+                        {
+                            Id = 23,
+                            AcademicRankId = 29,
+                            BirthDate = new DateOnly(1993, 12, 1),
+                            DateOfBeginning = new DateOnly(2019, 2, 5),
+                            DateOfEnding = new DateOnly(2021, 4, 27),
+                            DegreeId = 66,
+                            DepartmentId = 3,
+                            ElectedDate = new DateOnly(2018, 12, 5),
+                            HouseNumberId = 2,
+                            JobTitleId = 5,
+                            LastName = "Шестаков",
+                            Name = "Леонид",
+                            Surname = "Лаврентьева",
+                            TypeOfCooperationId = 1,
+                            Wage = 64000.0
+                        },
+                        new
+                        {
+                            Id = 24,
+                            AcademicRankId = 45,
+                            BirthDate = new DateOnly(1988, 6, 13),
+                            DateOfBeginning = new DateOnly(2018, 3, 4),
+                            DegreeId = 17,
+                            DepartmentId = 20,
+                            ElectedDate = new DateOnly(2017, 12, 4),
+                            HouseNumberId = 34,
+                            JobTitleId = 6,
+                            LastName = "Владимирова",
+                            Name = "Виктор",
+                            Surname = "Фадеева",
+                            TypeOfCooperationId = 1,
+                            Wage = 53000.0
+                        },
+                        new
+                        {
+                            Id = 25,
+                            AcademicRankId = 37,
+                            BirthDate = new DateOnly(1993, 6, 27),
+                            DateOfBeginning = new DateOnly(2018, 3, 7),
+                            DegreeId = 44,
+                            DepartmentId = 1,
+                            ElectedDate = new DateOnly(2018, 1, 7),
+                            HouseNumberId = 41,
+                            JobTitleId = 3,
+                            LastName = "Карпова",
+                            Name = "Альберт",
+                            Surname = "Кузьмин",
+                            TypeOfCooperationId = 2,
+                            Wage = 44000.0
+                        },
+                        new
+                        {
+                            Id = 26,
+                            AcademicRankId = 60,
+                            BirthDate = new DateOnly(1989, 3, 12),
+                            DateOfBeginning = new DateOnly(2018, 3, 10),
+                            DegreeId = 35,
+                            DepartmentId = 4,
+                            ElectedDate = new DateOnly(2017, 12, 10),
+                            HouseNumberId = 30,
+                            JobTitleId = 4,
+                            LastName = "Меркушева",
+                            Name = "Леонид",
+                            Surname = "Сазонова",
+                            TypeOfCooperationId = 1,
+                            Wage = 33000.0
+                        },
+                        new
+                        {
+                            Id = 27,
+                            AcademicRankId = 7,
+                            BirthDate = new DateOnly(1991, 12, 25),
+                            DateOfBeginning = new DateOnly(2018, 3, 9),
+                            DegreeId = 47,
+                            DepartmentId = 17,
+                            ElectedDate = new DateOnly(2017, 12, 9),
+                            HouseNumberId = 14,
+                            JobTitleId = 2,
+                            LastName = "Князев",
+                            Name = "Игнатий",
+                            Surname = "Трофимов",
+                            TypeOfCooperationId = 2,
+                            Wage = 33000.0
+                        },
+                        new
+                        {
+                            Id = 28,
+                            AcademicRankId = 6,
+                            BirthDate = new DateOnly(1991, 12, 26),
+                            DateOfBeginning = new DateOnly(2019, 1, 30),
+                            DegreeId = 27,
+                            DepartmentId = 1,
+                            ElectedDate = new DateOnly(2018, 11, 30),
+                            HouseNumberId = 45,
+                            JobTitleId = 5,
+                            LastName = "Новиков",
+                            Name = "Антонида",
+                            Surname = "Кузьмина",
+                            TypeOfCooperationId = 1,
+                            Wage = 51000.0
+                        },
+                        new
+                        {
+                            Id = 29,
+                            AcademicRankId = 31,
+                            BirthDate = new DateOnly(1996, 4, 8),
+                            DateOfBeginning = new DateOnly(2019, 3, 23),
+                            DegreeId = 7,
+                            DepartmentId = 6,
+                            ElectedDate = new DateOnly(2019, 1, 23),
+                            HouseNumberId = 48,
+                            JobTitleId = 6,
+                            LastName = "Медведев",
+                            Name = "Константин",
+                            Surname = "Бирюков",
+                            TypeOfCooperationId = 2,
+                            Wage = 37000.0
+                        },
+                        new
+                        {
+                            Id = 30,
+                            AcademicRankId = 44,
+                            BirthDate = new DateOnly(1990, 1, 11),
+                            DateOfBeginning = new DateOnly(2019, 3, 31),
+                            DegreeId = 32,
+                            DepartmentId = 7,
+                            ElectedDate = new DateOnly(2019, 1, 31),
+                            HouseNumberId = 1,
+                            JobTitleId = 1,
+                            LastName = "Панов",
+                            Name = "Галина",
+                            Surname = "Самсонова",
+                            TypeOfCooperationId = 1,
+                            Wage = 22000.0
+                        },
+                        new
+                        {
+                            Id = 31,
+                            AcademicRankId = 35,
+                            BirthDate = new DateOnly(1995, 6, 11),
+                            DateOfBeginning = new DateOnly(2019, 1, 30),
+                            DegreeId = 1,
+                            DepartmentId = 11,
+                            ElectedDate = new DateOnly(2018, 10, 30),
+                            HouseNumberId = 42,
+                            JobTitleId = 4,
+                            LastName = "Мельников",
+                            Name = "Арина",
+                            Surname = "Сазонова",
+                            TypeOfCooperationId = 1,
+                            Wage = 22000.0
+                        },
+                        new
+                        {
+                            Id = 32,
+                            AcademicRankId = 4,
+                            BirthDate = new DateOnly(1990, 7, 12),
+                            DateOfBeginning = new DateOnly(2019, 1, 31),
+                            DegreeId = 16,
+                            DepartmentId = 10,
+                            ElectedDate = new DateOnly(2018, 11, 30),
+                            HouseNumberId = 10,
+                            JobTitleId = 7,
+                            LastName = "Кондратьева",
+                            Name = "Лука",
+                            Surname = "Вишняков",
+                            TypeOfCooperationId = 1,
+                            Wage = 46000.0
+                        },
+                        new
+                        {
+                            Id = 33,
+                            AcademicRankId = 48,
+                            BirthDate = new DateOnly(1991, 3, 27),
+                            DateOfBeginning = new DateOnly(2018, 1, 31),
+                            DegreeId = 56,
+                            DepartmentId = 17,
+                            ElectedDate = new DateOnly(2017, 10, 31),
+                            HouseNumberId = 25,
+                            JobTitleId = 1,
+                            LastName = "Горбачева",
+                            Name = "Леонид",
+                            Surname = "Лукина",
+                            TypeOfCooperationId = 2,
+                            Wage = 15000.0
+                        },
+                        new
+                        {
+                            Id = 34,
+                            AcademicRankId = 40,
+                            BirthDate = new DateOnly(1988, 5, 17),
+                            DateOfBeginning = new DateOnly(2019, 1, 28),
+                            DegreeId = 33,
+                            DepartmentId = 29,
+                            ElectedDate = new DateOnly(2018, 11, 28),
+                            HouseNumberId = 30,
+                            JobTitleId = 6,
+                            LastName = "Мельников",
+                            Name = "Валентина",
+                            Surname = "Пестова",
+                            TypeOfCooperationId = 2,
+                            Wage = 63000.0
+                        },
+                        new
+                        {
+                            Id = 35,
+                            AcademicRankId = 2,
+                            BirthDate = new DateOnly(1990, 12, 13),
+                            DateOfBeginning = new DateOnly(2019, 3, 9),
+                            DegreeId = 10,
+                            DepartmentId = 9,
+                            ElectedDate = new DateOnly(2019, 1, 9),
+                            HouseNumberId = 33,
+                            JobTitleId = 6,
+                            LastName = "Шубин",
+                            Name = "Лариса",
+                            Surname = "Субботина",
+                            TypeOfCooperationId = 1,
+                            Wage = 31000.0
+                        },
+                        new
+                        {
+                            Id = 36,
+                            AcademicRankId = 68,
+                            BirthDate = new DateOnly(1989, 7, 7),
+                            DateOfBeginning = new DateOnly(2019, 4, 7),
+                            DegreeId = 21,
+                            DepartmentId = 31,
+                            ElectedDate = new DateOnly(2019, 2, 7),
+                            HouseNumberId = 21,
+                            JobTitleId = 1,
+                            LastName = "Уваров",
+                            Name = "Владислав",
+                            Surname = "Ситникова",
+                            TypeOfCooperationId = 1,
+                            Wage = 26000.0
+                        },
+                        new
+                        {
+                            Id = 37,
+                            AcademicRankId = 9,
+                            BirthDate = new DateOnly(1993, 2, 10),
+                            DateOfBeginning = new DateOnly(2018, 2, 26),
+                            DateOfEnding = new DateOnly(2023, 5, 16),
+                            DegreeId = 34,
+                            DepartmentId = 16,
+                            ElectedDate = new DateOnly(2017, 11, 26),
+                            HouseNumberId = 7,
+                            JobTitleId = 2,
+                            LastName = "Фадеева",
+                            Name = "Дмитрий",
+                            Surname = "Гущина",
+                            TypeOfCooperationId = 1,
+                            Wage = 54000.0
+                        },
+                        new
+                        {
+                            Id = 38,
+                            AcademicRankId = 36,
+                            BirthDate = new DateOnly(1991, 6, 25),
+                            DateOfBeginning = new DateOnly(2018, 3, 26),
+                            DateOfEnding = new DateOnly(2022, 7, 15),
+                            DegreeId = 62,
+                            DepartmentId = 10,
+                            ElectedDate = new DateOnly(2018, 1, 26),
+                            HouseNumberId = 40,
+                            JobTitleId = 2,
+                            LastName = "Комиссаров",
+                            Name = "Денис",
+                            Surname = "Уваров",
+                            TypeOfCooperationId = 1,
+                            Wage = 46000.0
+                        },
+                        new
+                        {
+                            Id = 39,
+                            AcademicRankId = 67,
+                            BirthDate = new DateOnly(1993, 6, 21),
+                            DateOfBeginning = new DateOnly(2018, 2, 4),
+                            DegreeId = 9,
+                            DepartmentId = 24,
+                            ElectedDate = new DateOnly(2017, 12, 4),
+                            HouseNumberId = 43,
+                            JobTitleId = 5,
+                            LastName = "Воронов",
+                            Name = "Тамара",
+                            Surname = "Мамонтова",
+                            TypeOfCooperationId = 2,
+                            Wage = 59000.0
+                        },
+                        new
+                        {
+                            Id = 40,
+                            AcademicRankId = 15,
+                            BirthDate = new DateOnly(1987, 12, 11),
+                            DateOfBeginning = new DateOnly(2018, 1, 30),
+                            DegreeId = 48,
+                            DepartmentId = 22,
+                            ElectedDate = new DateOnly(2017, 11, 30),
+                            HouseNumberId = 42,
+                            JobTitleId = 3,
+                            LastName = "Беляев",
+                            Name = "Александра",
+                            Surname = "Лапин",
+                            TypeOfCooperationId = 1,
+                            Wage = 58000.0
+                        },
+                        new
+                        {
+                            Id = 41,
+                            AcademicRankId = 1,
+                            BirthDate = new DateOnly(1996, 2, 2),
+                            DateOfBeginning = new DateOnly(2019, 3, 4),
+                            DateOfEnding = new DateOnly(2022, 2, 23),
+                            DegreeId = 40,
+                            DepartmentId = 13,
+                            ElectedDate = new DateOnly(2019, 1, 4),
+                            HouseNumberId = 2,
+                            JobTitleId = 3,
+                            LastName = "Гуляева",
+                            Name = "Арсений",
+                            Surname = "Осипова",
+                            TypeOfCooperationId = 1,
+                            Wage = 58000.0
+                        },
+                        new
+                        {
+                            Id = 42,
+                            AcademicRankId = 49,
+                            BirthDate = new DateOnly(1994, 12, 3),
+                            DateOfBeginning = new DateOnly(2018, 4, 1),
+                            DegreeId = 11,
+                            DepartmentId = 22,
+                            ElectedDate = new DateOnly(2018, 2, 1),
+                            HouseNumberId = 45,
+                            JobTitleId = 1,
+                            LastName = "Шарапов",
+                            Name = "Артём",
+                            Surname = "Артемьев",
+                            TypeOfCooperationId = 1,
+                            Wage = 19000.0
+                        },
+                        new
+                        {
+                            Id = 43,
+                            AcademicRankId = 32,
+                            BirthDate = new DateOnly(1988, 4, 24),
+                            DateOfBeginning = new DateOnly(2019, 2, 2),
+                            DegreeId = 38,
+                            DepartmentId = 13,
+                            ElectedDate = new DateOnly(2018, 11, 2),
+                            HouseNumberId = 2,
+                            JobTitleId = 2,
+                            LastName = "Абрамова",
+                            Name = "Анфиса",
+                            Surname = "Максимов",
+                            TypeOfCooperationId = 2,
+                            Wage = 46000.0
+                        },
+                        new
+                        {
+                            Id = 44,
+                            AcademicRankId = 46,
+                            BirthDate = new DateOnly(1992, 1, 15),
+                            DateOfBeginning = new DateOnly(2019, 4, 1),
+                            DegreeId = 49,
+                            DepartmentId = 28,
+                            ElectedDate = new DateOnly(2019, 1, 1),
+                            HouseNumberId = 39,
+                            JobTitleId = 6,
+                            LastName = "Исаева",
+                            Name = "Владислав",
+                            Surname = "Крылов",
+                            TypeOfCooperationId = 2,
+                            Wage = 38000.0
+                        },
+                        new
+                        {
+                            Id = 45,
+                            AcademicRankId = 58,
+                            BirthDate = new DateOnly(1995, 7, 11),
+                            DateOfBeginning = new DateOnly(2018, 3, 29),
+                            DegreeId = 70,
+                            DepartmentId = 8,
+                            ElectedDate = new DateOnly(2017, 12, 29),
+                            HouseNumberId = 17,
+                            JobTitleId = 6,
+                            LastName = "Баранов",
+                            Name = "Антонида",
+                            Surname = "Петухова",
+                            TypeOfCooperationId = 2,
+                            Wage = 41000.0
+                        },
+                        new
+                        {
+                            Id = 46,
+                            AcademicRankId = 66,
+                            BirthDate = new DateOnly(1992, 12, 28),
+                            DateOfBeginning = new DateOnly(2018, 4, 7),
+                            DegreeId = 37,
+                            DepartmentId = 17,
+                            ElectedDate = new DateOnly(2018, 2, 7),
+                            HouseNumberId = 48,
+                            JobTitleId = 5,
+                            LastName = "Костин",
+                            Name = "Клавдия",
+                            Surname = "Воробьев",
+                            TypeOfCooperationId = 2,
+                            Wage = 57000.0
+                        },
+                        new
+                        {
+                            Id = 47,
+                            AcademicRankId = 11,
+                            BirthDate = new DateOnly(1994, 11, 18),
+                            DateOfBeginning = new DateOnly(2019, 3, 27),
+                            DegreeId = 53,
+                            DepartmentId = 24,
+                            ElectedDate = new DateOnly(2019, 1, 27),
+                            HouseNumberId = 29,
+                            JobTitleId = 5,
+                            LastName = "Зыков",
+                            Name = "Ангелина",
+                            Surname = "Никонов",
+                            TypeOfCooperationId = 1,
+                            Wage = 43000.0
+                        },
+                        new
+                        {
+                            Id = 48,
+                            AcademicRankId = 69,
+                            BirthDate = new DateOnly(1993, 2, 15),
+                            DateOfBeginning = new DateOnly(2019, 1, 25),
+                            DegreeId = 3,
+                            DepartmentId = 8,
+                            ElectedDate = new DateOnly(2018, 11, 25),
+                            HouseNumberId = 6,
+                            JobTitleId = 5,
+                            LastName = "Виноградова",
+                            Name = "Людмила",
+                            Surname = "Беляева",
+                            TypeOfCooperationId = 1,
+                            Wage = 36000.0
+                        },
+                        new
+                        {
+                            Id = 49,
+                            AcademicRankId = 50,
+                            BirthDate = new DateOnly(1989, 2, 1),
+                            DateOfBeginning = new DateOnly(2018, 2, 5),
+                            DegreeId = 51,
+                            DepartmentId = 9,
+                            ElectedDate = new DateOnly(2017, 11, 5),
+                            HouseNumberId = 34,
+                            JobTitleId = 3,
+                            LastName = "Куликова",
+                            Name = "Андрей",
+                            Surname = "Константинов",
+                            TypeOfCooperationId = 2,
+                            Wage = 42000.0
+                        },
+                        new
+                        {
+                            Id = 50,
+                            AcademicRankId = 26,
+                            BirthDate = new DateOnly(1991, 2, 14),
+                            DateOfBeginning = new DateOnly(2019, 1, 24),
+                            DegreeId = 24,
+                            DepartmentId = 11,
+                            ElectedDate = new DateOnly(2018, 11, 24),
+                            HouseNumberId = 18,
+                            JobTitleId = 3,
+                            LastName = "Гурьева",
+                            Name = "Ольга",
+                            Surname = "Федоров",
+                            TypeOfCooperationId = 2,
+                            Wage = 30000.0
+                        },
+                        new
+                        {
+                            Id = 51,
+                            AcademicRankId = 57,
+                            BirthDate = new DateOnly(1993, 7, 4),
+                            DateOfBeginning = new DateOnly(2019, 4, 2),
+                            DateOfEnding = new DateOnly(2022, 1, 31),
+                            DegreeId = 39,
+                            DepartmentId = 15,
+                            ElectedDate = new DateOnly(2019, 2, 2),
+                            HouseNumberId = 24,
+                            JobTitleId = 5,
+                            LastName = "Блинов",
+                            Name = "Анатолий",
+                            Surname = "Гордеев",
+                            TypeOfCooperationId = 2,
+                            Wage = 20000.0
+                        },
+                        new
+                        {
+                            Id = 52,
+                            AcademicRankId = 62,
+                            BirthDate = new DateOnly(1996, 3, 16),
+                            DateOfBeginning = new DateOnly(2019, 4, 2),
+                            DegreeId = 52,
+                            DepartmentId = 25,
+                            ElectedDate = new DateOnly(2019, 1, 2),
+                            HouseNumberId = 19,
+                            JobTitleId = 2,
+                            LastName = "Щербаков",
+                            Name = "Василий",
+                            Surname = "Корнилов",
+                            TypeOfCooperationId = 1,
+                            Wage = 26000.0
+                        },
+                        new
+                        {
+                            Id = 53,
+                            AcademicRankId = 38,
+                            BirthDate = new DateOnly(1994, 4, 8),
+                            DateOfBeginning = new DateOnly(2019, 2, 26),
+                            DegreeId = 68,
+                            DepartmentId = 23,
+                            ElectedDate = new DateOnly(2018, 11, 26),
+                            HouseNumberId = 1,
+                            JobTitleId = 7,
+                            LastName = "Молчанов",
+                            Name = "Дмитрий",
+                            Surname = "Виноградов",
+                            TypeOfCooperationId = 1,
+                            Wage = 17000.0
+                        },
+                        new
+                        {
+                            Id = 54,
+                            AcademicRankId = 18,
+                            BirthDate = new DateOnly(1993, 4, 21),
+                            DateOfBeginning = new DateOnly(2018, 2, 4),
+                            DegreeId = 26,
+                            DepartmentId = 23,
+                            ElectedDate = new DateOnly(2017, 11, 4),
+                            HouseNumberId = 33,
+                            JobTitleId = 6,
+                            LastName = "Анисимов",
+                            Name = "Антонина",
+                            Surname = "Сидоров",
+                            TypeOfCooperationId = 1,
+                            Wage = 62000.0
+                        },
+                        new
+                        {
+                            Id = 55,
+                            AcademicRankId = 56,
+                            BirthDate = new DateOnly(1988, 4, 28),
+                            DateOfBeginning = new DateOnly(2019, 1, 28),
+                            DegreeId = 61,
+                            DepartmentId = 9,
+                            ElectedDate = new DateOnly(2018, 10, 28),
+                            HouseNumberId = 21,
+                            JobTitleId = 3,
+                            LastName = "Лихачев",
+                            Name = "Леонид",
+                            Surname = "Горбунов",
+                            TypeOfCooperationId = 2,
+                            Wage = 41000.0
+                        },
+                        new
+                        {
+                            Id = 56,
+                            AcademicRankId = 39,
+                            BirthDate = new DateOnly(1992, 12, 5),
+                            DateOfBeginning = new DateOnly(2018, 2, 24),
+                            DegreeId = 50,
+                            DepartmentId = 1,
+                            ElectedDate = new DateOnly(2017, 11, 24),
+                            HouseNumberId = 19,
+                            JobTitleId = 3,
+                            LastName = "Блинова",
+                            Name = "Алла",
+                            Surname = "Миронова",
+                            TypeOfCooperationId = 1,
+                            Wage = 30000.0
+                        },
+                        new
+                        {
+                            Id = 57,
+                            AcademicRankId = 63,
+                            BirthDate = new DateOnly(1993, 12, 1),
+                            DateOfBeginning = new DateOnly(2019, 2, 25),
+                            DegreeId = 23,
+                            DepartmentId = 22,
+                            ElectedDate = new DateOnly(2018, 12, 25),
+                            HouseNumberId = 6,
+                            JobTitleId = 1,
+                            LastName = "Беляков",
+                            Name = "Мария",
+                            Surname = "Овчинникова",
+                            TypeOfCooperationId = 1,
+                            Wage = 35000.0
+                        },
+                        new
+                        {
+                            Id = 58,
+                            AcademicRankId = 25,
+                            BirthDate = new DateOnly(1990, 5, 27),
+                            DateOfBeginning = new DateOnly(2019, 3, 2),
+                            DegreeId = 5,
+                            DepartmentId = 5,
+                            ElectedDate = new DateOnly(2018, 12, 2),
+                            HouseNumberId = 6,
+                            JobTitleId = 2,
+                            LastName = "Сазонов",
+                            Name = "Оксана",
+                            Surname = "Брагин",
+                            TypeOfCooperationId = 2,
+                            Wage = 53000.0
+                        },
+                        new
+                        {
+                            Id = 59,
+                            AcademicRankId = 42,
+                            BirthDate = new DateOnly(1988, 2, 11),
+                            DateOfBeginning = new DateOnly(2019, 1, 28),
+                            DegreeId = 45,
+                            DepartmentId = 22,
+                            ElectedDate = new DateOnly(2018, 11, 28),
+                            HouseNumberId = 23,
+                            JobTitleId = 4,
+                            LastName = "Михеев",
+                            Name = "Максим",
+                            Surname = "Федорова",
+                            TypeOfCooperationId = 1,
+                            Wage = 25000.0
+                        },
+                        new
+                        {
+                            Id = 60,
+                            AcademicRankId = 17,
+                            BirthDate = new DateOnly(1988, 3, 5),
+                            DateOfBeginning = new DateOnly(2019, 3, 28),
+                            DegreeId = 31,
+                            DepartmentId = 13,
+                            ElectedDate = new DateOnly(2018, 12, 28),
+                            HouseNumberId = 33,
+                            JobTitleId = 6,
+                            LastName = "Ширяева",
+                            Name = "Татьяна",
+                            Surname = "Галкина",
+                            TypeOfCooperationId = 2,
+                            Wage = 24000.0
+                        },
+                        new
+                        {
+                            Id = 61,
+                            AcademicRankId = 53,
+                            BirthDate = new DateOnly(1988, 4, 24),
+                            DateOfBeginning = new DateOnly(2018, 2, 27),
+                            DegreeId = 2,
+                            DepartmentId = 6,
+                            ElectedDate = new DateOnly(2017, 12, 27),
+                            HouseNumberId = 45,
+                            JobTitleId = 2,
+                            LastName = "Некрасова",
+                            Name = "Дмитрий",
+                            Surname = "Андреев",
+                            TypeOfCooperationId = 2,
+                            Wage = 17000.0
+                        },
+                        new
+                        {
+                            Id = 62,
+                            AcademicRankId = 28,
+                            BirthDate = new DateOnly(1989, 3, 17),
+                            DateOfBeginning = new DateOnly(2018, 2, 7),
+                            DegreeId = 8,
+                            DepartmentId = 10,
+                            ElectedDate = new DateOnly(2017, 11, 7),
+                            HouseNumberId = 43,
+                            JobTitleId = 7,
+                            LastName = "Ситников",
+                            Name = "Валерий",
+                            Surname = "Галкин",
+                            TypeOfCooperationId = 1,
+                            Wage = 31000.0
+                        },
+                        new
+                        {
+                            Id = 63,
+                            AcademicRankId = 30,
+                            BirthDate = new DateOnly(1989, 5, 16),
+                            DateOfBeginning = new DateOnly(2019, 3, 31),
+                            DegreeId = 60,
+                            DepartmentId = 26,
+                            ElectedDate = new DateOnly(2018, 12, 31),
+                            HouseNumberId = 14,
+                            JobTitleId = 3,
+                            LastName = "Родионов",
+                            Name = "Ольга",
+                            Surname = "Попов",
+                            TypeOfCooperationId = 1,
+                            Wage = 59000.0
+                        },
+                        new
+                        {
+                            Id = 64,
+                            AcademicRankId = 12,
+                            BirthDate = new DateOnly(1993, 2, 15),
+                            DateOfBeginning = new DateOnly(2019, 4, 4),
+                            DegreeId = 14,
+                            DepartmentId = 22,
+                            ElectedDate = new DateOnly(2019, 1, 4),
+                            HouseNumberId = 13,
+                            JobTitleId = 4,
+                            LastName = "Матвеева",
+                            Name = "Семён",
+                            Surname = "Воронцов",
+                            TypeOfCooperationId = 2,
+                            Wage = 56000.0
+                        },
+                        new
+                        {
+                            Id = 65,
+                            AcademicRankId = 19,
+                            BirthDate = new DateOnly(1991, 5, 15),
+                            DateOfBeginning = new DateOnly(2019, 1, 30),
+                            DateOfEnding = new DateOnly(2021, 11, 25),
+                            DegreeId = 28,
+                            DepartmentId = 23,
+                            ElectedDate = new DateOnly(2018, 10, 30),
+                            HouseNumberId = 30,
+                            JobTitleId = 1,
+                            LastName = "Мартынова",
+                            Name = "Вероника",
+                            Surname = "Богданова",
+                            TypeOfCooperationId = 2,
+                            Wage = 15000.0
+                        },
+                        new
+                        {
+                            Id = 66,
+                            AcademicRankId = 33,
+                            BirthDate = new DateOnly(1992, 6, 16),
+                            DateOfBeginning = new DateOnly(2018, 4, 3),
+                            DegreeId = 57,
+                            DepartmentId = 20,
+                            ElectedDate = new DateOnly(2018, 2, 3),
+                            HouseNumberId = 31,
+                            JobTitleId = 3,
+                            LastName = "Смирнов",
+                            Name = "Лариса",
+                            Surname = "Федосеев",
+                            TypeOfCooperationId = 1,
+                            Wage = 58000.0
+                        },
+                        new
+                        {
+                            Id = 67,
+                            AcademicRankId = 47,
+                            BirthDate = new DateOnly(1993, 3, 5),
+                            DateOfBeginning = new DateOnly(2018, 3, 31),
+                            DegreeId = 4,
+                            DepartmentId = 19,
+                            ElectedDate = new DateOnly(2017, 12, 31),
+                            HouseNumberId = 17,
+                            JobTitleId = 5,
                             LastName = "Воронова",
                             Name = "Раиса",
                             Surname = "Константинов",
                             TypeOfCooperationId = 2,
-                            Wage = 27000.0
+                            Wage = 20000.0
                         },
                         new
                         {
                             Id = 68,
-                            AcademicRankId = 21,
-                            BirthDate = new DateOnly(1988, 2, 11),
-                            DateOfBeginning = new DateOnly(2019, 4, 8),
-                            DateOfEnding = new DateOnly(2022, 12, 25),
-                            DegreeId = 30,
-                            DepartmentId = 24,
-                            ElectedDate = new DateOnly(2019, 1, 8),
-                            HouseNumberId = 45,
-                            JobTitleId = 6,
+                            AcademicRankId = 14,
+                            BirthDate = new DateOnly(1995, 5, 3),
+                            DateOfBeginning = new DateOnly(2018, 2, 7),
+                            DateOfEnding = new DateOnly(2023, 4, 22),
+                            DegreeId = 46,
+                            DepartmentId = 15,
+                            ElectedDate = new DateOnly(2017, 12, 7),
+                            HouseNumberId = 22,
+                            JobTitleId = 2,
                             LastName = "Фомичев",
                             Name = "Ярослав",
                             Surname = "Гущин",
-                            TypeOfCooperationId = 2,
-                            Wage = 45000.0
+                            TypeOfCooperationId = 1,
+                            Wage = 50000.0
                         },
                         new
                         {
                             Id = 69,
-                            AcademicRankId = 48,
-                            BirthDate = new DateOnly(1988, 3, 3),
-                            DateOfBeginning = new DateOnly(2019, 5, 17),
-                            DegreeId = 34,
-                            DepartmentId = 11,
-                            ElectedDate = new DateOnly(2019, 2, 17),
-                            HouseNumberId = 39,
-                            JobTitleId = 5,
+                            AcademicRankId = 34,
+                            BirthDate = new DateOnly(1996, 4, 22),
+                            DateOfBeginning = new DateOnly(2019, 3, 23),
+                            DegreeId = 15,
+                            DepartmentId = 28,
+                            ElectedDate = new DateOnly(2018, 12, 23),
+                            HouseNumberId = 24,
+                            JobTitleId = 2,
                             LastName = "Попов",
                             Name = "Ульяна",
                             Surname = "Баранова",
                             TypeOfCooperationId = 1,
-                            Wage = 55000.0
+                            Wage = 47000.0
                         },
                         new
                         {
                             Id = 70,
-                            AcademicRankId = 31,
-                            BirthDate = new DateOnly(1991, 2, 7),
-                            DateOfBeginning = new DateOnly(2019, 6, 17),
-                            DegreeId = 70,
-                            DepartmentId = 25,
-                            ElectedDate = new DateOnly(2019, 3, 17),
-                            HouseNumberId = 47,
-                            JobTitleId = 4,
+                            AcademicRankId = 59,
+                            BirthDate = new DateOnly(1991, 4, 15),
+                            DateOfBeginning = new DateOnly(2019, 3, 31),
+                            DegreeId = 59,
+                            DepartmentId = 30,
+                            ElectedDate = new DateOnly(2019, 1, 31),
+                            HouseNumberId = 17,
+                            JobTitleId = 3,
                             LastName = "Петрова",
                             Name = "Жанна",
                             Surname = "Шилова",
-                            TypeOfCooperationId = 1,
-                            Wage = 55000.0
+                            TypeOfCooperationId = 2,
+                            Wage = 39000.0
                         });
                 });
 

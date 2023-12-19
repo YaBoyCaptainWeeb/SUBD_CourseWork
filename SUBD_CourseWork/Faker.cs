@@ -93,7 +93,7 @@ namespace SUBD_CourseWork
             _degreeFaker = new Faker<Degree>("ru")
                 .UseSeed(1969)
                 .RuleFor(x => x.Id, x => id++).RuleFor(x => x.DegreeType, x => x.PickRandom(degreeTypes))
-                .RuleFor(x => x.YearOfAward, f => yearOfAward.AddYears(rnd.Next(-6,-1)))
+                .RuleFor(x => x.YearOfAward, f => yearOfAward.AddYears(rnd.Next(-6, -1)).AddMonths(rnd.Next(0, 13)).AddDays(rnd.Next(0, 31)))
                 .RuleFor(x => x.DisciplineId, x => rnd.Next(1,6));
             return _degreeFaker;
         }
