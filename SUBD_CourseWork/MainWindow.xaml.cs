@@ -308,8 +308,11 @@ namespace SUBD_CourseWork
                 }).Where(x => x.DepartmentShortName == departmentName && x.FacultyShortName == facultyName && x.DegreeTypeYearOfAward >= fromBetween && x.DegreeTypeYearOfAward <= toBetween)
                 .ToList();
                 TeachersGrid2.ItemsSource = thirdQuerry;
-                ThirdGrid.Visibility = Visibility.Visible;
-                TeachersGrid2Label.Visibility = Visibility.Visible;
+                DateSelector.BlackoutDates.Clear();
+                DateSelector1.BlackoutDates.Clear();
+            } else
+            {
+                MessageBox.Show("Один из аргументов не был указан", "Ошибка", MessageBoxButton.OK);
             }
 
         }
@@ -405,5 +408,30 @@ namespace SUBD_CourseWork
                 $"\nAND dgrs.\"YearOfAward\" BETWEEN '{fromBetween}' AND '{toBetween}'\r\nORDER BY tch.\"Surname\"";
         }
 
+        private void DateSelector_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        {
+            DateSelector1.BlackoutDates.Clear();
+            DateTime d2 = DateTime.MinValue;
+            int totalDays = (int)(DateSelector.SelectedDate.Value - d2).TotalDays;
+            List<DateTime> startFrom = new List<DateTime>() { DateSelector.SelectedDate.Value };
+            var res = startFrom.SelectMany(x => Enumerable.Range(0, totalDays).Select(d => x.AddDays(-1*d)));
+            CalendarDateRange dr = new();
+            dr.Start = res.Last();
+            dr.End = res.First();
+            DateSelector1.BlackoutDates.Add(dr);
+        }
+
+        private void DateSelector1_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        {
+            DateSelector.BlackoutDates.Clear();
+            DateTime d1 = DateTime.MaxValue;
+            int totalDays = (int)(d1 - DateSelector1.SelectedDate.Value).TotalDays;
+            List<DateTime> startFrom = new List<DateTime>() { DateSelector1.SelectedDate.Value };
+            var res = startFrom.SelectMany(x => Enumerable.Range(0, totalDays-20000).Select(d => x.AddDays(d)));
+            CalendarDateRange dr = new();
+            dr.Start = res.First();
+            dr.End = res.Last();
+            DateSelector.BlackoutDates.Add(dr);
+        }
     }
 }

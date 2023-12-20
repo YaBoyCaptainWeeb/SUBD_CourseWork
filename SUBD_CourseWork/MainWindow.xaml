@@ -6,7 +6,7 @@
         xmlns:avalonEdit="http://icsharpcode.net/sharpdevelop/avalonedit"
         xmlns:local="clr-namespace:SUBD_CourseWork"
         mc:Ignorable="d"
-        Title="Индивидуальный план преподавателя" WindowStartupLocation="CenterScreen" Width="auto" MinHeight="500" MaxHeight="800" SizeToContent="Height" Loaded="Window_Loaded">
+        Title="Индивидуальный план преподавателя" WindowStartupLocation="CenterScreen" Width="auto" MinHeight="500" MaxHeight="900" SizeToContent="Height" Loaded="Window_Loaded">
     <TabControl>
         <TabItem >
             <TabItem.Header>
@@ -21,7 +21,7 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
                 <Label Content="Представленная выборка, отсортированная по фамилии в алфавитном порядке" FontStyle="Italic" FontWeight="Bold" Grid.Row="0"/>
-                <ScrollViewer Grid.Row="0" Margin="0 25 0 0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" CanContentScroll="False" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel">
+                <ScrollViewer MaxHeight="400" Grid.Row="0" Margin="0 25 0 0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" CanContentScroll="False" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel">
                     <DataGrid Name="TeachersGrid" CanUserAddRows="False" CanUserDeleteRows="False" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" AutoGenerateColumns="False" Padding="0 0 0 5">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Фамилия" Binding="{Binding Surname}"/>
@@ -34,11 +34,12 @@
                     </DataGrid>
                 </ScrollViewer>
                 <Label Content="Как выглядит SQL запрос для данной выборки" FontWeight="Bold" FontStyle="Italic" Grid.Row="1"/>
-                <ScrollViewer Grid.Row="1" Margin="0 25 0 0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" CanContentScroll="False" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel">
+                <ScrollViewer MinHeight="400" Grid.Row="1" Margin="0 25 0 0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" CanContentScroll="False" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel">
                     <avalonEdit:TextEditor Name="SQLcode"
                                FontFamily="Consolas"
                                FontSize="10pt"                          
-                               LineNumbersForeground="#FF2B91AF" 
+                               LineNumbersForeground="#b0b0b0"
+                                           ShowLineNumbers="True"
                                IsReadOnly="True"
                                HorizontalScrollBarVisibility="Disabled"
                                VerticalScrollBarVisibility="Disabled"
@@ -59,7 +60,7 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
                 <Label Content="Представленная выборка, отсортированная по фамилии в алфавитном порядке" FontWeight="Bold" FontStyle="Italic" Grid.Row="0"/>
-                <ScrollViewer Grid.Row="0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" CanContentScroll="False" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel" Margin="0 25 0 0">
+                <ScrollViewer MaxHeight="400" Grid.Row="0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" CanContentScroll="False" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel" Margin="0 25 0 0">
                     <DataGrid Name="TeachersGrid1" CanUserAddRows="False" CanUserDeleteRows="False" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" AutoGenerateColumns="False" >
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Кафедра" Binding="{Binding DepartmentShortName}"/>
@@ -80,11 +81,12 @@
                     </DataGrid>
                 </ScrollViewer>
                 <Label Content="Как выглядит SQL запрос для данной выборки" FontWeight="Bold" Grid.Row="1" FontStyle="Italic"/>
-                <ScrollViewer Grid.Row="1" Margin="0 25 0 0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" CanContentScroll="False" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel" Grid.ColumnSpan="3">
+                <ScrollViewer MinHeight="400" Grid.Row="1" Margin="0 25 0 0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" CanContentScroll="False" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel" Grid.ColumnSpan="3">
                     <avalonEdit:TextEditor Name="SQLcode1"
                                FontFamily="Consolas"
                                FontSize="10pt"                          
-                               LineNumbersForeground="#FF2B91AF" 
+                               LineNumbersForeground="#b0b0b0" 
+                                           ShowLineNumbers="True"
                                IsReadOnly="True"
                                HorizontalScrollBarVisibility="Disabled"
                                VerticalScrollBarVisibility="Disabled"
@@ -103,9 +105,8 @@
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
-                    <RowDefinition/>
                 </Grid.RowDefinitions>
-                <StackPanel Grid.Row="0" Height="50" VerticalAlignment="Top">
+                <StackPanel Grid.Row="0" Height="100" VerticalAlignment="Top">
                     <TextBlock Text="Укажите аргументы для поиска" HorizontalAlignment="Center" FontWeight="Bold" FontStyle="Italic"/>
                     <StackPanel Orientation="Horizontal" Margin="3">
                         <TextBlock Text="Название факультета:" VerticalAlignment="Center" />
@@ -115,16 +116,16 @@
                         <ComboBox Name="DepartmentSelector" ItemsSource="{Binding Path=DepartmentSelectorVM}" IsEnabled="False" Margin="3 0 0 0" Width="100" VerticalAlignment="Center"/>
 
                         <TextBlock Text="Дата присуждения ученой степени от:" VerticalAlignment="Center" Margin="5 0 0 0"/>
-                        <DatePicker Name="DateSelector" VerticalAlignment="Center" Margin="3 0 0 0"/>
+                        <DatePicker Name="DateSelector" SelectedDateChanged="DateSelector_SelectedDateChanged" VerticalAlignment="Center" Margin="3 0 0 0"/>
                         <TextBlock Text="до" Margin="2 0 0 0" VerticalAlignment="Center"/>
-                        <DatePicker Name="DateSelector1" VerticalAlignment="Center" Margin="3 0 0 0"/>
+                        <DatePicker Name="DateSelector1" SelectedDateChanged="DateSelector1_SelectedDateChanged" VerticalAlignment="Center" Margin="3 0 0 0"/>
                     </StackPanel>
+                    <Button Content="Поиск" Click="Button_Click" Height="25" Width="50" Margin="0 5 0 0" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <Label Name="TeachersGrid2Label" Visibility="Hidden" Content="Представленная выборка, отсортированная по фамилии в алфавитном порядке" FontStyle="Italic" FontWeight="Bold" Grid.Row="1"/>
 
 
                 </StackPanel>
-                <Button Content="Поиск" Click="Button_Click" Grid.Row="0" Height="25" Width="50" Margin="0 50 0 0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <Label Name="TeachersGrid2Label" Visibility="Collapsed" Content="Представленная выборка, отсортированная по фамилии в алфавитном порядке" FontStyle="Italic" FontWeight="Bold" Grid.Row="1"/>
-                <ScrollViewer Name="ThirdGrid" Visibility="Collapsed" Grid.Row="1" Margin="0 25 0 0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" CanContentScroll="False" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel">
+                <ScrollViewer MaxHeight="300" Name="ThirdGrid" Visibility="Visible" Grid.Row="0" Margin="0 85 0 0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" CanContentScroll="False" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel">
                     <DataGrid Name="TeachersGrid2" CanUserAddRows="False" CanUserDeleteRows="False" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" AutoGenerateColumns="False" Padding="0 0 0 5"
                               >
                         <DataGrid.Columns>
@@ -140,11 +141,12 @@
                     </DataGrid>
                 </ScrollViewer>
                 <Label Content="Как выглядит SQL запрос для данной выборки" FontWeight="Bold" FontStyle="Italic" Grid.Row="2"/>
-                <ScrollViewer Grid.Row="2" Margin="0 25 0 0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" CanContentScroll="False" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel">
+                <ScrollViewer MinHeight="300" Grid.Row="2" Margin="0 25 0 0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" CanContentScroll="False" PreviewMouseWheel="ScrollViewer_PreviewMouseWheel">
                     <avalonEdit:TextEditor Name="SQLcode2"
                                FontFamily="Consolas"
                                FontSize="10pt"  
-                               LineNumbersForeground="#FF2B91AF" 
+                               LineNumbersForeground="#b0b0b0" 
+                                           ShowLineNumbers="True"
                                IsReadOnly="True"
                                HorizontalScrollBarVisibility="Disabled"
                                VerticalScrollBarVisibility="Disabled"
